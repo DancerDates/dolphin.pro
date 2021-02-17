@@ -7,13 +7,14 @@
 
 .bx_events_main_photo img {
 	width: 100%;
-    background-color:#fff;
+    background-color:transparent;
 }
 
 .bx_events_main_info_text {
     width:80%;
     float:left;
     text-align:left;
+    background-color:transparent;
 }
 .bx_events_main_info_img {
     width:20%;

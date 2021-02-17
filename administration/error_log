@@ -1,0 +1,531 @@
+[29-Sep-2019 19:13:19 Europe/London] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/xplosive/dancerdates/inc/admin.inc.php on line 188
+[29-Sep-2019 19:13:19 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:13:19 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:13:19 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:13:19 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:13:19 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:13:19 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:13:19 Europe/London] PHP   8. member_auth() /home/xplosive/dancerdates/inc/admin.inc.php:248
+[29-Sep-2019 19:13:19 Europe/London] PHP   9. check_login() /home/xplosive/dancerdates/inc/admin.inc.php:293
+[29-Sep-2019 19:13:19 Europe/London] PHP  10. strcmp() /home/xplosive/dancerdates/inc/admin.inc.php:188
+[29-Sep-2019 19:13:19 Europe/London] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/xplosive/dancerdates/inc/admin.inc.php on line 188
+[29-Sep-2019 19:13:19 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:13:19 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:13:19 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:13:19 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:13:19 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:13:19 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:13:19 Europe/London] PHP   8. member_auth() /home/xplosive/dancerdates/inc/admin.inc.php:248
+[29-Sep-2019 19:13:19 Europe/London] PHP   9. check_login() /home/xplosive/dancerdates/inc/admin.inc.php:293
+[29-Sep-2019 19:13:19 Europe/London] PHP  10. strcmp() /home/xplosive/dancerdates/inc/admin.inc.php:188
+[29-Sep-2019 19:13:19 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/profiles.inc.php on line 549
+[29-Sep-2019 19:13:19 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:13:19 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:13:19 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:13:19 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:13:19 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:13:19 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:13:19 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[29-Sep-2019 19:13:19 Europe/London] PHP   9. setcookie() /home/xplosive/dancerdates/inc/profiles.inc.php:549
+[29-Sep-2019 19:13:19 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/profiles.inc.php on line 550
+[29-Sep-2019 19:13:19 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:13:19 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:13:19 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:13:19 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:13:19 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:13:19 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:13:19 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[29-Sep-2019 19:13:19 Europe/London] PHP   9. setcookie() /home/xplosive/dancerdates/inc/profiles.inc.php:550
+[29-Sep-2019 19:13:19 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/classes/BxDolSession.php on line 63
+[29-Sep-2019 19:13:19 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:13:19 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:13:19 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:13:19 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:13:19 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:13:19 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:13:19 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[29-Sep-2019 19:13:19 Europe/London] PHP   9. BxDolSession->destroy() /home/xplosive/dancerdates/inc/profiles.inc.php:556
+[29-Sep-2019 19:13:19 Europe/London] PHP  10. setcookie() /home/xplosive/dancerdates/inc/classes/BxDolSession.php:63
+[29-Sep-2019 19:13:19 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/profiles.inc.php on line 563
+[29-Sep-2019 19:13:19 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:13:19 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:13:19 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:13:19 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:13:19 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:13:19 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:13:19 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[29-Sep-2019 19:13:19 Europe/London] PHP   9. setcookie() /home/xplosive/dancerdates/inc/profiles.inc.php:563
+[29-Sep-2019 19:13:19 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/modules/denre/geo_locator/classes/DbGeoModule.php on line 66
+[29-Sep-2019 19:13:19 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:13:19 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:13:19 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:13:19 Europe/London] PHP   3. BxDolAlerts->alert() /home/xplosive/dancerdates/inc/design.inc.php:434
+[29-Sep-2019 19:13:19 Europe/London] PHP   4. eval() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php:97
+[29-Sep-2019 19:13:19 Europe/London] PHP   5. BxDolService->call() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(97) : eval()'d code:1
+[29-Sep-2019 19:13:19 Europe/London] PHP   6. BxDolRequest->processAsService() /home/xplosive/dancerdates/inc/classes/BxDolService.php:41
+[29-Sep-2019 19:13:19 Europe/London] PHP   7. BxDolRequest->_perform() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:56
+[29-Sep-2019 19:13:19 Europe/London] PHP   8. call_user_func_array:{/home/xplosive/dancerdates/inc/classes/BxDolRequest.php:96}() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:96
+[29-Sep-2019 19:13:19 Europe/London] PHP   9. DbGeoModule->serviceResponse() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:96
+[29-Sep-2019 19:13:19 Europe/London] PHP  10. setcookie() /home/xplosive/dancerdates/modules/denre/geo_locator/classes/DbGeoModule.php:66
+[29-Sep-2019 19:13:19 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/admin_design.inc.php on line 51
+[29-Sep-2019 19:13:19 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:13:19 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:13:19 Europe/London] PHP   2. member_auth() /home/xplosive/dancerdates/administration/modules.php:19
+[29-Sep-2019 19:13:19 Europe/London] PHP   3. login_form() /home/xplosive/dancerdates/inc/admin.inc.php:288
+[29-Sep-2019 19:13:19 Europe/London] PHP   4. LoginFormAdmin() /home/xplosive/dancerdates/inc/admin.inc.php:20
+[29-Sep-2019 19:13:19 Europe/London] PHP   5. PageCodeAdmin() /home/xplosive/dancerdates/inc/admin_design.inc.php:124
+[29-Sep-2019 19:13:19 Europe/London] PHP   6. header() /home/xplosive/dancerdates/inc/admin_design.inc.php:51
+[29-Sep-2019 19:24:15 Europe/London] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/xplosive/dancerdates/inc/admin.inc.php on line 188
+[29-Sep-2019 19:24:15 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:24:15 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:24:15 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:24:15 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:24:15 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:24:15 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:24:15 Europe/London] PHP   8. member_auth() /home/xplosive/dancerdates/inc/admin.inc.php:248
+[29-Sep-2019 19:24:15 Europe/London] PHP   9. check_login() /home/xplosive/dancerdates/inc/admin.inc.php:293
+[29-Sep-2019 19:24:15 Europe/London] PHP  10. strcmp() /home/xplosive/dancerdates/inc/admin.inc.php:188
+[29-Sep-2019 19:24:15 Europe/London] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/xplosive/dancerdates/inc/admin.inc.php on line 188
+[29-Sep-2019 19:24:15 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:24:15 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:24:15 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:24:15 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:24:15 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:24:15 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:24:15 Europe/London] PHP   8. member_auth() /home/xplosive/dancerdates/inc/admin.inc.php:248
+[29-Sep-2019 19:24:15 Europe/London] PHP   9. check_login() /home/xplosive/dancerdates/inc/admin.inc.php:293
+[29-Sep-2019 19:24:15 Europe/London] PHP  10. strcmp() /home/xplosive/dancerdates/inc/admin.inc.php:188
+[29-Sep-2019 19:24:15 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/profiles.inc.php on line 549
+[29-Sep-2019 19:24:15 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:24:15 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:24:15 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:24:15 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:24:15 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:24:15 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:24:15 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[29-Sep-2019 19:24:15 Europe/London] PHP   9. setcookie() /home/xplosive/dancerdates/inc/profiles.inc.php:549
+[29-Sep-2019 19:24:15 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/profiles.inc.php on line 550
+[29-Sep-2019 19:24:15 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:24:15 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:24:15 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:24:15 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:24:15 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:24:15 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:24:15 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[29-Sep-2019 19:24:15 Europe/London] PHP   9. setcookie() /home/xplosive/dancerdates/inc/profiles.inc.php:550
+[29-Sep-2019 19:24:15 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/classes/BxDolSession.php on line 63
+[29-Sep-2019 19:24:15 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:24:15 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:24:15 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:24:15 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:24:15 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:24:15 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:24:15 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[29-Sep-2019 19:24:15 Europe/London] PHP   9. BxDolSession->destroy() /home/xplosive/dancerdates/inc/profiles.inc.php:556
+[29-Sep-2019 19:24:15 Europe/London] PHP  10. setcookie() /home/xplosive/dancerdates/inc/classes/BxDolSession.php:63
+[29-Sep-2019 19:24:15 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/profiles.inc.php on line 563
+[29-Sep-2019 19:24:15 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:24:15 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:24:15 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[29-Sep-2019 19:24:15 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[29-Sep-2019 19:24:15 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[29-Sep-2019 19:24:15 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[29-Sep-2019 19:24:15 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[29-Sep-2019 19:24:15 Europe/London] PHP   9. setcookie() /home/xplosive/dancerdates/inc/profiles.inc.php:563
+[29-Sep-2019 19:24:15 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/modules/denre/geo_locator/classes/DbGeoModule.php on line 66
+[29-Sep-2019 19:24:15 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:24:15 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:24:15 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[29-Sep-2019 19:24:15 Europe/London] PHP   3. BxDolAlerts->alert() /home/xplosive/dancerdates/inc/design.inc.php:434
+[29-Sep-2019 19:24:15 Europe/London] PHP   4. eval() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php:97
+[29-Sep-2019 19:24:15 Europe/London] PHP   5. BxDolService->call() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(97) : eval()'d code:1
+[29-Sep-2019 19:24:15 Europe/London] PHP   6. BxDolRequest->processAsService() /home/xplosive/dancerdates/inc/classes/BxDolService.php:41
+[29-Sep-2019 19:24:15 Europe/London] PHP   7. BxDolRequest->_perform() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:56
+[29-Sep-2019 19:24:15 Europe/London] PHP   8. call_user_func_array:{/home/xplosive/dancerdates/inc/classes/BxDolRequest.php:96}() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:96
+[29-Sep-2019 19:24:15 Europe/London] PHP   9. DbGeoModule->serviceResponse() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:96
+[29-Sep-2019 19:24:15 Europe/London] PHP  10. setcookie() /home/xplosive/dancerdates/modules/denre/geo_locator/classes/DbGeoModule.php:66
+[29-Sep-2019 19:24:15 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/admin_design.inc.php on line 51
+[29-Sep-2019 19:24:15 Europe/London] PHP Stack trace:
+[29-Sep-2019 19:24:15 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[29-Sep-2019 19:24:15 Europe/London] PHP   2. member_auth() /home/xplosive/dancerdates/administration/modules.php:19
+[29-Sep-2019 19:24:15 Europe/London] PHP   3. login_form() /home/xplosive/dancerdates/inc/admin.inc.php:288
+[29-Sep-2019 19:24:15 Europe/London] PHP   4. LoginFormAdmin() /home/xplosive/dancerdates/inc/admin.inc.php:20
+[29-Sep-2019 19:24:15 Europe/London] PHP   5. PageCodeAdmin() /home/xplosive/dancerdates/inc/admin_design.inc.php:124
+[29-Sep-2019 19:24:15 Europe/London] PHP   6. header() /home/xplosive/dancerdates/inc/admin_design.inc.php:51
+[27-Nov-2019 10:39:33 Europe/London] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/xplosive/dancerdates/inc/admin.inc.php on line 188
+[27-Nov-2019 10:39:33 Europe/London] PHP Stack trace:
+[27-Nov-2019 10:39:33 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[27-Nov-2019 10:39:33 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[27-Nov-2019 10:39:33 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[27-Nov-2019 10:39:33 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[27-Nov-2019 10:39:33 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[27-Nov-2019 10:39:33 Europe/London] PHP   8. member_auth() /home/xplosive/dancerdates/inc/admin.inc.php:248
+[27-Nov-2019 10:39:33 Europe/London] PHP   9. check_login() /home/xplosive/dancerdates/inc/admin.inc.php:293
+[27-Nov-2019 10:39:33 Europe/London] PHP  10. strcmp() /home/xplosive/dancerdates/inc/admin.inc.php:188
+[27-Nov-2019 10:39:33 Europe/London] PHP Warning:  strcmp() expects parameter 2 to be string, array given in /home/xplosive/dancerdates/inc/admin.inc.php on line 188
+[27-Nov-2019 10:39:33 Europe/London] PHP Stack trace:
+[27-Nov-2019 10:39:33 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[27-Nov-2019 10:39:33 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[27-Nov-2019 10:39:33 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[27-Nov-2019 10:39:33 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[27-Nov-2019 10:39:33 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[27-Nov-2019 10:39:33 Europe/London] PHP   8. member_auth() /home/xplosive/dancerdates/inc/admin.inc.php:248
+[27-Nov-2019 10:39:33 Europe/London] PHP   9. check_login() /home/xplosive/dancerdates/inc/admin.inc.php:293
+[27-Nov-2019 10:39:33 Europe/London] PHP  10. strcmp() /home/xplosive/dancerdates/inc/admin.inc.php:188
+[27-Nov-2019 10:39:33 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/profiles.inc.php on line 549
+[27-Nov-2019 10:39:33 Europe/London] PHP Stack trace:
+[27-Nov-2019 10:39:33 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[27-Nov-2019 10:39:33 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[27-Nov-2019 10:39:33 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[27-Nov-2019 10:39:33 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[27-Nov-2019 10:39:33 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[27-Nov-2019 10:39:33 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[27-Nov-2019 10:39:33 Europe/London] PHP   9. setcookie() /home/xplosive/dancerdates/inc/profiles.inc.php:549
+[27-Nov-2019 10:39:33 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/profiles.inc.php on line 550
+[27-Nov-2019 10:39:33 Europe/London] PHP Stack trace:
+[27-Nov-2019 10:39:33 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[27-Nov-2019 10:39:33 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[27-Nov-2019 10:39:33 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[27-Nov-2019 10:39:33 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[27-Nov-2019 10:39:33 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[27-Nov-2019 10:39:33 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[27-Nov-2019 10:39:33 Europe/London] PHP   9. setcookie() /home/xplosive/dancerdates/inc/profiles.inc.php:550
+[27-Nov-2019 10:39:33 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/classes/BxDolSession.php on line 63
+[27-Nov-2019 10:39:33 Europe/London] PHP Stack trace:
+[27-Nov-2019 10:39:33 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[27-Nov-2019 10:39:33 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[27-Nov-2019 10:39:33 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[27-Nov-2019 10:39:33 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[27-Nov-2019 10:39:33 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[27-Nov-2019 10:39:33 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[27-Nov-2019 10:39:33 Europe/London] PHP   9. BxDolSession->destroy() /home/xplosive/dancerdates/inc/profiles.inc.php:556
+[27-Nov-2019 10:39:33 Europe/London] PHP  10. setcookie() /home/xplosive/dancerdates/inc/classes/BxDolSession.php:63
+[27-Nov-2019 10:39:33 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/profiles.inc.php on line 563
+[27-Nov-2019 10:39:33 Europe/London] PHP Stack trace:
+[27-Nov-2019 10:39:33 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[27-Nov-2019 10:39:33 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[27-Nov-2019 10:39:33 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[27-Nov-2019 10:39:33 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[27-Nov-2019 10:39:33 Europe/London] PHP   7. check_logged() /home/xplosive/dancerdates/inc/profiles.inc.php:664
+[27-Nov-2019 10:39:33 Europe/London] PHP   8. bx_logout() /home/xplosive/dancerdates/inc/admin.inc.php:254
+[27-Nov-2019 10:39:33 Europe/London] PHP   9. setcookie() /home/xplosive/dancerdates/inc/profiles.inc.php:563
+[27-Nov-2019 10:39:33 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/modules/denre/geo_locator/classes/DbGeoModule.php on line 66
+[27-Nov-2019 10:39:33 Europe/London] PHP Stack trace:
+[27-Nov-2019 10:39:33 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[27-Nov-2019 10:39:33 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/modules.php:9
+[27-Nov-2019 10:39:33 Europe/London] PHP   3. BxDolAlerts->alert() /home/xplosive/dancerdates/inc/design.inc.php:434
+[27-Nov-2019 10:39:33 Europe/London] PHP   4. eval() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php:97
+[27-Nov-2019 10:39:33 Europe/London] PHP   5. BxDolService->call() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(97) : eval()'d code:1
+[27-Nov-2019 10:39:33 Europe/London] PHP   6. BxDolRequest->processAsService() /home/xplosive/dancerdates/inc/classes/BxDolService.php:41
+[27-Nov-2019 10:39:33 Europe/London] PHP   7. BxDolRequest->_perform() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:56
+[27-Nov-2019 10:39:33 Europe/London] PHP   8. call_user_func_array:{/home/xplosive/dancerdates/inc/classes/BxDolRequest.php:96}() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:96
+[27-Nov-2019 10:39:33 Europe/London] PHP   9. DbGeoModule->serviceResponse() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:96
+[27-Nov-2019 10:39:33 Europe/London] PHP  10. setcookie() /home/xplosive/dancerdates/modules/denre/geo_locator/classes/DbGeoModule.php:66
+[27-Nov-2019 10:39:33 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xplosive/dancerdates/inc/admin.inc.php:188) in /home/xplosive/dancerdates/inc/admin_design.inc.php on line 51
+[27-Nov-2019 10:39:33 Europe/London] PHP Stack trace:
+[27-Nov-2019 10:39:33 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[27-Nov-2019 10:39:33 Europe/London] PHP   2. member_auth() /home/xplosive/dancerdates/administration/modules.php:19
+[27-Nov-2019 10:39:33 Europe/London] PHP   3. login_form() /home/xplosive/dancerdates/inc/admin.inc.php:288
+[27-Nov-2019 10:39:33 Europe/London] PHP   4. LoginFormAdmin() /home/xplosive/dancerdates/inc/admin.inc.php:20
+[27-Nov-2019 10:39:33 Europe/London] PHP   5. PageCodeAdmin() /home/xplosive/dancerdates/inc/admin_design.inc.php:124
+[27-Nov-2019 10:39:33 Europe/London] PHP   6. header() /home/xplosive/dancerdates/inc/admin_design.inc.php:51
+[07-Feb-2021 13:35:43 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 13:35:43 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/administration/index.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 13:36:00 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 13:36:00 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/administration/index.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[08-Feb-2021 00:25:17 Europe/London] PHP Warning:  mysql_query(): Access denied for user 'xplosive'@'localhost' (using password: NO) in /home/xplosive/dancerdates/inc/header.inc.php on line 187
+[08-Feb-2021 00:25:17 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:17 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:17 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:8
+[08-Feb-2021 00:25:17 Europe/London] PHP   3. mysql_query() /home/xplosive/dancerdates/inc/header.inc.php:187
+[08-Feb-2021 00:25:17 Europe/London] PHP Warning:  mysql_query(): A link to the server could not be established in /home/xplosive/dancerdates/inc/header.inc.php on line 187
+[08-Feb-2021 00:25:17 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:17 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:17 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:8
+[08-Feb-2021 00:25:17 Europe/London] PHP   3. mysql_query() /home/xplosive/dancerdates/inc/header.inc.php:187
+[08-Feb-2021 00:25:17 Europe/London] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/xplosive/dancerdates/inc/header.inc.php on line 188
+[08-Feb-2021 00:25:17 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:17 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:17 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:8
+[08-Feb-2021 00:25:17 Europe/London] PHP   3. mysql_fetch_assoc() /home/xplosive/dancerdates/inc/header.inc.php:188
+[08-Feb-2021 00:25:17 Europe/London] PHP Fatal error:  Call to undefined method BxBaseConfig::BxBaseConfig() in /home/xplosive/dancerdates/templates/tmpl_myEvo/scripts/BxTemplConfig.php on line 24
+[08-Feb-2021 00:25:17 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:17 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:17 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:9
+[08-Feb-2021 00:25:17 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/profiles.inc.php:9
+[08-Feb-2021 00:25:17 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[08-Feb-2021 00:25:17 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[08-Feb-2021 00:25:17 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[08-Feb-2021 00:25:17 Europe/London] PHP   7. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:23
+[08-Feb-2021 00:25:17 Europe/London] PHP   8. BxTemplConfig->BxTemplConfig() /home/xplosive/dancerdates/inc/params.inc.php:90
+[08-Feb-2021 00:25:18 Europe/London] PHP Warning:  mysql_query(): Access denied for user 'xplosive'@'localhost' (using password: NO) in /home/xplosive/dancerdates/inc/header.inc.php on line 187
+[08-Feb-2021 00:25:18 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:18 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:18 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:8
+[08-Feb-2021 00:25:18 Europe/London] PHP   3. mysql_query() /home/xplosive/dancerdates/inc/header.inc.php:187
+[08-Feb-2021 00:25:18 Europe/London] PHP Warning:  mysql_query(): A link to the server could not be established in /home/xplosive/dancerdates/inc/header.inc.php on line 187
+[08-Feb-2021 00:25:18 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:18 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:18 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:8
+[08-Feb-2021 00:25:18 Europe/London] PHP   3. mysql_query() /home/xplosive/dancerdates/inc/header.inc.php:187
+[08-Feb-2021 00:25:18 Europe/London] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/xplosive/dancerdates/inc/header.inc.php on line 188
+[08-Feb-2021 00:25:18 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:18 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:18 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:8
+[08-Feb-2021 00:25:18 Europe/London] PHP   3. mysql_fetch_assoc() /home/xplosive/dancerdates/inc/header.inc.php:188
+[08-Feb-2021 00:25:18 Europe/London] PHP Fatal error:  Call to undefined method BxBaseConfig::BxBaseConfig() in /home/xplosive/dancerdates/templates/tmpl_myEvo/scripts/BxTemplConfig.php on line 24
+[08-Feb-2021 00:25:18 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:18 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:18 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:9
+[08-Feb-2021 00:25:18 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/profiles.inc.php:9
+[08-Feb-2021 00:25:18 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[08-Feb-2021 00:25:18 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[08-Feb-2021 00:25:18 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[08-Feb-2021 00:25:18 Europe/London] PHP   7. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:23
+[08-Feb-2021 00:25:18 Europe/London] PHP   8. BxTemplConfig->BxTemplConfig() /home/xplosive/dancerdates/inc/params.inc.php:90
+[08-Feb-2021 00:25:18 Europe/London] PHP Warning:  mysql_query(): Access denied for user 'xplosive'@'localhost' (using password: NO) in /home/xplosive/dancerdates/inc/header.inc.php on line 187
+[08-Feb-2021 00:25:18 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:18 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:18 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:8
+[08-Feb-2021 00:25:18 Europe/London] PHP   3. mysql_query() /home/xplosive/dancerdates/inc/header.inc.php:187
+[08-Feb-2021 00:25:18 Europe/London] PHP Warning:  mysql_query(): A link to the server could not be established in /home/xplosive/dancerdates/inc/header.inc.php on line 187
+[08-Feb-2021 00:25:18 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:18 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:18 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:8
+[08-Feb-2021 00:25:18 Europe/London] PHP   3. mysql_query() /home/xplosive/dancerdates/inc/header.inc.php:187
+[08-Feb-2021 00:25:18 Europe/London] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/xplosive/dancerdates/inc/header.inc.php on line 188
+[08-Feb-2021 00:25:18 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:18 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:18 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:8
+[08-Feb-2021 00:25:18 Europe/London] PHP   3. mysql_fetch_assoc() /home/xplosive/dancerdates/inc/header.inc.php:188
+[08-Feb-2021 00:25:18 Europe/London] PHP Fatal error:  Call to undefined method BxBaseConfig::BxBaseConfig() in /home/xplosive/dancerdates/templates/tmpl_myEvo/scripts/BxTemplConfig.php on line 24
+[08-Feb-2021 00:25:18 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:25:18 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:25:18 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:9
+[08-Feb-2021 00:25:18 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/profiles.inc.php:9
+[08-Feb-2021 00:25:18 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[08-Feb-2021 00:25:18 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[08-Feb-2021 00:25:18 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[08-Feb-2021 00:25:18 Europe/London] PHP   7. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:23
+[08-Feb-2021 00:25:18 Europe/London] PHP   8. BxTemplConfig->BxTemplConfig() /home/xplosive/dancerdates/inc/params.inc.php:90
+[08-Feb-2021 00:40:40 Europe/London] PHP Fatal error:  Call to undefined method BxBaseConfig::BxBaseConfig() in /home/xplosive/dancerdates/templates/tmpl_myEvo/scripts/BxTemplConfig.php on line 24
+[08-Feb-2021 00:40:40 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:40:40 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:40:40 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:9
+[08-Feb-2021 00:40:40 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/profiles.inc.php:9
+[08-Feb-2021 00:40:40 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[08-Feb-2021 00:40:40 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[08-Feb-2021 00:40:40 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[08-Feb-2021 00:40:40 Europe/London] PHP   7. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:23
+[08-Feb-2021 00:40:40 Europe/London] PHP   8. BxTemplConfig->BxTemplConfig() /home/xplosive/dancerdates/inc/params.inc.php:90
+[08-Feb-2021 00:42:48 Europe/London] PHP Fatal error:  Call to undefined method BxDolModule::BxDolModule() in /home/xplosive/dancerdates/modules/denre/geo_locator/classes/DbGeoModule.php on line 18
+[08-Feb-2021 00:42:48 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:42:48 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:42:48 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:9
+[08-Feb-2021 00:42:48 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/profiles.inc.php:9
+[08-Feb-2021 00:42:48 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/design.inc.php:9
+[08-Feb-2021 00:42:48 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:11
+[08-Feb-2021 00:42:48 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/admin_design.inc.php:12
+[08-Feb-2021 00:42:48 Europe/London] PHP   7. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:23
+[08-Feb-2021 00:42:48 Europe/London] PHP   8. BxTemplFormView->__construct() /home/xplosive/dancerdates/inc/params.inc.php:96
+[08-Feb-2021 00:42:48 Europe/London] PHP   9. BxBaseFormView->__construct() /home/xplosive/dancerdates/templates/tmpl_myEvo/scripts/BxTemplFormView.php:9
+[08-Feb-2021 00:42:48 Europe/London] PHP  10. BxDolForm->__construct() /home/xplosive/dancerdates/templates/base/scripts/BxBaseFormView.php:48
+[08-Feb-2021 00:42:48 Europe/London] PHP  11. BxDolAlerts->alert() /home/xplosive/dancerdates/inc/classes/BxDolForm.php:146
+[08-Feb-2021 00:42:48 Europe/London] PHP  12. eval() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php:97
+[08-Feb-2021 00:42:48 Europe/London] PHP  13. BxDolService::call() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(97) : eval()'d code:1
+[08-Feb-2021 00:42:48 Europe/London] PHP  14. BxDolRequest::processAsService() /home/xplosive/dancerdates/inc/classes/BxDolService.php:40
+[08-Feb-2021 00:42:48 Europe/London] PHP  15. BxDolRequest->_perform() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:60
+[08-Feb-2021 00:42:48 Europe/London] PHP  16. BxDolRequest::_require() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:100
+[08-Feb-2021 00:42:48 Europe/London] PHP  17. DbGeoModule->DbGeoModule() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:132
+[08-Feb-2021 00:43:57 Europe/London] PHP Fatal error:  Call to undefined method BxDolModule::BxDolModule() in /home/xplosive/dancerdates/modules/denre/cnm/classes/DbCNMModule.php on line 13
+[08-Feb-2021 00:43:57 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:43:57 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/index.php:0
+[08-Feb-2021 00:43:57 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/administration/index.php:9
+[08-Feb-2021 00:43:57 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/profiles.inc.php:9
+[08-Feb-2021 00:43:57 Europe/London] PHP   4. BxDolAlerts->alert() /home/xplosive/dancerdates/inc/design.inc.php:434
+[08-Feb-2021 00:43:57 Europe/London] PHP   5. eval() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php:97
+[08-Feb-2021 00:43:57 Europe/London] PHP   6. BxDolService::call() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(97) : eval()'d code:1
+[08-Feb-2021 00:43:57 Europe/London] PHP   7. BxDolRequest::processAsService() /home/xplosive/dancerdates/inc/classes/BxDolService.php:40
+[08-Feb-2021 00:43:57 Europe/London] PHP   8. BxDolRequest->_perform() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:60
+[08-Feb-2021 00:43:57 Europe/London] PHP   9. BxDolRequest::_require() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:100
+[08-Feb-2021 00:43:57 Europe/London] PHP  10. DbCNMModule->DbCNMModule() /home/xplosive/dancerdates/inc/classes/BxDolRequest.php:132
+[08-Feb-2021 10:52:54 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/aqb/event_rec/install/installer.php on line 21
+[08-Feb-2021 10:52:54 Europe/London] PHP Stack trace:
+[08-Feb-2021 10:52:54 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[08-Feb-2021 10:52:54 Europe/London] PHP   2. BxDolInstallerUi->actionUninstall() /home/xplosive/dancerdates/administration/modules.php:70
+[08-Feb-2021 10:52:54 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:388
+[08-Feb-2021 10:52:54 Europe/London] PHP   4. AqbEventRecInstaller->AqbEventRecInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:47:56 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/ibdw/1col/install/installer.php on line 21
+[11-Feb-2021 11:47:56 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:47:56 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:47:56 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:47:56 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:47:56 Europe/London] PHP   4. FirstColInstaller->FirstColInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:49:43 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/ibdw/1col/install/installer.php on line 21
+[11-Feb-2021 11:49:43 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:49:43 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:49:43 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:49:43 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:49:43 Europe/London] PHP   4. FirstColInstaller->FirstColInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:50:11 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/ibdw/3col/install/installer.php on line 23
+[11-Feb-2021 11:50:11 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:50:11 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:50:11 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:50:11 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:50:11 Europe/London] PHP   4. ThirdColInstaller->ThirdColInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:51:08 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/andrew/birthmail/install/installer.php on line 15
+[11-Feb-2021 11:51:08 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:51:08 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:51:08 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:51:08 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:51:08 Europe/London] PHP   4. ABMailInstaller->ABMailInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:52:03 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/sandklock/social_inviter/install/installer.php on line 7
+[11-Feb-2021 11:52:03 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:52:03 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:52:03 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:52:03 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:52:03 Europe/London] PHP   4. SkSocialInviterInstaller->SkSocialInviterInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:53:00 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/denre/weather/install/installer.php on line 27
+[11-Feb-2021 11:53:00 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:53:00 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:53:00 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:53:00 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:53:00 Europe/London] PHP   4. DbWeatherInstaller->DbWeatherInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:54:14 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/EmmetBytes/emmetbytes_profile_cover/install/installer.php on line 13
+[11-Feb-2021 11:54:14 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:54:14 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:54:14 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:54:14 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:54:14 Europe/London] PHP   4. EmmetBytesProfileCoverInstaller->EmmetBytesProfileCoverInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:55:40 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/andrew/birthblock/install/installer.php on line 15
+[11-Feb-2021 11:55:40 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:55:40 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:55:40 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:55:40 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:55:40 Europe/London] PHP   4. ABirthBlockInstaller->ABirthBlockInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:57:25 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/aneila_mods/designbox_switcher/install/installer.php on line 22
+[11-Feb-2021 11:57:25 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:57:25 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:57:25 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:57:25 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:57:25 Europe/London] PHP   4. AndsDesignBoxSwitcherInstaller->AndsDesignBoxSwitcherInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:58:39 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/deano/cron_monitor/install/installer.php on line 22
+[11-Feb-2021 11:58:39 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:58:39 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:58:39 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:58:39 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:58:39 Europe/London] PHP   4. deanoCronMonitorInstaller->deanoCronMonitorInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 11:59:41 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/denre/dbadverts/install/installer.php on line 27
+[11-Feb-2021 11:59:41 Europe/London] PHP Stack trace:
+[11-Feb-2021 11:59:41 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 11:59:41 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 11:59:41 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 11:59:41 Europe/London] PHP   4. DbAdvertsInstaller->DbAdvertsInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 12:00:49 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/ibdw/eventcover/install/installer.php on line 22
+[11-Feb-2021 12:00:49 Europe/London] PHP Stack trace:
+[11-Feb-2021 12:00:49 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 12:00:49 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 12:00:49 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 12:00:49 Europe/London] PHP   4. eventcoverInstaller->eventcoverInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 12:01:50 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/aqb/evu/install/installer.php on line 21
+[11-Feb-2021 12:01:50 Europe/London] PHP Stack trace:
+[11-Feb-2021 12:01:50 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 12:01:50 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 12:01:50 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 12:01:50 Europe/London] PHP   4. AqbEVUInstaller->AqbEVUInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 12:02:46 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/Dately/geodistance/install/installer.php on line 21
+[11-Feb-2021 12:02:46 Europe/London] PHP Stack trace:
+[11-Feb-2021 12:02:46 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 12:02:46 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 12:02:46 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 12:02:46 Europe/London] PHP   4. DatelyGeoDInstaller->DatelyGeoDInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 12:04:00 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/misterpopper/googleanalytics/install/installer.php on line 21
+[11-Feb-2021 12:04:00 Europe/London] PHP Stack trace:
+[11-Feb-2021 12:04:00 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 12:04:00 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 12:04:00 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 12:04:00 Europe/London] PHP   4. MPGoogleAnalyticsInstaller->MPGoogleAnalyticsInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 12:05:02 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/mchristiaan/mtools/install/installer.php on line 14
+[11-Feb-2021 12:05:02 Europe/London] PHP Stack trace:
+[11-Feb-2021 12:05:02 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 12:05:02 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 12:05:02 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 12:05:02 Europe/London] PHP   4. MChrisMToolsInstaller->MChrisMToolsInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 12:05:55 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/modloaded/photo_rotator/install/installer.php on line 28
+[11-Feb-2021 12:05:55 Europe/London] PHP Stack trace:
+[11-Feb-2021 12:05:55 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 12:05:55 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 12:05:55 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 12:05:55 Europe/London] PHP   4. MlPhotoRInstaller->MlPhotoRInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 12:06:59 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/rayz/rzradio/install/installer.php on line 25
+[11-Feb-2021 12:06:59 Europe/London] PHP Stack trace:
+[11-Feb-2021 12:06:59 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 12:06:59 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 12:06:59 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 12:06:59 Europe/London] PHP   4. RzRadioInstaller->RzRadioInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[11-Feb-2021 12:08:19 Europe/London] PHP Fatal error:  Call to undefined method BxDolInstaller::BxDolInstaller() in /home/xplosive/dancerdates/modules/ibdw/schoolcover/install/installer.php on line 23
+[11-Feb-2021 12:08:19 Europe/London] PHP Stack trace:
+[11-Feb-2021 12:08:19 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/modules.php:0
+[11-Feb-2021 12:08:19 Europe/London] PHP   2. BxDolInstallerUi->actionRecompile() /home/xplosive/dancerdates/administration/modules.php:72
+[11-Feb-2021 12:08:19 Europe/London] PHP   3. BxDolInstallerUi->_perform() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:392
+[11-Feb-2021 12:08:19 Europe/London] PHP   4. schoolcoverInstaller->schoolcoverInstaller() /home/xplosive/dancerdates/inc/classes/BxDolInstallerUi.php:560
+[15-Feb-2021 00:47:09 Europe/London] PHP Fatal error:  Cannot use object of type PDOStatement as array in /home/xplosive/dancerdates/administration/menu_compose_admin.php on line 337
+[15-Feb-2021 00:47:09 Europe/London] PHP Stack trace:
+[15-Feb-2021 00:47:09 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/menu_compose_admin.php:0
+[15-Feb-2021 00:47:09 Europe/London] PHP   2. createNewElement() /home/xplosive/dancerdates/administration/menu_compose_admin.php:42
+[15-Feb-2021 00:49:01 Europe/London] PHP Fatal error:  Cannot use object of type PDOStatement as array in /home/xplosive/dancerdates/administration/menu_compose_admin.php on line 337
+[15-Feb-2021 00:49:01 Europe/London] PHP Stack trace:
+[15-Feb-2021 00:49:01 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/administration/menu_compose_admin.php:0
+[15-Feb-2021 00:49:01 Europe/London] PHP   2. createNewElement() /home/xplosive/dancerdates/administration/menu_compose_admin.php:42

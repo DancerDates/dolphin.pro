@@ -57,7 +57,12 @@
 .bx-sys-mobile-page {
     padding:0;
     margin:0;
-    background-image: url(../images/sys-bg-main.png);
+    background-position: center top;
+	background-image:url(../images/dancers.png);
+    background-repeat:no-repeat;
+	background-size:Cover;
+	background-attachment:fixed;
+
 }
 
 .bx-sys-row { position:relative; padding-right:30px; }

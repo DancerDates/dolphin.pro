@@ -1,0 +1,43 @@
+<style>
+	.sk_inviter_logo{
+	display:inline;
+	margin-right:5px;
+	}
+</style>
+
+<script type="text/javascript">
+	function popupInviter(pageURL){
+
+		var w = 800;
+		var h = 500;
+		var title ='socialinviterwindow';
+		var left = (screen.width/2)-(w/2);
+		var top = (screen.height/2)-(h/2);
+		var newwindow =  window.open (pageURL, title, 'toolbar=no,location=no,directories=no,status=no,menubar=no, scrollbars=yes,resizable=yes,copyhistory=no,width='+w+',height='+h+',top='+top+',left='+left);
+		
+        showSocialInviterLoadingImg('__loading_img__');
+
+		if (window.focus) {newwindow.focus();}
+	
+		var interval = setInterval(function(){
+			if (newwindow.closed) {
+                var oPopupOptions = {closeOnOuterClick: false};
+				$('#sk_inviter_loading_img').dolPopupHide(oPopupOptions);
+				clearInterval(interval);
+			}
+		},500);
+	};
+</script>
+
+<div class="bx-def-bc-padding">
+	<bx_repeat:networks>
+		<div class="sk_inviter_logo">
+			<a href="javascript:void(popupInviter('__login_url__'))"><img src="__img_src__" title="__tooltip__"/></a>
+		</div>
+	</bx_repeat:networks>
+	<bx_if:other>
+		<div class="sk_inviter_logo">
+			<a href="javascript:void(0)" onclick="showSocialInviterImport()"><img src="__other_img__" title="__tooltip__"/></a>
+		</div>
+	</bx_if:other>
+</div>

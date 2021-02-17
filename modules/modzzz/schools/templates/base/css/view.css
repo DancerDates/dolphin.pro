@@ -1,0 +1,62 @@
+.infoExtraHeader {
+    font-size:14px;
+	font-weight:bold;
+    margin:0px 0px 10px 0px;
+}
+
+.infoExtraUnit{
+    margin:5px 0px 5px 0px;
+}
+
+.infoUnitBorderFirst {
+	border:2px solid #CCCCCC;width:100%;
+    margin:5px 0px 10px 0px ;
+}
+
+.infoUnitBorder {
+	border:2px solid #CCCCCC;width:100%;
+    margin:5px 0px 5px 0px ;
+}
+
+
+.bx-def-btc-padding-in-out {
+	padding: 10px 0px 10px 0px;
+}
+
+.bx_sys_block_videos_title_curr{
+	margin-bottom:20px;
+	font-weight:bold;
+}
+
+.modzzz_schools_title {
+	padding:10px;
+	font-size:12px;
+	margin-bottom:5px;
+	font-weight:bold;
+}
+
+.modzzz_schools_description {
+    padding:10px;
+    font-size:11px;
+}
+ 
+table.modzzz_schools_fields {
+    border-collapse:collapse;
+    border-spacing:0px;
+}
+
+td.modzzz_schools_field_name {
+    padding:0px 0px 10px 0px ;
+    text-align:left;
+}
+
+td.modzzz_schools_field_value {
+    padding:0px 0px 10px 10px ;
+    text-align:left;
+}
+
+.modzzz_schools_profile_unit {
+    overflow:hidden;
+    float:left;
+}
+ 

@@ -1,0 +1,11 @@
+div.modzzz_pcheck_outer_padding {
+	width:100%;
+	background-color:#dddddd;
+	border:1px solid #0099cc;
+	border-radius: 8px;
+}
+
+div.modzzz_pcheck_outer_padding div.progress_bar{
+	background-color:#0099cc;
+	height:10px;
+} 

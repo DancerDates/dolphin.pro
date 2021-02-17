@@ -1,0 +1,78 @@
+<script type="text/javascript" src="__data_table__"></script>
+<script type="text/javascript">
+	window.alert = (function() {
+		var nativeAlert = window.alert;
+		return function(message) {
+			window.alert = nativeAlert;
+			message.indexOf("DataTables warning") === 0 ?
+				console.warn(message) :
+				nativeAlert(message);
+		};
+	})();
+
+	var keyRunning = 0;
+	$(document).ready(function() {
+		$('#importer_table').dataTable({
+			
+			"processing": true,
+			"serverSide": true,
+			"ajax": '__ajax_url__'
+		});
+		//$('#importer_table_filter input[type=search]').unbind();
+		//filter();
+	});
+	
+	function filter(){
+		$('#importer_table_filter input[type=search]').keyup(function(e){
+			e.preventDefault();
+
+			if(keyRunning === 0)
+				keyRunning = setTimeout(filter_callback,400);
+			else{
+				clearTimeout(keyRunning);
+				keyRunning = setTimeout(filter_callback,400);
+			}
+						
+		}).focus(function(){
+			this.value = "";
+			$(this).css({
+				"color": "black"
+			});
+			$(this).unbind('focus');
+		});
+	}
+	function filter_callback(){
+		var data = $('#importer_table_filter input[type=search]').val().split(' ');
+		var list = $('#importer_table tr').not('#importer_table tr:first');
+		if(this.value === ''){
+			list.css('display','table-row');
+			return;
+		}
+		
+		list.hide();
+		
+		list.filter(function(){
+			var row = $(this);
+			for(var i=0; i<data.length;i++){
+				if(row.find('td').eq(0).is(':contains("'+data[i]+'")') || row.find('td').eq(1).is(':contains("'+data[i]+'")') || row.find('td').eq(2).is(':contains("'+data[i]+'")') || row.find('td').eq(3).is(':contains("'+data[i]+'")')){
+					return true;
+				}
+			}
+			return false;
+		}).css('display','table-row');
+	}
+
+</script>
+<table border="0" class="display" id="importer_table">
+<thead>
+	<tr>
+		<th>Username</th>
+		<th>Contact</th>
+		<th>Provider</th>
+		<th>Date</th>
+	</tr>
+</thead>
+</table>
+<style type="text/css" title="currentStyle">
+@import "__css_url__";
+</style>

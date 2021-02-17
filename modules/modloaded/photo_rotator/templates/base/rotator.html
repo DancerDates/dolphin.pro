@@ -1,0 +1,65 @@
+<script>
+var angle = 0;
+$(document).ready(function()
+{
+	$('#saveImage').click(function(){
+		$('#save_results').html('__saving__...');
+		$.ajax({
+		   type: "GET",
+		   url: "__action__/__id__/__ext__/"+(parseFloat($('#currentAngle').val()) - (parseFloat($("#currentAngle").val()) * 2)),
+		   data: "",
+		   success: function(msg){
+	     		$('#save_results').html(msg);
+	     		//$('#prev-img').attr('src','__pic__');
+	     		location.reload();
+	   	}
+	 	});
+	});
+});
+
+function changeAngle(direction){
+
+		if(direction == 'anticlockwise')
+			angle = angle - 90;
+		else
+			angle = angle + 90;
+
+	$("#prev").css('transform','rotate(' + angle + 'deg)');
+}
+
+function updateAngle(image,direction,currentAngle)
+{
+	changeAngle(direction);
+	var rotateAngle = 0;
+		
+	switch (direction)
+	{
+		case 'anticlockwise':
+			if(currentAngle == 0){rotateAngle = -90;}
+			else{rotateAngle = parseInt(currentAngle) - 90;}
+		break;
+		default:
+			if(currentAngle == 0){rotateAngle = 90;}
+			else{rotateAngle = parseInt(currentAngle) + 90;}
+	}
+			
+	//$('#'+image).rotateAnimation({
+	$('.fileUnitSpacer').rotateAnimation({
+		animateAngle:rotateAngle
+	});
+		
+	$('#currentAngle').val(rotateAngle); // sets currentAngle value
+}
+
+</script>
+<div id="controls">
+	<img src="__clockwise__" onclick="updateAngle('image1','',document.getElementById('currentAngle').value);" id="button_rotate"> 
+	<img src="__anticlockwise__" onclick="updateAngle('image1','anticlockwise',document.getElementById('currentAngle').value);" id="button_rotate">
+	<a href="#" id="saveImage" onclick="return false;"><img alt="__save_title__" title="__save_title__" src="__save__" border=0></a><span id="save_results"></span>
+	<img id="prev" src="__pic__" style="width: 70px; height: 70px;" />
+</div>
+
+<input type="hidden" id="currentAngle" name="angle" value="0" size=2>
+
+</center>
+	

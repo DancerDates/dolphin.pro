@@ -1,0 +1,47 @@
+.soclall_theme_block {
+    width: 46%;
+    height:182px;
+    display: inline-block;
+    margin:5px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    overflow:auto;
+}
+
+.soclall_theme_block .theme_title {
+    font-size:20px;
+    float:left;
+}
+
+.soclall_theme_block .btn_apply {
+    float:right;
+    padding: 2px 15px !important;
+    font-size: 14px !important;
+}
+
+.soclall_theme_block .sa_frame {
+    float:left;
+    width:100%;
+    margin:20px 0 0;
+    padding:0 3px;
+}
+
+.soclall_theme_block.active {
+    border:1px solid #1a3d66;
+    background-color: #fff;
+}
+
+.soclall_theme_block .check_theme_applied {
+    float: right;
+    font-size: 36px;
+    margin-right: 10px;
+    color: #009900;
+    line-height: 25px;
+}
+
+.soclall_theme_block .theme_size {
+    margin-left: 15px;
+    margin-top: 4px;
+    display: inline-block;
+}

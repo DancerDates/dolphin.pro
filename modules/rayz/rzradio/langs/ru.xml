@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<items>
+	<item key="_name_"><![CDATA[Русский]]></item>
+
+	<item key="dlgBrowse"><![CDATA[Категории]]></item>
+	<item key="dlgSearch"><![CDATA[Поиск]]></item>
+	<item key="dlgFeatured"><![CDATA[Лучшие]]></item>
+	<item key="dlgFavorites"><![CDATA[Любимые]]></item>
+	<item key="dlgCategoryNew"><![CDATA[Новый Каталог]]></item>
+	<item key="dlgNewCategory"><![CDATA[Новый Каталог]]></item>
+	<item key="dlgCategoryEdit"><![CDATA[Изменить Каталог]]></item>
+	<item key="dlgCategoryTitle"><![CDATA[Название:]]></item>
+	<item key="dlgCategoryImage"><![CDATA[Картинка:]]></item>
+	<item key="dlgSettings"><![CDATA[Настройки]]></item>
+	<item key="dlgMenu"><![CDATA[Позиция меню:]]></item>
+	<item key="dlgMenuHide"><![CDATA[Прятать меню:]]></item>
+	<item key="dlgMenuHint"><![CDATA[Подсказки в меню:]]></item>
+	<item key="dlgSearchCaption"><![CDATA[Строка поиска:]]></item>
+	<item key="dlgRemoveIdle"><![CDATA[Удалять нерабочие радио:]]></item>
+	<item key="dlgGuestPlay"><![CDATA[Гости слушают радио:]]></item>
+	<item key="dlgMinCatItems"><![CDATA[Наимен. кол-во радио в категории:]]></item>
+	<item key="dlgVolume"><![CDATA[Громкость:]]></item>
+	
+	<item key="btnOk"><![CDATA[OK]]></item>
+	<item key="btnCancel"><![CDATA[Отмена]]></item>
+	<item key="btnSearch"><![CDATA[Найти]]></item>
+	<item key="btnEdit"><![CDATA[Изменить]]></item>
+	<item key="btnUp"><![CDATA[Сдвинуть вверх]]></item>
+	<item key="btnDown"><![CDATA[Сдвинуть вниз]]></item>
+	<item key="btnBrowse"><![CDATA[Файл]]></item>
+	<item key="btnSave"><![CDATA[Сохранить]]></item>
+	<item key="btnRemove"><![CDATA[Удалить]]></item>
+	<item key="btnApply"><![CDATA[Применить]]></item>
+	<item key="btnFavorite"><![CDATA[В Любимые]]></item>
+	<item key="btnFeatured"><![CDATA[В Лучшие]]></item>
+	<item key="btnPopup"><![CDATA[Открыть в новом окне]]></item>
+	
+	<item key="menuBottom"><![CDATA[Внизу]]></item>
+	<item key="menuTop"><![CDATA[Вверху]]></item>
+	<item key="menuLeft"><![CDATA[Слева]]></item>
+	<item key="menuRight"><![CDATA[Справа]]></item>
+
+	<item key="msgGuestPlay"><![CDATA[Проигрывание радио разрешен только для зарегистрированных пользователей. Нажмите OK для регистрации.]]></item>
+	<item key="msgConnectionError"><![CDATA[Ошибка соединения]]></item>
+    <item key="msgLoading"><![CDATA[ЗАГРУЗКА ...]]></item>
+	<item key="msgPlayError"><![CDATA[Ошибка проигрывания радио.]]></item>
+    <item key="msgErrorGetItems"><![CDATA[Ошибка получения радио.]]></item>
+
+	<item key="txtHome"><![CDATA[Начало]]></item>
+	<item key="txtSearch"><![CDATA[Поиск]]></item>
+	<item key="txtNoItems"><![CDATA[НЕТ РАДИО]]></item>
+	<item key="txtNoCategories"><![CDATA[НЕТ КАТЕГОРИЙ]]></item>
+	<item key="txtSearchNoItems"><![CDATA[НЕ НАЙДЕНО РАДИО]]></item>
+</items>

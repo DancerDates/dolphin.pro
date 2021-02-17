@@ -1,0 +1,190 @@
+<style>
+	#sk_import_wrapper .sk_header_2{
+		background-color:#f0f0f0;
+		padding: 10px 20px;
+		font-weight:bold;
+		cursor:pointer;
+	}
+	#sk_import_wrapper .sk_input{
+		padding: 15px 20px;
+		display:none;
+	}
+	.sk_extra_info{
+		color: gray;
+		padding:5px 0;
+        margin: 10px 0;
+	}
+    .sk_import_wrapper {
+        font-size: 16px;
+        border:1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    #sk_import_wrapper .sk_import_wrapper:first-child{
+        margin-bottom: 10px;
+    }
+    .sk_import_border_bottom {
+        border-bottom:1px solid #ccc;
+    }
+    #sk_inviter_file_error{
+        margin: 10px 0;
+    }
+</style>
+<script>
+	$(document).ready(function(){
+		
+		var text_div = $('#sk_import_wrapper .sk_input').eq(0);
+		text_div.find('textarea').keyup(function(){
+			var text_email = $.trim($(this).val());
+			if(text_email.length > 0)
+				text_div.find(':button').prop('disabled',false);
+			else
+				text_div.find(':button').prop('disabled',true);
+		});
+		
+		$('#sk_import_wrapper .sk_input').eq(1).find(':file').change(function(){
+			if($(this).val() != '')
+				$(this).parent().find(':submit').prop('disabled',false);
+		});
+		
+		var header = $('#sk_import_wrapper .sk_header_2');
+		var block = $('#sk_import_wrapper .sk_input');
+        header.eq(0).addClass('sk_import_border_bottom');
+		header.eq(0).click(function(){
+            $(this).addClass('sk_import_border_bottom');
+            header.eq(1).removeClass('sk_import_border_bottom');
+			block.eq(0).slideDown('slow');
+			block.eq(1).slideUp('slow');
+			setTimeout(getCenterPosition,600);
+		});
+		header.eq(1).click(function(){
+            $(this).addClass('sk_import_border_bottom');
+            header.eq(0).removeClass('sk_import_border_bottom');
+			block.eq(0).slideUp('slow');
+			block.eq(1).slideDown('slow');
+			setTimeout(getCenterPosition,600);
+		});
+		
+		var files;
+
+		$('#sk_import input[type=file]').on('change', prepareUpload);
+		$('#sk_import').on('submit', uploadFiles);
+
+		function prepareUpload(event)
+		{
+			files = event.target.files;
+		}
+
+		function uploadFiles(event)
+		{
+			event.stopPropagation();
+			event.preventDefault(); 
+
+			var data = new FormData();
+			$.each(files, function(key, value)
+			{
+				data.append(key, value);
+			});
+			
+			$.ajax({
+				url: site_url+'m/social_inviter/parse_csv',
+				type: 'POST',
+				data: data,
+				cache: false,
+				dataType: 'json',
+				processData: false, 
+				contentType: false, 
+				success: function(data, textStatus, jqXHR)
+				{
+					if(data.error != 1)
+						showSocialInviterBlock2(JSON.stringify(data.contacts),'csv');
+					else
+						$('#sk_inviter_file_error').html(data.err_info);
+				}
+			});
+		}
+		
+		
+	});
+	
+	function showSocialInviterBlock2(friends,nonet){
+		
+		if ($('#sk_import_form').is(':visible'))
+			$('#sk_import_form').hide();
+		
+		$('#sk_inviter_loading_img').show();
+		
+		var oPopupOptions = {closeOnOuterClick: false};
+		
+		if ($('#sk_friend_block').length){
+			$('#sk_friend_block').remove();
+		}
+		$('<div id="sk_friend_block" style="display: none;"></div>').prependTo('body').load(
+			site_url + 'm/social_inviter/ajax_mode/friend_list_block',
+			{
+				ajaxmode: 'true',
+				list: friends,
+				other: nonet,
+				relocate: String(window.location),
+			},
+			function() {
+				$('#sk_inviter_loading_img').hide();
+				$(this).dolPopup(oPopupOptions);
+			});
+	}
+	
+	function showList(){
+		var email = $.trim($('#sk_import_wrapper .sk_input').eq(0).find('textarea').val());
+		
+		var aEmail = email.split(',');
+		var flag = true;
+		for(var i = 0;i < aEmail.length;i++){
+			if(!$.trim(aEmail[i]).match('^([A-Za-z0-9\\+\\_\\.\\-]+)@([A-Za-z0-9\\+\\_\\.\\-]+)$')){
+				$('#sk_inviter_email_error').html('Wrong format email');
+				flag = false;
+				break;
+			}
+		}
+		if(flag)
+			showSocialInviterBlock2(email,'typing');
+	}
+	
+	function getCenterPosition(){
+		var top = ($(window).height() - $('#sk_import_form').height())/2;
+		$('#sk_import_form').animate({'top' : top},'slow');
+	}
+</script>
+<div id="sk_import_wrapper">
+    <div class="sk_import_wrapper">
+        <div class="sk_header_2">
+    		Invite by manually typing emails
+    	</div>
+    	<div class="sk_input" style="display:block">
+    		<textarea style="border-color:#ccc;padding:3px;width:98%;height:130px;resize:none;border-radius:2px;" class="form_input_textarea bx-def-font-inputs"></textarea>
+    		<div class="sk_extra_info">
+    			Separate multiple emails with a comma.
+    		</div>
+    		<div id="sk_inviter_email_error" style="color:red">
+    		</div>
+    		<input class="bx-btn" style="margin-left:0;margin-bottom:5px;" type="button" onclick="showList()" value="Next" disabled="disabled" />
+    		<div class="clear_both"></div>
+    	</div>
+    </div>
+	<div class="sk_import_wrapper">
+        <div class="sk_header_2">
+    		Upload a csv file
+    	</div>
+    	<div class="sk_input">
+    		<form id="sk_import" method="post" enctype="multipart/form-data" action="#">
+    			<input type="file" name="sk_file_upload" id="sk_file_upload" />
+    			<div class="sk_extra_info">
+    				Max file size: __file_size__
+    			</div>
+    			<div id="sk_inviter_file_error" style="color:red">
+    			</div>
+    			<input class="bx-btn" style="margin-left:0;" type="submit" value="Upload" disabled="disabled" />
+    			<div class="clear_both"></div>
+    		</form>
+    	</div>
+    </div>
+</div>

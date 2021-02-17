@@ -1,0 +1,84 @@
+<script type="text/javascript" src="__jplayer_url__js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="__jplayer_url__js/jplayer.playlist.js"></script>
+__ui_js__
+__sortable_js__
+
+<script type="text/javascript">
+	var aqb_jplaylist_instance;
+	$(document).ready(function(){
+		aqb_jplaylist_instance = new jPlayerPlaylist({
+			jPlayer: "#aqb_jquery_jplayer",
+			solution: "flash,html",
+			cssSelectorAncestor: "#aqb_jp_container"
+		}, [
+		<bx_repeat:files>
+			{
+				id: __id__,
+				title:"__title__",
+				mp3:site_url + "modules/?r=aqb_profile_mp3_player/action_get_file/__id__"
+			},
+		</bx_repeat:files>
+			{
+				id: __last_id__,
+				title:"__last_title__",
+				mp3:site_url + "modules/?r=aqb_profile_mp3_player/action_get_file/__last_id__"
+			}
+		], {
+			swfPath: "__jplayer_url__js",
+			supplied: "mp3",
+			wmode: "window",
+			solution: "flash,html",
+			smoothPlayBar: true,
+
+			playlistOptions: {
+				enableRemoveControls: true
+				<bx_if:autoplay>
+				,autoPlay: true
+				</bx_if:autoplay>
+			},
+
+			keyEnabled: true
+		});
+
+		$("#aqb_mp3_sortable").sortable({
+			distance: 15,
+			update: function(event, ui) {
+				aqb_jplaylist_instance.current = $('ul#aqb_mp3_sortable li.jp-playlist-current').index();
+				var new_play_list = [];
+				var new_order = [];
+				$('ul#aqb_mp3_sortable li').each(function(index, el){
+					var iMediaID = $(el).attr('aqb_media_id');
+					for (iListItem in aqb_jplaylist_instance.playlist) {
+						if (aqb_jplaylist_instance.playlist[iListItem].id == iMediaID) {
+							new_play_list[index] = aqb_jplaylist_instance.playlist[iListItem];
+							new_order.push(iMediaID);
+							break;
+						}
+					}
+				});
+				aqb_jplaylist_instance.playlist = new_play_list;
+				if (!aqb_jplaylist_instance.shuffled) aqb_jplaylist_instance.original = new_play_list;
+				<bx_if:save_play_list_order>
+					if (!aqb_jplaylist_instance.shuffled)
+						$.post(site_url + "modules/?r=aqb_profile_mp3_player/action_save_order/", {order: new_order});
+				</bx_if:save_play_list_order>
+			}
+		});
+		$("#aqb_mp3_sortable").disableSelection();
+	});
+
+	function aqb_detach_profile_mp3_player(iProfile) {
+		if ($('#aqb_mp3_player_settings_form').length) $('#aqb_mp3_player_player_block').hide();
+		else $('#aqb_mp3_player_player_block').closest('div.page_block_container').hide();
+		$("#aqb_jquery_jplayer").jPlayer("stop");
+		var win = window.open(site_url + 'modules/?r=aqb_profile_mp3_player/action_popout_player/' + iProfile, 'profile_player', 'toolbar=no,resizable=yes,scrollbars=yes,width=__popup_width__,height=__popup_height__');
+		win.onunload = function() {
+			if(win.location != "about:blank") {
+            	if ($('#aqb_mp3_player_settings_form').length) $('#aqb_mp3_player_player_block').show();
+				else $('#aqb_mp3_player_player_block').closest('div.page_block_container').show();
+        	}
+		}
+	}
+</script>
+<div id="aqb_jquery_jplayer" class="jp-jplayer"></div>
+__skinnable_content__

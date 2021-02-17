@@ -1,0 +1,53 @@
+<style>
+	.sk_login_form_width{
+		width:600px;
+	}
+</style>
+
+__content__
+	
+<script type='text/javascript'>
+	 
+	$(document).ready(function() {
+			$('#sk_mapping_info p:eq(0)').css('font-weight','bold');
+			var map_input = $('#sk_login_form input[name=\'opt\']:eq(0)');
+			var info_input = $('#sk_login_form input[name=\'opt\']:eq(1)');
+			if('__email_error__' == 'existed'){
+				$('#sk_login_form div.bx-form-element:eq(2)').hide();
+				map_input.prop('checked',true);
+			}else if('__email_error__' != 'existed' && '__username_error__' == 'existed') {
+				$('#sk_login_form div.bx-form-element:eq(3)').hide();
+				map_input.prop('checked',true);
+			} else {
+				info_input.prop('checked',true);
+				if($('#sk_captcha_container').length > 0)
+					$('#sk_captcha_container').parent().parent().parent().hide();
+				$('#sk_guide').show();
+                $('#sk_login_form div.bx-form-element:eq(0)').hide();
+				$('#sk_login_form div.bx-form-element:eq(1)').hide();
+				$('#sk_login_form div.bx-form-element:eq(4)').hide();
+			}
+			
+			$('#login_div .login_ajax_wrap').addClass('sk_login_form_width');
+            
+            $('#sk_login_form input[name=\'username\']').keypress(function (e) {
+                socialLoginPressEnter(e);
+            });
+            
+            $('#sk_login_form input[name=\'email\']').keypress(function (e) {
+                socialLoginPressEnter(e);
+            });
+            
+            $('#sk_login_form input[name=\'password\']').keypress(function (e) {
+                socialLoginPressEnter(e);
+            });
+	});
+    
+    function socialLoginPressEnter(e_p) {
+        var key = e_p.which;
+        if(key == 13) {
+            $('#sk_login_form input#confirm').click();
+            return false;  
+        }
+    }
+</script>

@@ -4,3 +4,14 @@
     border: 1px solid rgb(152, 152, 152);
     border: 1px solid rgba(64, 64, 64, 0.5);
 }
+#sys_search_wrapper {
+    position:relative;
+	top: 300px
+	left: 100px;
+}
+#sys_search {
+    background-color: #fff;
+    left: 0px;
+    position: absolute;
+    top: 75px;
+}

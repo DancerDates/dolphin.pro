@@ -1,0 +1,150 @@
+
+	<style>
+		.sk_posting_cell{
+			display:table-cell;
+			vertical-align:middle;
+		}
+		.sk_posting_cell+.sk_posting_cell{
+			padding-left:10px;
+		}
+		.sk_posting_cell:nth-child(3){
+			width:100px;
+		}
+		.sk_posting_form_label{
+			padding:5px 0;
+			font-weight:bold;
+		}
+		.sk_posting_form_input:last-child input[type=button]{
+			float:right;
+			width:57px;
+		}
+		.sk_posting_form_input+.sk_posting_form_input{
+			margin-top:20px;
+		}
+		.sk_posting_form_network+.sk_posting_form_network{
+			margin-top:5px;
+		}
+		#sk_posting_form_setting{
+			float:left;
+			width:300px;
+            margin-top: 6px;
+		}
+		#sk_posting_form_setting a{
+			padding-left:5px;
+		}
+		.sk_posting_error{
+			color:red;
+		}
+		#message_counter{
+			font-style:italic;
+			margin-top:10px;
+		}
+        .sk_posting_form_network{
+            border-bottom: 1px solid #d6d6d6;
+            padding-bottom: 3px;
+            margin-top: 10px;
+        }
+	</style>
+	
+	<div class="sk_posting_form_input bx-def-font">
+		<div class="sk_posting_form_label"><bx_text:_sk_social_posting_posting_popup_label_message /></div>
+		<textarea style="height: 130px;resize: none;font-size: 16px;" class="form_input_textarea bx-def-font-inputs">__posting_message__</textarea>
+		<div id="message_counter"></div>
+	</div>
+	<div class="sk_posting_form_input bx-def-font">
+		<div class="sk_posting_form_label"><bx_text:_sk_social_posting_posting_popup_label_network /></div>
+		<bx_repeat:networks>
+			<div class="sk_posting_form_network">
+				<div class="sk_posting_cell">
+					<input __disabled__ __checked__ type="checkbox" value="__name__" id="__name__" class="form_input_checkbox" />
+				</div>
+				<div class="sk_posting_cell">
+					<img src="__img_src__"/>
+				</div>
+				<div class="sk_posting_cell">
+					<label for="__name__">__caption__</label>
+				</div>
+				<div class="sk_posting_cell">
+					__connect_link__
+				</div>
+			</div>
+		</bx_repeat:networks>
+		<div class="clear_both"></div>
+	</div>
+	<div class="sk_posting_form_input bx-def-font" style="display: inline-flex;">
+		<div id="sk_posting_form_setting">
+			<input __checked_auto_publish__ type="checkbox" value="auto_publish" id="auto_publish"/>
+			<label for="auto_publish"><bx_text:_sk_social_posting_posting_popup_label_auto_publish /></label>
+			<input __checked_no_ask__ type="checkbox" value="no_ask" id="no_ask"/>
+			<label for="no_ask"><bx_text:_sk_social_posting_posting_popup_label_no_ask /></label><br/>
+			<!--
+            <a href=""><bx_text:_sk_social_posting_posting_popup_label_settings /></a>
+            -->
+		</div>
+		<input type="button" class="bx-btn" value="<bx_text:_sk_social_posting_posting_popup_label_post_btn />" onclick="skposting.post()" style="float: right; top: -6px; right: 10px;"/>
+		<div class="clear_both"></div>
+	</div>
+	
+	<script type="text/javascript">
+		var aNetwork = ['tumblr','linkedin','twitter','plurk','mailru','lastfm','facebook'];
+		$(document).ready(function(){
+            $('#posting_div .sk_posting_form_network:last').css('border-bottom', 'none');
+            
+			var max_length = getMaxLength();
+			$('.sk_posting_form_network').find('.sk_posting_cell:eq(0)').find(':checkbox').change(function(){
+				max_length = getMaxLength();
+			});
+			$('.sk_posting_form_input:eq(0) textarea').keyup(function(){
+				var message = $('.sk_posting_form_input:eq(0) textarea').val();
+				if(max_length){
+					var length_left = max_length - message.length;
+					if(length_left <= Math.floor(max_length*0.3)){
+						if(length_left >= 0 ){
+							if($('#message_counter').hasClass('sk_posting_error'))
+								$('#message_counter').removeClass('sk_posting_error');
+							$('.sk_posting_form_input:eq(2) input:button').prop('disabled',false);
+							$('#message_counter').html('You have <strong>'+length_left+'</strong> characters left');
+						}
+						else{
+							$('#message_counter').addClass('sk_posting_error').html('Your message is too long');
+							$('.sk_posting_form_input:eq(2) input:button').prop('disabled',true);
+						}
+					}else
+						$('#message_counter').html('');
+				}
+			});
+		});
+		
+		function getMaxLength(){
+			var oData = new Object();
+			for(var i=0; i < aNetwork.length; i++)
+				oData[aNetwork[i]] = $('.sk_posting_form_network input#'+aNetwork[i]).is(':checked') ? 1 : 0;
+			var aMessageLength = new Array();
+			for(var network in oData){
+				if(oData[network])
+					aMessageLength.push(getMessageLength(network));
+			}
+			if(aMessageLength){
+				aMessageLength.sort(function(a, b){return a-b});
+				return aMessageLength[0];
+			}
+			return 0;
+		}
+		function getMessageLength(network){
+			if(network == 'tumblr')
+				return 2000;
+			if(network == 'linkedin')
+				return 700;
+			if(network == 'plurk')
+				return 210;
+			if(network == 'twitter')
+				return 140;
+			if(network == 'lastfm')
+				return 1000;
+			if(network == 'mailru')
+				return 400;
+			if(network == 'facebook')
+				return 420;
+		}
+	</script>
+	

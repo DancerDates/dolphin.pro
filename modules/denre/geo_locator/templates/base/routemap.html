@@ -1,0 +1,64 @@
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+<script>
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+var map;
+var myLocation = new google.maps.LatLng(__latFrom__, __lngFrom__);
+var myDestination = new google.maps.LatLng(__latTo__, __lngTo__ );
+/* var map, latLng, mapOptions; */
+
+$(document).ready(function() {
+
+        // init map
+    directionsDisplay = new google.maps.DirectionsRenderer();
+
+    var mapOptions =
+    {
+        zoom: 16,
+        center: myLocation
+    }
+    map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
+    directionsDisplay.setMap(map);
+
+    var request =
+    {
+        origin: myLocation,
+        destination: myDestination,
+        travelMode: google.maps.TravelMode.DRIVING
+    };
+    directionsService.route(request, function(response, status)
+    {
+        if (status == google.maps.DirectionsStatus.OK)
+        {
+            directionsDisplay.setDirections(response);
+        }
+
+    });
+
+    // Function added to help reset map and container boundaries
+    $(".tabs input:radio").click(function() {
+                google.maps.event.trigger(map, 'resize');
+                map.setCenter(myLocation);
+    });
+});
+
+function calcRoute()
+{
+    var selectedMode = document.getElementById('mode').value;
+    var request =
+    {
+        origin: myLocation,
+        destination: myDestination,
+        travelMode: google.maps.TravelMode[selectedMode]
+    };
+    directionsService.route(request, function(response, status)
+    {
+        if (status == google.maps.DirectionsStatus.OK)
+        {
+            directionsDisplay.setDirections(response);
+        }
+    });
+}
+</script>
+<div id="mapcanvas"></div>
+

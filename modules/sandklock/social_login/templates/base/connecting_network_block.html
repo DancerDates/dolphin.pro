@@ -1,0 +1,59 @@
+<style>
+	.sk_network:odd{
+	}
+	.sk_network+.sk_network{
+		margin-top:5px;
+	}
+	.sk_logo{
+		width:50px;
+		display:table-cell;
+	}
+	.sk_info{
+		display:table-cell;
+		vertical-align:middle;
+	}
+	.sk_a{
+		font-weight:bold;
+	}
+</style>
+
+<script type="text/javascript">
+	function popup(pageURL){
+		var w = 800;
+		var h = 500;
+		var title ='socialloginwindow';
+		var left = (screen.width/2)-(w/2);
+		var top = (screen.height/2)-(h/2);
+		var newwindow =  window.open (pageURL, title, 'toolbar=no,location=no,directories=no,status=no,menubar=no, scrollbars=yes,resizable=yes,copyhistory=no,width='+w+',height='+h+',top='+top+',left='+left);
+		if (window.focus) {newwindow.focus();}
+	};
+	function disconnectLogin(net){
+		var url = site_url + 'm/social_login/disconnect';
+		var data ={
+			network: net
+		};
+		$.post(url,data,function(response,status){
+			if(status == 'success'){
+				if(response.network && response.url)
+					$('#'+response.network+' .sk_info').html('<a href="javascript:void(popup(\''+response.url+'\'))">Connect</a>');
+				if(response.error)
+					alert(response.error);
+			}
+		},'json');
+	}
+</script>
+
+<div class="bx-def-bc-padding"><div class="sa-default">
+	<bx_repeat:networks>
+		<div id="__name__" class="sk_network">
+			<div class="sk_logo">
+				<span class="sa sa-__name__"></span>
+			</div>
+			<div class="sk_info">
+				__info__
+			</div>
+			<div class="clear_both"></div>
+		</div>
+	</bx_repeat:networks>
+	<div class="clear_both"></div>
+</div></div>

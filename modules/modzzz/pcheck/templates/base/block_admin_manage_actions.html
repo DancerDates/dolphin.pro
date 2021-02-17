@@ -1,0 +1,35 @@
+<form name='actionfrm' method=post action='__submit_url__'>
+
+<div class='bx-def-margin-thd-top'>&nbsp;</div>   
+<div class='bx-def-font-large' style='width:100%'>
+	<b>__header_desc__</b>
+</div>
+<div class='bx-def-margin-bottom'>&nbsp;</div>  
+
+<div style='width:100%'>
+	<div style='float:left;width:50%'><b><bx_text:_modzzz_pcheck_caption_field /></b></div>
+	<div style='float:left;width:15%'><b><bx_text:_modzzz_pcheck_caption_weight /></b></div>
+	<div style='float:left;width:10%'><b><bx_text:_modzzz_pcheck_active /></b></div>
+</div>
+<div class='bx-def-margin-thd-topbottom'>&nbsp;</div>  
+
+<bx_repeat:items>
+	<div class='bx-def-margin-thd-top' style='width:100%'>
+		<div style='float:left;width:50%'>__field_name__</div>
+		<div style='float:left;width:15%'><input type=text name='weight[__id__]' value='__weight__' size=5></div>
+		<div style='float:left;width:10%'><input type=checkbox name='active[__id__]' value='1' __active__></div> 
+		<input type=hidden name='field[__id__]' value='__id__'> 
+	</div>
+	<div class='clear_both'></div>  
+</bx_repeat:items>
+
+<div class='bx-def-margin-sec-topbottom;' style='padding:10px;'>&nbsp;</div>  
+
+<div style='margin:auto;width:20%'>
+	<button class="bx-btn bx-btn-img bx-btn-ifont" onclick="document.actionfrm.submit()"> 
+		<i class="sys-icon plus"></i>
+		<bx_text:_Save />
+	</button>  
+</div>
+
+<div class='clear_both'></div>  

@@ -1,0 +1,110 @@
+
+1. Copy all content from 'upload' on your server.
+
+
+2. Go to http://yourwebsite/moveinstall.php to install mod.
+
+
+3. Open "inc/classes/BxDolCategories.php"
+
+
+Near line 82 
+find:
+
+	GROUP BY `cat`.`{$this->aTagFields['tag']}`";
+
+
+replace with 
+
+	
+GROUP BY `cat`.`{$this->aTagFields['tag']}` ORDER BY `Order` ASC";
+
+
+
+4. Open "administration/templates/base/_header.html"
+
+
+Near line 28 
+find:
+
+  __extra_js__
+
+
+Just above add:
+
+		
+<script type="text/javascript" src="<bx_url_root />inc/js/jquery.tablednd_0_5.js"></script>
+		
+<script type="text/javascript" src="<bx_url_root />inc/js/table-dnd.js"></script>
+
+
+
+5. Open "administration/categories.php"
+
+
+Find near line 100:
+
+	    
+foreach($aCategories as $aCategory) 
+            
+{
+                
+$aItems[] = array(
+                    
+'name' => $aCategory['Category'],
+                    
+'value' => $aCategory['Category'] . '%%' . $aCategory['ID'] . '%%' . $aCategory['Type'],
+                    
+'title'=> $aCategory['Category'],
+                );
+            
+}
+
+
+Replace with:
+
+            
+foreach($aCategories as $aCategory) 
+            
+{
+                
+$aItems[] = array(
+                    
+'name' => $aCategory['Category'],
+                    
+'value' => $aCategory['Category'] . '%%' . $aCategory['ID'] . '%%' . $aCategory['Type'],
+                    
+'title'=> $aCategory['Category'],
+		    'order'=> $aCategory['Order'],
+		    'type'=> $aCategory['Type'],
+                
+);
+            
+}
+
+
+
+Find near line 90:
+
+  
+$aCategories = $oDb->getAll("SELECT * FROM `sys_categories` WHERE `Status` = 'active' AND `Owner` = 0 AND `Type` = '$sModule'");
+
+
+replace with:
+
+  
+$aCategories = $oDb->getAll("SELECT * FROM `sys_categories` WHERE `Status` = 'active' AND `Owner` = 0 AND `Type` = '$sModule' ORDER BY `Order`");
+
+
+
+if you want to display all categories together with user created, 
+
+replace with:
+
+  $aCategories = $oDb->getAll("SELECT * FROM `sys_categories` WHERE `Status` = 'active' AND `Type` = '$sModule' GROUP BY `Category` ORDER BY `Order`");
+
+
+
+
+6. That's it!
+

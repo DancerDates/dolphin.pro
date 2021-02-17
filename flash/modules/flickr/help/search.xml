@@ -1,0 +1,34 @@
+<topics>
+	<topic id="help">
+		<title><![CDATA[Using Help]]></title>
+		<contents><![CDATA[This documentation contains a great deal of information that describes the application capabilities and user guidelines. The whole documentation consists of a number of topics covering all available features.]]></contents>
+	</topic>
+	<topic id="about">
+		<title><![CDATA[About Internet Photos]]></title>
+		<contents><![CDATA["Internet Photos" is a Ray widget (Flash application), developed by <a href="http://rayzzz.com/redirect.php?action=author&widget=#widget#&domain=#domain#" target="_blank"><font color="#0000CC"><u>Rayz</u></font></a>. It uses <a href="http://flickr.com/" target="_blank"><font color="#0000CC"><u>flickr.com</u></font></a> API to search for photos. You can easily get this widget for your own site (<a href="http://rayzzz.com/redirect.php?action=about&widget=#widget#&domain=#domain#&type=free" target="_blank"><font color="#0000CC"><u>limited</u></font></a> or <a href="http://rayzzz.com/redirect.php?action=about&widget=#widget#&domain=#domain#&type=paid" target="_blank"><font color="#0000CC"><u>full version</u></font></a>). For questions and bug reports contact me at <a href="mailto:contact@rayzzz.com?subject=#widget#"><font color="#0000CC"><u>contact@rayzzz.com</u></font></a>.]]></contents>
+	</topic>
+	<topic id="search">
+		<title><![CDATA[Searching for Photos]]></title>
+		<contents><![CDATA["Search For Photos" dialog allows you to define criterias for searching photos directly in <a href="http://flickr.com" target="_blank"><font color="#0000CC"><u>flickr.com</u></font></a> database. You can search for photos by tags (split tags with spaces to define 2 or more tag words) or by user name (one word without any spaces). You should switch respective option for that. After you have defined the searching criterias, click the "Search" button.]]></contents>
+	</topic>
+	<topic id="browse">
+		<title><![CDATA[Browsing Photos]]></title>
+		<contents><![CDATA[The application contains the searching for Photos results.<BR>Every Photo icon displays photo thumbnail, current rating (from 1 to 5) and extra buttons:<br><li>"Feature" allows you to feature this photo, i.e. place it to all "Featured" sections;</li><li>"Add to Favorites" allows to add the Photo to your Favorites list (for authorized members only);</li><li>"Export" allows you to export current photo to your Profile photos or to share it with others in Photos library of the site (for authorized members only);</li><li>"View Original Size" opens current photo in new browser window with its original size (if it's provided) and therefore you can save it to your hard drive from there;</li><li>"Add to Favorites" allows to ad the Photo to your Favorites list (for authorized members only).</li>While hovering over the Photo, you can see extra information about it as a tooltip. It contains information about Photo title, nickname of the user who published this Photo to <a href="http://flickr.com" target="_blank"><font color="#0000CC"><u>flickr.com</u></font></a>, current rating, number of times this Photo was viewed by site members and visitors, addition date and tags.<BR>Clicking any Photo icon will open it for viewing.]]></contents>
+	</topic>
+	<topic id="player">
+		<title><![CDATA[Viewing Photo]]></title>
+		<contents><![CDATA[After you select any Photo for viewing, it will be opened with larger size in the Photo viewer. You can also see this Photo by clicking "View Original Size" button on Photo icon.]]></contents>
+	</topic>
+	<topic id="export">
+		<title><![CDATA[Exporting Photo]]></title>
+		<contents><![CDATA[After you push "Export" button Photo viewer the "Exporting Photo" dialog will open. You can select where you want to export the photo to. There are 2 options available: your Profile photos or Photos library of the site. After you selected some option (both options) click "Export" button to export the photo.]]></contents>
+	</topic>
+	<topic id="preferences">
+		<title><![CDATA[Changing Preferences]]></title>
+		<contents><![CDATA[You can change the application preferences in the "Preferences" menu. You can easily change current language or design template there.]]></contents>
+	</topic>
+	<topic id="limit">
+		<title><![CDATA[Free version limitations]]></title>
+		<contents><![CDATA[While using the free version, you can only view up to three first pages of searching results, and each page can contain up to 15 elements.]]></contents>
+	</topic>
+</topics>

@@ -1,0 +1,76 @@
+<bx_repeat:theme>
+    <div class="soclall_theme_block">
+        <span class="theme_title">__title__</span>
+        <bx_if:check_resize>
+            <div class="theme_size">
+                <span>__custom_size__</span>
+                <select onchange="soclLoginResizeTheme(this)">
+                    <bx_repeat:theme_size>
+                        __content__
+                    </bx_repeat:theme_size>
+                </select>
+            </div>
+        </bx_if:check_resize>
+        <input type="button" class="bx-btn btn_apply" onclick="soclLoginApplyTheme(this, '__code__')" value="__apply__" />
+        <bx_if:check_applied>
+            <span class="sys-icon check check_theme_applied"></span>
+        </bx_if:check_applied>
+        <div class="sa_frame sa-__code__">
+            <bx_repeat:networks>
+                <span class="sa __size_class__ sa-__name__"></span>
+            </bx_repeat:networks>
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                if('__code__' == '__theme_applied__')
+                    $('div.sa-__code__').parent().addClass('active').find('input[type=button]').hide();
+            });
+        </script>
+    </div>
+</bx_repeat:theme>
+
+<script type="text/javascript">
+function soclLoginApplyTheme( ele, theme ) {  
+    $(ele).val('__wating_text__');
+    
+    resize = ($(ele).parent().find('div.theme_size').length) ? $(ele).parent().find('div.theme_size select').val() : '0';
+    
+    $.ajax({
+        type : "POST",
+        url : site_url + "m/social_login/ajax_mode/apply_theme",
+        data : "ajaxmode=true" + "&theme=" + theme + "&resize=" + resize,
+        success : function(result) {
+            if(!result) {
+                alert('__error_text__');
+            } else {
+                $('div.soclall_theme_block').removeClass('active');
+                $(ele).parent().addClass('active');
+                        
+                $('div.soclall_theme_block input[type=button]').show();
+                $(ele).val('__apply_text__').hide();
+                
+                $('div.soclall_theme_block span.check_theme_applied').remove();
+                $(ele).after('<span class="sys-icon check check_theme_applied"></span>');
+            }
+        }
+    });
+}
+
+function soclLoginResizeTheme( ele ) {
+    jQuery(function($) {
+        resize = $(ele).val();
+        theme = $(ele).parent().parent().find('div.sa_frame span');
+        
+        sizes = ['100','75','50'];
+        for( i = 0; i < sizes.length; i++ ) {
+            if( theme.hasClass('sa-' + sizes[i]) ) {
+                theme.removeClass( 'sa-' + sizes[i] );
+                break;
+            }
+        }
+        
+        theme.addClass( 'sa-' + resize );
+    });
+}
+</script>

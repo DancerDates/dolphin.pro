@@ -1,0 +1,51 @@
+div.network_logo{
+	float:left;
+	-moz-background-clip: border !important;
+	-moz-background-inline-policy: continuous !important;
+	-moz-background-origin: padding !important;
+	-moz-background-size: auto auto;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat;
+	cursor: pointer !important;
+	float: left !important;
+	height: auto !important;
+	padding: 0 15px 0 0 !important;
+	width: auto !important;
+}
+
+div.network_name{
+	float: left;
+	margin-left: 0px;
+	font-weight: bold;
+	line-height: 32px;
+}
+
+div.network_updating{
+	float:right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+div.network_status{
+	float: right;
+	margin-right: 20px;
+	font-weight: bold;
+	line-height: 32px;
+}
+div.network+div.network{
+	border-top: 1px solid #CCC;
+}
+	
+div.network_block {
+	display: block;
+	height: 32px;
+	padding: 5px 0 5px 10px;
+}
+
+div.network_block:hover{
+	background-color: #EDEFF4;
+	cursor: move;
+}

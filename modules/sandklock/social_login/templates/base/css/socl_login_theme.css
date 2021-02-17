@@ -1,0 +1,1666 @@
+body {
+    font-family: system, -apple-system, ".SFNSDisplay-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+}
+.sa-default {
+    line-height: 0;
+    margin: -5px 0 0 -5px
+	font-family: system, -apple-system, ".SFNSDisplay-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.sa-default .sa {
+    background-image: url(../images/icons.png);
+    background-size: 32px auto
+}
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .sa-default .sa {
+        background-image:url(../images/icons@2x.png)
+    }
+}
+
+.sa-default .sa-meneame {
+    background-position: 0 0%
+}
+
+.sa-default .sa-ameba {
+    background-position: 0 -100%
+}
+
+.sa-default .sa-blogger {
+    background-position: 0 -200%
+}
+
+.sa-default .sa-cyworld {
+    background-position: 0 -300%
+}
+
+.sa-default .sa-delicious {
+    background-position: 0 -400%
+}
+
+.sa-default .sa-digg {
+    background-position: 0 -500%
+}
+
+.sa-default .sa-disqus {
+    background-position: 0 -600%
+}
+
+.sa-default .sa-facebook {
+    background-position: 0 -700%
+}
+
+.sa-default .sa-fotka {
+    background-position: 0 -800%
+}
+
+.sa-default .sa-foursquare {
+    background-position: 0 -900%
+}
+
+.sa-default .sa-github {
+    background-position: 0 -1000%
+}
+
+.sa-default .sa-goo {
+    background-position: 0 -1100%
+}
+
+.sa-default .sa-google {
+    background-position: 0 -1200%
+}
+
+.sa-default .sa-grono {
+    background-position: 0 -1300%
+}
+
+.sa-default .sa-hi5 {
+    background-position: 0 -1400%
+}
+
+.sa-default .sa-hyves {
+    background-position: 0 -1500%
+}
+
+.sa-default .sa-instagram {
+    background-position: 0 -1600%
+}
+
+.sa-default .sa-kakao {
+    background-position: 0 -1700%
+}
+
+.sa-default .sa-lastfm {
+    background-position: 0 -1800%
+}
+
+.sa-default .sa-linkedin {
+    background-position: 0 -1900%
+}
+
+.sa-default .sa-live {
+    background-position: 0 -2000%
+}
+
+.sa-default .sa-livejournal {
+    background-position: 0 -2100%
+}
+
+.sa-default .sa-mailru {
+    background-position: 0 -2200%
+}
+
+.sa-default .sa-bebo {
+    background-position: 0 -2300%
+}
+
+.sa-default .sa-mixi {
+    background-position: 0 -2400%
+}
+
+.sa-default .sa-mixx {
+    background-position: 0 -2500%
+}
+
+.sa-default .sa-myspace {
+    background-position: 0 -2600%
+}
+
+.sa-default .sa-naver {
+    background-position: 0 -2700%
+}
+
+.sa-default .sa-nujij {
+    background-position: 0 -2800%
+}
+
+.sa-default .sa-odnoklassniki {
+    background-position: 0 -2900%
+}
+
+.sa-default .sa-pinterest {
+    background-position: 0 -3000%
+}
+
+.sa-default .sa-plurk {
+    background-position: 0 -3100%
+}
+
+.sa-default .sa-rakuten {
+    background-position: 0 -3200%
+}
+
+.sa-default .sa-reddit {
+    background-position: 0 -3300%
+}
+
+.sa-default .sa-skyblog {
+    background-position: 0 -3400%
+}
+
+.sa-default .sa-sledzik {
+    background-position: 0 -3500%
+}
+
+.sa-default .sa-stumbleupon {
+    background-position: 0 -3600%
+}
+
+.sa-default .sa-tuenti {
+    background-position: 0 -3700%
+}
+
+.sa-default .sa-tumblr {
+    background-position: 0 -3800%
+}
+
+.sa-default .sa-twitter {
+    background-position: 0 -3900%
+}
+
+.sa-default .sa-vkontakte {
+    background-position: 0 -4000%
+}
+
+.sa-default .sa-webryblog {
+    background-position: 0 -4100%
+}
+
+.sa-default .sa-weibo {
+    background-position: 0 -4200%
+}
+
+.sa-default .sa-wordpress {
+    background-position: 0 -4300%
+}
+.sa-default .sa-ebay {
+    background-position:0 -300%
+}
+
+.sa-default .sa-wykop {
+    background-position: 0 -4400%
+}
+
+.sa-default .sa-yahoo {
+    background-position: 0 -4500%
+}
+
+.sa-default .sa-yigg {
+    background-position: 0 -4600%
+}
+
+.sa-default .sa {
+    display: inline-block;
+    border-radius: 2px;
+    margin: 5px 0 0 5px;
+    width: 32px;
+    height: 32px
+}
+
+/*------ no5 ----------*/
+.sa-no5 {
+	font-family: system, -apple-system, ".SFNSDisplay-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 0;
+    margin: -5px 0 0 -5px
+}
+.sa-no5 .sa {
+    display: inline-block;
+    border-radius: 2px;
+    margin: 5px 0 0 5px;
+    background-image: url(../images/circle-icons.png);
+}
+.sa-no5 .sa-100 {
+	width: 64px;
+    height: 64px;
+    background-size: 64px auto
+}
+.sa-no5 .sa-75 {
+	width: 48px;
+    height: 48px;
+    background-size: 48px auto
+}
+.sa-no5 .sa-50 {
+	width: 32px;
+    height: 32px;
+    background-size: 32px auto
+}
+.sa-no5 .sa-meneame {
+    background-position: 0 0%
+}
+
+.sa-no5 .sa-ameba {
+    background-position: 0 -100%
+}
+
+.sa-no5 .sa-blogger {
+    background-position: 0 -200%
+}
+
+.sa-no5 .sa-cyworld {
+    background-position: 0 -300%
+}
+
+.sa-no5 .sa-delicious {
+    background-position: 0 -400%
+}
+
+.sa-no5 .sa-digg {
+    background-position: 0 -500%
+}
+
+.sa-no5 .sa-disqus {
+    background-position: 0 -1300%
+}
+
+.sa-no5 .sa-facebook {
+    background-position: 0 -1000%
+}
+
+.sa-no5 .sa-fotka {
+    background-position: 0 -800%
+}
+
+.sa-no5 .sa-foursquare {
+    background-position: 0 -200%
+}
+
+.sa-no5 .sa-github {
+    background-position: 0 -900%
+}
+
+.sa-no5 .sa-goo {
+    background-position: 0 -1100%
+}
+
+.sa-no5 .sa-google {
+    background-position: 0 -300%
+}
+
+.sa-no5 .sa-grono {
+    background-position: 0 -1300%
+}
+
+.sa-no5 .sa-hi5 {
+    background-position: 0 -1400%
+}
+
+.sa-no5 .sa-hyves {
+    background-position: 0 -1500%
+}
+
+.sa-no5 .sa-instagram {
+    background-position: 0 -400%
+}
+
+.sa-no5 .sa-kakao {
+    background-position: 0 -1700%
+}
+
+.sa-no5 .sa-lastfm {
+    background-position: 0 -100%
+}
+
+.sa-no5 .sa-linkedin {
+    background-position: 0 -500%
+}
+
+.sa-no5 .sa-live {
+    background-position: 0 -700%
+}
+
+.sa-no5 .sa-livejournal {
+    background-position: 0 -2100%
+}
+
+.sa-no5 .sa-mailru {
+    background-position: 0 -1100%
+}
+
+.sa-no5 .sa-bebo {
+    background-position: 0 -2300%
+}
+
+.sa-no5 .sa-mixi {
+    background-position: 0 -2400%
+}
+
+.sa-no5 .sa-mixx {
+    background-position: 0 -2500%
+}
+
+.sa-no5 .sa-myspace {
+    background-position: 0 -2600%
+}
+
+.sa-no5 .sa-naver {
+    background-position: 0 -2700%
+}
+
+.sa-no5 .sa-nujij {
+    background-position: 0 -2800%
+}
+
+.sa-no5 .sa-odnoklassniki {
+    background-position: 0 -2900%
+}
+
+.sa-no5 .sa-pinterest {
+    background-position: 0 -3000%
+}
+
+.sa-no5 .sa-plurk {
+    background-position: 0 0
+}
+
+.sa-no5 .sa-rakuten {
+    background-position: 0 -3200%
+}
+
+.sa-no5 .sa-reddit {
+    background-position: 0 -1400%
+}
+
+.sa-no5 .sa-skyblog {
+    background-position: 0 -3400%
+}
+
+.sa-no5 .sa-sledzik {
+    background-position: 0 -3500%
+}
+
+.sa-no5 .sa-stumbleupon {
+    background-position: 0 -3600%
+}
+
+.sa-no5 .sa-tuenti {
+    background-position: 0 -3700%
+}
+
+.sa-no5 .sa-tumblr {
+    background-position: 0 -600%
+}
+
+.sa-no5 .sa-twitter {
+    background-position: 0 -1500%
+}
+
+.sa-no5 .sa-vkontakte {
+    background-position: 0 -1200%
+}
+
+.sa-no5 .sa-webryblog {
+    background-position: 0 -4100%
+}
+
+.sa-no5 .sa-weibo {
+    background-position: 0 -4200%
+}
+
+.sa-no5 .sa-wordpress {
+    background-position: 0 -800%
+}
+
+.sa-no5 .sa-wykop {
+    background-position: 0 -4400%
+}
+
+.sa-no5 .sa-yahoo {
+    background-position: 0 -4500%
+}
+
+.sa-no5 .sa-yigg {
+    background-position: 0 -4600%
+}
+.sa-no5 .sa-amazon {
+    background-position: 0 calc(-1700% - 1px);
+}
+.sa-no5 .sa-pinterest {
+    background-position: 0 calc(-1600% - 1px);
+}
+.sa-no5 .sa-ebay {
+    background-position: 0 calc(-1800% - 1px);
+}
+
+/*------ no6 ----------*/
+.sa-no6 {
+	font-family: system, -apple-system, ".SFNSDisplay-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 0;
+    margin: -5px 0 0 -5px
+}
+.sa-no6 .sa {
+    display: inline-block;
+    border-radius: 2px;
+    margin: 5px 0 0 5px;
+    background-image: url(../images/round-icons.png);
+}
+.sa-no6 .sa-100 {
+    width: 64px;
+    height: 64px;
+    background-size: 64px auto
+}
+.sa-no6 .sa-75 {
+    width: 48px;
+    height: 48px;
+    background-size: 48px auto
+}
+.sa-no6 .sa-50 {
+    width: 32px;
+    height: 32px;
+    background-size: 32px auto
+}
+
+.sa-no6 .sa-meneame {
+    background-position: 0 0%
+}
+
+.sa-no6 .sa-ameba {
+    background-position: 0 -100%
+}
+
+.sa-no6 .sa-blogger {
+    background-position: 0 -200%
+}
+
+.sa-no6 .sa-cyworld {
+    background-position: 0 -300%
+}
+
+.sa-no6 .sa-delicious {
+    background-position: 0 -400%
+}
+
+.sa-no6 .sa-digg {
+    background-position: 0 -500%
+}
+
+.sa-no6 .sa-disqus {
+    background-position: 0 -200%
+}
+
+.sa-no6 .sa-facebook {
+    background-position: 0 -600%
+}
+
+.sa-no6 .sa-fotka {
+    background-position: 0 -800%
+}
+
+.sa-no6 .sa-foursquare {
+    background-position: 0 -1000%
+}
+
+.sa-no6 .sa-github {
+    background-position: 0 -1600%
+}
+
+.sa-no6 .sa-goo {
+    background-position: 0 -1100%
+}
+
+.sa-no6 .sa-google {
+    background-position: 0 -900%
+}
+
+.sa-no6 .sa-grono {
+    background-position: 0 -1300%
+}
+
+.sa-no6 .sa-hi5 {
+    background-position: 0 -1400%
+}
+
+.sa-no6 .sa-hyves {
+    background-position: 0 -1500%
+}
+
+.sa-no6 .sa-instagram {
+    background-position: 0 -100%
+}
+
+.sa-no6 .sa-kakao {
+    background-position: 0 -1700%
+}
+
+.sa-no6 .sa-lastfm {
+    background-position: 0 -500%
+}
+
+.sa-no6 .sa-linkedin {
+    background-position: 0 -1700%
+}
+
+.sa-no6 .sa-live {
+    background-position: 0 -1500%
+}
+
+.sa-no6 .sa-livejournal {
+    background-position: 0 -2100%
+}
+
+.sa-no6 .sa-mailru {
+    background-position: 0 -700%
+}
+
+.sa-no6 .sa-bebo {
+    background-position: 0 -2300%
+}
+
+.sa-no6 .sa-mixi {
+    background-position: 0 -2400%
+}
+
+.sa-no6 .sa-mixx {
+    background-position: 0 -2500%
+}
+
+.sa-no6 .sa-myspace {
+    background-position: 0 -2600%
+}
+
+.sa-no6 .sa-naver {
+    background-position: 0 -2700%
+}
+
+.sa-no6 .sa-nujij {
+    background-position: 0 -2800%
+}
+
+.sa-no6 .sa-odnoklassniki {
+    background-position: 0 -2900%
+}
+
+.sa-no6 .sa-pinterest {
+    background-position: 0 -3000%
+}
+
+.sa-no6 .sa-plurk {
+    background-position: 0 0
+}
+
+.sa-no6 .sa-rakuten {
+    background-position: 0 -3200%
+}
+
+.sa-no6 .sa-reddit {
+    background-position: 0 -300%
+}
+
+.sa-no6 .sa-skyblog {
+    background-position: 0 -3400%
+}
+
+.sa-no6 .sa-sledzik {
+    background-position: 0 -3500%
+}
+
+.sa-no6 .sa-stumbleupon {
+    background-position: 0 -3600%
+}
+
+.sa-no6 .sa-tuenti {
+    background-position: 0 -3700%
+}
+
+.sa-no6 .sa-tumblr {
+    background-position: 0 -1400%
+}
+
+.sa-no6 .sa-twitter {
+    background-position: 0 -800%
+}
+
+.sa-no6 .sa-vkontakte {
+    background-position: 0 -1200%
+}
+
+.sa-no6 .sa-webryblog {
+    background-position: 0 -4100%
+}
+
+.sa-no6 .sa-weibo {
+    background-position: 0 -4200%
+}
+
+.sa-no6 .sa-wordpress {
+    background-position: 0 -400%
+}
+
+.sa-no6 .sa-wykop {
+    background-position: 0 -4400%
+}
+
+.sa-no6 .sa-yahoo {
+    background-position: 0 -4500%
+}
+
+.sa-no6 .sa-yigg {
+    background-position: 0 -4600%
+}
+.sa-no6 .sa-amazon {
+    background-position: 0 -1800%
+}
+.sa-no6 .sa-pinterest {
+    background-position: 0 -1100%
+}
+.sa-no6 .sa-ebay {
+    background-position: 0 -1900%
+}
+
+/*------ core ----------*/
+.sa-core {
+	font-family: system, -apple-system, ".SFNSDisplay-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    margin: -3px 0 0 -3px
+}
+
+.sa-core .sa {
+    display: inline-block;
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    padding: 3px 4px;
+    border-radius: 2px;
+    margin: 3px 0 0 3px;
+}
+
+.sa-core .sa-disqus {
+    background: #2e9fff
+}
+
+.sa-core .sa-facebook {
+    background: #3B5998
+}
+
+.sa-core .sa-foursquare {
+    background: #F94877
+}
+
+.sa-core .sa-github {
+    background: #171515
+}
+
+.sa-core .sa-google {
+    background: #DD4B39
+}
+
+.sa-core .sa-instagram {
+    background: #3F729B
+}
+
+.sa-core .sa-lastfm {
+    background: #C3000D
+}
+
+.sa-core .sa-linkedin {
+    background: #0E76A8
+}
+
+.sa-core .sa-live {
+    background: #00a1f1
+}
+
+.sa-core .sa-mailru {
+    background: #ffa930
+}
+
+.sa-core .sa-plurk {
+    background: #C6602C
+}
+
+.sa-core .sa-reddit {
+    background: #cee3f8;
+    color: #000
+}
+
+.sa-core .sa-tumblr {
+    background: #34526F
+}
+
+.sa-core .sa-twitter {
+    background: #00ACEE
+}
+
+.sa-core .sa-vkontakte {
+    background: #45668e
+}
+
+.sa-core .sa-wordpress {
+    background: #21759b
+}
+.sa-core .sa-amazon{
+	background:#e47911
+}
+.sa-core .sa-pinterest{
+	background:#C8232C
+}
+.sa-core .sa-ebay {
+    background:#89C507;
+	color:#000
+}
+
+.sa-core .sa-disqus:after {
+    content: 'Disqus'
+}
+
+.sa-core .sa-facebook:after {
+    content: 'Facebook'
+}
+
+.sa-core .sa-foursquare:after {
+    content: 'Foursquare'
+}
+
+.sa-core .sa-github:after {
+    content: 'Github'
+}
+
+.sa-core .sa-google:after {
+    content: 'Google'
+}
+
+.sa-core .sa-instagram:after {
+    content: 'Instagram'
+}
+
+.sa-core .sa-lastfm:after {
+    content: 'Last.fm'
+}
+
+.sa-core .sa-linkedin:after {
+    content: 'LinkedIn'
+}
+
+.sa-core .sa-live:after {
+    content: 'Live'
+}
+
+.sa-core .sa-mailru:after {
+    content: 'Mail.ru'
+}
+
+.sa-core .sa-plurk:after {
+    content: 'Plurk'
+}
+
+.sa-core .sa-reddit:after {
+    content: 'Reddit'
+}
+
+.sa-core .sa-tumblr:after {
+    content: 'Tumblr'
+}
+
+.sa-core .sa-twitter:after {
+    content: 'Twitter'
+}
+
+.sa-core .sa-vkontakte:after {
+    content: 'Vkontakte'
+}
+
+.sa-core .sa-wordpress:after {
+    content: 'WordPress'
+}
+.sa-core .sa-amazon:after {
+    content: 'Amazon'
+}
+.sa-core .sa-pinterest:after {
+    content: 'Pinterest'
+}
+.sa-core .sa-ebay:after {
+    content: 'Ebay'
+}
+
+/* ------ no3 -------*/
+.sa-no3 {
+	font-family: system, -apple-system, ".SFNSDisplay-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    margin: -3px 0 0 -3px
+}
+
+.sa-no3 .sa {
+    display: inline-block;
+    text-decoration: none;
+    background: #333;
+    color: #FFF !important;
+	font-size: 14px !important;
+    padding: 10px 4px 5px;
+    width: 74px;
+    text-align: center;
+    /* border-radius: 2px; */
+    margin: 3px 0 0 3px;
+}
+
+.sa-no3 .sa:before {
+	content: '';
+	display: block;
+	width: 45px;
+	height: 45px;
+	background-image: url(../images/white-icons.png);
+	background-size: 45px auto;
+	margin: auto;
+	margin-bottom:5px;
+    font-size: 14px;
+}
+
+.sa-no3 .sa-disqus {
+    background: #2e9fff;
+}
+
+.sa-no3 .sa-disqus:before {
+	background-position: 0 -4300%;
+}
+
+.sa-no3 .sa-facebook {
+    background: #3B5998;
+}
+.sa-no3 .sa-facebook:before {
+	background-position: 0 0;
+}
+.sa-no3 .sa-foursquare {
+    background: #F94877;
+}
+.sa-no3 .sa-foursquare:before {
+	background-position: 0 -3200%;
+}
+.sa-no3 .sa-github {
+    background: #171515;
+}
+.sa-no3 .sa-github:before {
+	background-position: 0 -400%;
+}
+
+.sa-no3 .sa-google {
+    background: #DD4B39;
+}
+.sa-no3 .sa-google:before {
+	background-position: 0 -1200%;
+}
+
+.sa-no3 .sa-instagram {
+    background: #3F729B;
+}
+.sa-no3 .sa-instagram:before {
+	background-position: 0 -1800%;
+}
+.sa-no3 .sa-lastfm {
+    background: #C3000D;
+}
+.sa-no3 .sa-lastfm:before {
+	background-position: 0 -300%;
+}
+.sa-no3 .sa-linkedin {
+    background: #0E76A8;
+}
+.sa-no3 .sa-linkedin:before {
+	background-position: 0 -3600%;
+}
+.sa-no3 .sa-live {
+    background: #00a1f1;
+}
+.sa-no3 .sa-live:before {
+	background-position: 0 -2300%;
+}
+.sa-no3 .sa-mailru {
+    background: #ffa930;
+}
+.sa-no3 .sa-mailru:before {
+	background-position: 0 -3300%;
+}
+.sa-no3 .sa-plurk {
+    background: #C6602C;
+}
+.sa-no3 .sa-plurk:before {
+	background-position: 0 -2000%;
+}
+.sa-no3 .sa-reddit {
+    background: #cee3f8;
+    color: #333 !important;
+}
+.sa-no3 .sa-reddit:before {
+	background-position: 0 -4000%;
+}
+.sa-no3 .sa-tumblr {
+    background: #34526F;
+}
+.sa-no3 .sa-tumblr:before {
+	background-position: 0 -3100%;
+}
+.sa-no3 .sa-twitter {
+    background: #00ACEE;
+}
+.sa-no3 .sa-twitter:before {
+	background-position: 0 -600%;
+}
+.sa-no3 .sa-vkontakte {
+    background: #45668e;
+}
+.sa-no3 .sa-vkontakte:before {
+	background-position: 0 -2400%;
+}
+.sa-no3 .sa-wordpress {
+    background: #21759b;
+}
+.sa-no3 .sa-wordpress:before {
+	background-position: 0 -2500%;
+}
+.sa-no3 .sa-amazon {
+    background:#e47911
+}
+.sa-no3 .sa-amazon:before {
+	background-position: 0 -1400%;
+}
+.sa-no3 .sa-pinterest {
+    background:#C8232C;
+}
+.sa-no3 .sa-pinterest:before {
+	background-position: 0 -900%;
+}
+.sa-no3 .sa-ebay{
+    background:#fff;
+	color: #333 !important;
+}
+.sa-no3 .sa-ebay:before {
+	background-position: 0 -1600%;
+}
+.sa-no3 .sa-disqus:after {
+    content: 'Disqus';
+}
+
+.sa-no3 .sa-facebook:after {
+    content: 'Facebook';
+}
+
+.sa-no3 .sa-foursquare:after {
+    content: 'Foursquare';
+}
+
+.sa-no3 .sa-github:after {
+    content: 'Github';
+}
+
+.sa-no3 .sa-google:after {
+    content: 'Google';
+}
+
+.sa-no3 .sa-instagram:after {
+    content: 'Instagram';
+}
+
+.sa-no3 .sa-lastfm:after {
+    content: 'Last.fm';
+}
+
+.sa-no3 .sa-linkedin:after {
+    content: 'LinkedIn';
+}
+
+.sa-no3 .sa-live:after {
+    content: 'Live';
+}
+
+.sa-no3 .sa-mailru:after {
+    content: 'Mail.ru';
+}
+
+.sa-no3 .sa-plurk:after {
+    content: 'Plurk';
+}
+
+.sa-no3 .sa-reddit:after {
+    content: 'Reddit';
+}
+
+.sa-no3 .sa-tumblr:after {
+    content: 'Tumblr';
+}
+
+.sa-no3 .sa-twitter:after {
+    content: 'Twitter';
+}
+
+.sa-no3 .sa-vkontakte:after {
+    content: 'Vkontakte';
+}
+
+.sa-no3 .sa-wordpress:after {
+    content: 'WordPress';
+}
+.sa-no3 .sa-amazon:after {
+    content: 'Amazon';
+}
+.sa-no3 .sa-pinterest:after {
+    content: 'Pinterest';
+}
+.sa-no3 .sa-ebay:after {
+    content: 'Ebay';
+}
+/* ------ no4 -------*/
+.sa-no4 {
+	font-family: system, -apple-system, ".SFNSDisplay-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 2.2;
+    margin: -3px 0 0 -3px
+}
+
+.sa-no4 .sa {
+    display: inline-block;
+    text-decoration: none;
+    background: #333;
+    color: #333;
+    width: 190px;
+    text-align: left;
+    border-radius: 2px;
+	border: 1px solid #ddd;
+	border-top-color: #eee;
+    margin: 3px 0 0 3px;
+	overflow: hidden;
+    font-size: 14px;
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f0f0f0+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f0f0f0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f0f0f0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f0f0f0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-9 */
+}
+.sa-no4 .sa:before {
+	content: '';
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/black-icons.png);
+	background-size: 32px auto;
+	margin-right: 8px;
+	background-color: #999;
+	float:left;
+}
+.sa-no4 .sa-disqus:before {
+	background-position: 0 -200%
+}
+.sa-no4 .sa-disqus {
+  /*  background: #2e9fff;*/
+}
+.sa-no4 .sa-facebook:before{
+	background-position: 0 -600%
+}
+.sa-no4 .sa-facebook {
+  /*  background: #3B5998;*/
+}
+.sa-no4 .sa-foursquare:before{
+	background-position: 0 -1000%
+}
+.sa-no4 .sa-foursquare {
+ /*   background: #F94877;*/
+}
+.sa-no4 .sa-github:before{
+	background-position: 0 -1600%
+}
+.sa-no4 .sa-github {
+ /*   background: #171515;*/
+}
+.sa-no4 .sa-google:before{
+	background-position: 0 -900%
+}
+.sa-no4 .sa-google {
+ /*   background: #DD4B39;*/
+}
+.sa-no4 .sa-instagram:before{
+	background-position: 0 -100%
+}
+.sa-no4 .sa-instagram {
+ /*   background: #3F729B;*/
+}
+.sa-no4 .sa-lastfm:before{
+	background-position: 0 -500%
+}
+.sa-no4 .sa-lastfm {
+ /*   background: #C3000D;*/
+}
+.sa-no4 .sa-linkedin:before{
+	background-position: 0 -1700%
+}
+.sa-no4 .sa-linkedin {
+  /*  background: #0E76A8;*/
+}
+.sa-no4 .sa-live:before{
+	background-position: 0 -1500%
+}
+.sa-no4 .sa-live {
+ /*   background: #00a1f1;*/
+}
+.sa-no4 .sa-mailru:before{
+	background-position: 0 -700%
+}
+.sa-no4 .sa-mailru {
+ /*   background: #ffa930;*/
+}
+.sa-no4 .sa-plurk:before{
+	background-position: 0 0
+}
+.sa-no4 .sa-plurk {
+ /*   background: #C6602C;*/
+}
+.sa-no4 .sa-reddit:before{
+	background-position: 0 -300%
+}
+.sa-no4 .sa-reddit {
+ /*   background: #cee3f8;*/
+    color: #000;
+}
+.sa-no4 .sa-tumblr:before{
+	background-position: 0 -1400%
+}
+.sa-no4 .sa-tumblr {
+/*    background: #34526F;*/
+}
+.sa-no4 .sa-twitter:before{
+	background-position: 0 -800%
+}
+.sa-no4 .sa-twitter {
+/*    background: #00ACEE;*/
+}
+.sa-no4 .sa-vkontakte:before{
+	background-position: 0 -1200%
+}
+.sa-no4 .sa-vkontakte {
+ /*   background: #45668e;*/
+}
+.sa-no4 .sa-wordpress:before{
+	background-position: 0 -400%
+}
+.sa-no4 .sa-wordpress {
+ /* background: #21759b;*/
+}
+.sa-no4 .sa-amazon:before{
+	background-position: 0 -1800%
+}
+.sa-no4 .sa-pinterest:before{
+	background-position: 0 -1100%
+}
+.sa-no4 .sa-ebay:before{
+	background-position: 0 -1900%
+}
+
+.sa-no4 .sa-disqus:after {
+    content: 'Login with Disqus';
+}
+
+.sa-no4 .sa-facebook:after {
+    content: 'Login with Facebook';
+}
+
+.sa-no4 .sa-foursquare:after {
+    content: 'Login with Foursquare';
+}
+
+.sa-no4 .sa-github:after {
+    content: 'Login with Github';
+}
+
+.sa-no4 .sa-google:after {
+    content: 'Login with Google';
+}
+
+.sa-no4 .sa-instagram:after {
+    content: 'Login with Instagram';
+}
+
+.sa-no4 .sa-lastfm:after {
+    content: 'Login with Last.fm';
+}
+
+.sa-no4 .sa-linkedin:after {
+    content: 'Login with LinkedIn';
+}
+
+.sa-no4 .sa-live:after {
+    content: 'Login with Live';
+}
+
+.sa-no4 .sa-mailru:after {
+    content: 'Login with Mail.ru';
+}
+
+.sa-no4 .sa-plurk:after {
+    content: 'Login with Plurk';
+}
+
+.sa-no4 .sa-reddit:after {
+    content: 'Login with Reddit';
+}
+
+.sa-no4 .sa-tumblr:after {
+    content: 'Login with Tumblr';
+}
+
+.sa-no4 .sa-twitter:after {
+    content: 'Login with Twitter';
+}
+
+.sa-no4 .sa-vkontakte:after {
+    content: 'Login with Vkontakte';
+}
+
+.sa-no4 .sa-wordpress:after {
+    content: 'Login with WordPress';
+}
+.sa-no4 .sa-amazon:after {
+    content: 'Login with Amazon';
+}
+.sa-no4 .sa-pinterest:after {
+    content: 'Login with Pinterest';
+}
+.sa-no4 .sa-ebay:after {
+    content: 'Login with Ebay';
+}
+/* ------ no7 -------*/
+.sa-no7 {
+	font-family: system, -apple-system, ".SFNSDisplay-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 2.2;
+    margin: -3px 0 0 -3px
+}
+.sa-no7 .sa {
+	content: '';
+	width: 97.3%;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
+	color: #fff;    
+    text-align: center;
+    border-radius: 3px;
+    display: block;    
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none !important;
+	font-weight: bold !important;
+	padding: 0 20px;
+}
+.sa-no7 .sa-100 {
+	font: 16px/50px sans-serif;
+    margin: 10px 0 0;
+}
+.sa-no7 .sa-75 {
+	font: 14px/40px sans-serif;	
+    margin: 7px 0 0;
+}
+.sa-no7 .sa-50 {
+	font: 12px/25px sans-serif;
+    margin: 5px 0 0;
+}
+.sa-no7 .sa-disqus {
+    background: #2e9fff;
+}
+.sa-no7 .sa-facebook {
+    background: #3B5998;
+}
+.sa-no7 .sa-foursquare {
+    background: #F94877;
+}
+.sa-no7 .sa-github {
+    background: #171515;
+}
+.sa-no7 .sa-google {
+    background: #DD4B39;
+}
+.sa-no7 .sa-instagram {
+    background: #3F729B;
+}
+.sa-no7 .sa-lastfm {
+    background: #C3000D;
+}
+.sa-no7 .sa-linkedin {
+    background: #0E76A8;
+}
+.sa-no7 .sa-live {
+    background: #00a1f1;
+}
+.sa-no7 .sa-mailru {
+    background: #ffa930;
+}
+.sa-no7 .sa-plurk {
+    background: #C6602C;
+}
+.sa-no7 .sa-reddit {
+   background: #cee3f8;
+    color: #000;
+}
+.sa-no7 .sa-tumblr {
+    background: #34526F;
+}
+.sa-no7 .sa-twitter {
+   background: #00ACEE;
+}
+.sa-no7 .sa-vkontakte {
+    background: #45668e;
+}
+.sa-no7 .sa-wordpress {
+      background: #21759b;
+}
+.sa-no7 .sa-amazon {
+    background:#e47911
+}
+.sa-no7 .sa-pinterest {
+    background:#C8232C
+}
+.sa-no7 .sa-ebay {
+      background:#80B807
+}
+.sa-no7 .sa-disqus:after {
+    content: 'Login with Disqus';
+}
+
+.sa-no7 .sa-facebook:after {
+    content: 'Login with Facebook';
+}
+
+.sa-no7 .sa-foursquare:after {
+    content: 'Login with Foursquare';
+}
+
+.sa-no7 .sa-github:after {
+    content: 'Login with Github';
+}
+
+.sa-no7 .sa-google:after {
+    content: 'Login with Google';
+}
+
+.sa-no7 .sa-instagram:after {
+    content: 'Login with Instagram';
+}
+
+.sa-no7 .sa-lastfm:after {
+    content: 'Last.fm';
+}
+
+.sa-no7 .sa-linkedin:after {
+    content: 'Login with LinkedIn';
+}
+
+.sa-no7 .sa-live:after {
+    content: 'Login with Live';
+}
+
+.sa-no7 .sa-mailru:after {
+    content: 'Login with Mail.ru';
+}
+
+.sa-no7 .sa-plurk:after {
+    content: 'Login with Plurk';
+}
+
+.sa-no7 .sa-reddit:after {
+    content: 'Login with Reddit';
+}
+
+.sa-no7 .sa-tumblr:after {
+    content: 'Login with Tumblr';
+}
+
+.sa-no7 .sa-twitter:after {
+    content: 'Login with Twitter';
+}
+
+.sa-no7 .sa-vkontakte:after {
+    content: 'Login with Vkontakte';
+}
+
+.sa-no7 .sa-wordpress:after {
+    content: 'Login with WordPress';
+}
+.sa-no7 .sa-amazon:after {
+    content: 'Login with Amazon';
+}
+.sa-no7 .sa-pinterest:after {
+    content: 'Login with Pinterest';
+}
+.sa-no7 .sa-ebay:after {
+    content: 'Login with Ebay';
+}
+/* ------ no8 -------*/
+.sa-no8 {
+	font-family: system, -apple-system, ".SFNSDisplay-Regular", 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 2.2;
+    margin: -3px 0 0 -3px
+}
+
+.sa-no8 .sa {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: 190px;
+    text-align: left;
+    border-radius: 2px;
+	border: 1px solid #ddd;
+	border-top-color: #eee;
+    margin: 3px 0 0 3px;
+	overflow: hidden;
+	font-size: 14px;
+}
+.sa-no8 .sa:before {
+	content: '';
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/icons.png);
+	background-size: 32px auto;
+	margin-right: 8px;
+	background-color: #999;
+	float:left;
+}
+.sa-no8 .sa-disqus:before {
+	background-position: 0 -600%
+}
+.sa-no8 .sa-disqus {
+    background: #1e8fef;
+}
+.sa-no8 .sa-facebook:before{
+	background-position: 0 -700%
+}
+.sa-no8 .sa-facebook {
+    background: #2B4988;
+}
+.sa-no8 .sa-foursquare:before{
+	background-position: 0 -900%
+}
+.sa-no8 .sa-foursquare {
+    background: #d93867;
+}
+.sa-no8 .sa-github:before{
+	background-position: 0 -1000%
+}
+.sa-no8 .sa-github {
+    background: #070505;
+}
+.sa-no8 .sa-google:before{
+	background-position: 0 -1200%
+}
+.sa-no8 .sa-google {
+    background: #cD3B29;
+}
+.sa-no8 .sa-instagram:before{
+	background-position: 0 -1600%
+}
+.sa-no8 .sa-instagram {
+    background: #2F628B;
+}
+.sa-no8 .sa-lastfm:before{
+	background-position: 0 -1800%
+}
+.sa-no8 .sa-lastfm {
+    background: #b3000D;
+}
+.sa-no8 .sa-linkedin:before{
+	background-position: 0 -1900%
+}
+.sa-no8 .sa-linkedin {
+    background: #0F72A1;
+}
+.sa-no8 .sa-live:before{
+	background-position: 0 -2000%
+}
+.sa-no8 .sa-live {
+    background: #1662dC;
+}
+.sa-no8 .sa-mailru:before{
+	background-position: 0 -2200%
+}
+.sa-no8 .sa-mailru {
+    background: #E19718;
+}
+.sa-no8 .sa-plurk:before{
+	background-position: 0 -3100%
+}
+.sa-no8 .sa-plurk {
+    background: #b6501C;
+}
+.sa-no8 .sa-reddit:before{
+	background-position: 0 -3300%
+}
+.sa-no8 .sa-reddit {
+    background: #bed3e8;
+    color: #333 !important;
+}
+.sa-no8 .sa-tumblr:before{
+	background-position: 0 -3800%
+}
+.sa-no8 .sa-tumblr {
+    background: #27364D;
+}
+.sa-no8 .sa-twitter:before{
+	background-position: 0 -3900%
+}
+.sa-no8 .sa-twitter {
+    background: #00A0DD;
+}
+.sa-no8 .sa-vkontakte:before{
+	background-position: 0 -4000%
+}
+.sa-no8 .sa-vkontakte {
+    background: #35567e;
+}
+.sa-no8 .sa-wordpress:before{
+	background-position: 0 -4300%
+}
+.sa-no8 .sa-wordpress {
+    background: #11658b;
+}
+.sa-no8 .sa-amazon:before{
+	background-position: 0 0
+}
+.sa-no8 .sa-amazon {
+    background: #dF8800;
+}
+.sa-no8 .sa-pinterest:before{
+	background-position: 0 -3000%
+}
+.sa-no8 .sa-pinterest {
+    background: #bB1017;
+}
+.sa-no8 .sa-ebay:before{
+	background-position: 0 -300%
+}
+
+.sa-no8 .sa-ebay {
+    background: #eFeFeF;
+    color: #333 !important;
+}
+
+.sa-no8 .sa-disqus:after {
+    content: 'Login with Disqus';
+}
+
+.sa-no8 .sa-facebook:after {
+    content: 'Login with Facebook';
+}
+
+.sa-no8 .sa-foursquare:after {
+    content: 'Login with Foursquare';
+}
+
+.sa-no8 .sa-github:after {
+    content: 'Login with Github';
+}
+
+.sa-no8 .sa-google:after {
+    content: 'Login with Google';
+}
+
+.sa-no8 .sa-instagram:after {
+    content: 'Login with Instagram';
+}
+
+.sa-no8 .sa-lastfm:after {
+    content: 'Login with Last.fm';
+}
+
+.sa-no8 .sa-linkedin:after {
+    content: 'Login with LinkedIn';
+}
+
+.sa-no8 .sa-live:after {
+    content: 'Login with Live';
+}
+
+.sa-no8 .sa-mailru:after {
+    content: 'Login with Mail.ru';
+}
+
+.sa-no8 .sa-plurk:after {
+    content: 'Login with Plurk';
+}
+
+.sa-no8 .sa-reddit:after {
+    content: 'Login with Reddit';
+}
+
+.sa-no8 .sa-tumblr:after {
+    content: 'Login with Tumblr';
+}
+
+.sa-no8 .sa-twitter:after {
+    content: 'Login with Twitter';
+}
+
+.sa-no8 .sa-vkontakte:after {
+    content: 'Login with Vkontakte';
+}
+
+.sa-no8 .sa-wordpress:after {
+    content: 'Login with WordPress';
+}
+.sa-no8 .sa-amazon:after {
+    content: 'Login with Amazon';
+}
+.sa-no8 .sa-pinterest:after {
+    content: 'Login with Pinterest';
+}
+.sa-no8 .sa-ebay:after {
+    content: 'Login with Ebay';
+}

@@ -1,0 +1,45 @@
+<script type="text/javascript">                                   
+$(function(){
+	$.aqb_months_weeks = {
+					weeks: '__weeks__',
+					days: '__days__',
+					months: '__months__',
+				   };
+	$("#aqb-start, #aqb-end").datetimepicker({timeOnly: true});
+	$("#aqb-duration").datetimepicker({timeOnly: true, timeOnlyTitle: '__set_time_title__'});
+	
+	$.aqbChangePattern($('input[name=repeat]:checked').val());
+	$('#aqb-repeat input:radio').change(function(){$.aqbChangePattern($(this).val())});	
+	
+	$.aqbChangeTimePanels();
+		
+	$.aqbChangeRange($('input[name=range_date]:checked').val());
+	$('#aqb-range-date input:radio').change(function(){$.aqbChangeRange($(this).val())});	
+					
+	$('#form_events').submit(function(){
+		__aqb_errors__
+		return $.aqbValidateEventTime(aAqbErrors);
+	});	
+	
+	$("#aqb-date-start, #aqb-date-end").datetimepicker('option', 'showTimepicker', false);
+	$("#aqb-date-start, #aqb-date-end").datetimepicker('option', 'showButtonPanel', false);	
+	$("#aqb-date-start, #aqb-date-end").datetimepicker('option', 'minDate', 0);
+});
+
+</script>
+<div class="aqb-event-rec-panel">
+	<div class="aqb-event-rec-panel-select-area">
+		<bx_if:recurring_enabled>
+			<div><label><input type="radio" name="aqb_time_settings[]" value="0" __checked_1__ /><bx_text:_aqb_eventrec_use_standard_time /></label></div>
+			<div><label><input type="radio" name="aqb_time_settings[]" value="1" __checked_2__ /><bx_text:_aqb_eventrec_use_rec_time /></label></div>
+		</bx_if:recurring_enabled>
+	</div>
+	<div class="aqb-event-rec-panel-sub" __style1__>
+		__rec_panel__
+	</div>
+	<div class="aqb-event-rec-panel-sub" __style2__>
+		<div class="aqb-event-rec-area">
+			<table class="aqb-event-rec-panel-standard-fields">__date_fields__</table>
+		</div>
+	</div>
+</div>

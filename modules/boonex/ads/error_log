@@ -1,0 +1,565 @@
+[09-Oct-2019 04:46:23 Europe/London] PHP Fatal error:  Call to a member function MsgBox() on null in /home/xplosive/dancerdates/modules/boonex/ads/classes/BxAdsModule.php on line 274
+[09-Oct-2019 04:46:23 Europe/London] PHP Stack trace:
+[09-Oct-2019 04:46:23 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[09-Oct-2019 04:46:23 Europe/London] PHP   2. PageCompAds() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:28
+[09-Oct-2019 04:46:23 Europe/London] PHP   3. BxAdsModule->actionSearch() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:44
+[19-Jun-2020 08:13:48 Europe/London] PHP Fatal error:  Call to a member function getId() on null in /home/xplosive/dancerdates/inc/classes/BxDolPageView.php(720) : eval()'d code on line 1
+[19-Jun-2020 08:13:48 Europe/London] PHP Stack trace:
+[19-Jun-2020 08:13:48 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[19-Jun-2020 08:13:48 Europe/London] PHP   2. PageCompAds() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:28
+[19-Jun-2020 08:13:48 Europe/London] PHP   3. BxDolPageView->getCode() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:113
+[19-Jun-2020 08:13:48 Europe/London] PHP   4. BxDolPageView->gen() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:263
+[19-Jun-2020 08:13:48 Europe/London] PHP   5. BxDolPageView->genColumn() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:223
+[19-Jun-2020 08:13:48 Europe/London] PHP   6. BxDolPageView->genBlock() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:315
+[19-Jun-2020 08:13:48 Europe/London] PHP   7. BxDolPageView->getBlockCode_PHP() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:399
+[19-Jun-2020 08:13:48 Europe/London] PHP   8. eval() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:720
+[24-Jun-2020 06:20:28 Europe/London] PHP Fatal error:  Call to a member function getParam() on null in /home/xplosive/dancerdates/inc/db.inc.php on line 85
+[24-Jun-2020 06:20:28 Europe/London] PHP Stack trace:
+[24-Jun-2020 06:20:28 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[24-Jun-2020 06:20:28 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:7
+[24-Jun-2020 06:20:28 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/header.inc.php:169
+[24-Jun-2020 06:20:28 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php:7
+[24-Jun-2020 06:20:28 Europe/London] PHP   5. BxDolDb->BxDolDb() /home/xplosive/dancerdates/inc/db.inc.php:12
+[24-Jun-2020 06:20:28 Europe/London] PHP   6. BxDolDb->connect() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:44
+[24-Jun-2020 06:20:28 Europe/London] PHP   7. BxDolDb->error() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:68
+[24-Jun-2020 06:20:28 Europe/London] PHP   8. BxDolDb->genMySQLErr() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:345
+[24-Jun-2020 06:20:28 Europe/London] PHP   9. sendMail() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:514
+[24-Jun-2020 06:20:28 Europe/London] PHP  10. getParam() /home/xplosive/dancerdates/inc/utils.inc.php:457
+[24-Jun-2020 06:21:42 Europe/London] PHP Fatal error:  Call to a member function getParam() on null in /home/xplosive/dancerdates/inc/db.inc.php on line 85
+[24-Jun-2020 06:21:42 Europe/London] PHP Stack trace:
+[24-Jun-2020 06:21:42 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[24-Jun-2020 06:21:42 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:7
+[24-Jun-2020 06:21:42 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/header.inc.php:169
+[24-Jun-2020 06:21:42 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php:7
+[24-Jun-2020 06:21:42 Europe/London] PHP   5. BxDolDb->BxDolDb() /home/xplosive/dancerdates/inc/db.inc.php:12
+[24-Jun-2020 06:21:42 Europe/London] PHP   6. BxDolDb->connect() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:44
+[24-Jun-2020 06:21:42 Europe/London] PHP   7. BxDolDb->error() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:68
+[24-Jun-2020 06:21:42 Europe/London] PHP   8. BxDolDb->genMySQLErr() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:345
+[24-Jun-2020 06:21:42 Europe/London] PHP   9. sendMail() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:514
+[24-Jun-2020 06:21:42 Europe/London] PHP  10. getParam() /home/xplosive/dancerdates/inc/utils.inc.php:457
+[24-Jun-2020 06:32:57 Europe/London] PHP Fatal error:  Call to a member function getParam() on null in /home/xplosive/dancerdates/inc/db.inc.php on line 85
+[24-Jun-2020 06:32:57 Europe/London] PHP Stack trace:
+[24-Jun-2020 06:32:57 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[24-Jun-2020 06:32:57 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:7
+[24-Jun-2020 06:32:57 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/header.inc.php:169
+[24-Jun-2020 06:32:57 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php:7
+[24-Jun-2020 06:32:57 Europe/London] PHP   5. BxDolDb->BxDolDb() /home/xplosive/dancerdates/inc/db.inc.php:12
+[24-Jun-2020 06:32:57 Europe/London] PHP   6. BxDolDb->connect() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:44
+[24-Jun-2020 06:32:57 Europe/London] PHP   7. BxDolDb->error() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:68
+[24-Jun-2020 06:32:57 Europe/London] PHP   8. BxDolDb->genMySQLErr() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:345
+[24-Jun-2020 06:32:57 Europe/London] PHP   9. sendMail() /home/xplosive/dancerdates/inc/classes/BxDolDb.php:514
+[24-Jun-2020 06:32:57 Europe/London] PHP  10. getParam() /home/xplosive/dancerdates/inc/utils.inc.php:457
+[17-Jul-2020 21:44:37 Europe/London] PHP Fatal error:  Call to a member function getId() on null in /home/xplosive/dancerdates/inc/classes/BxDolPageView.php(720) : eval()'d code on line 1
+[17-Jul-2020 21:44:37 Europe/London] PHP Stack trace:
+[17-Jul-2020 21:44:37 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[17-Jul-2020 21:44:37 Europe/London] PHP   2. PageCompAds() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:28
+[17-Jul-2020 21:44:37 Europe/London] PHP   3. BxDolPageView->getCode() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:113
+[17-Jul-2020 21:44:37 Europe/London] PHP   4. BxDolPageView->gen() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:263
+[17-Jul-2020 21:44:37 Europe/London] PHP   5. BxDolPageView->genColumn() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:223
+[17-Jul-2020 21:44:37 Europe/London] PHP   6. BxDolPageView->genBlock() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:315
+[17-Jul-2020 21:44:37 Europe/London] PHP   7. BxDolPageView->getBlockCode_PHP() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:399
+[17-Jul-2020 21:44:37 Europe/London] PHP   8. eval() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:720
+[19-Jul-2020 17:35:03 Europe/London] PHP Fatal error:  Call to a member function getId() on null in /home/xplosive/dancerdates/inc/classes/BxDolPageView.php(720) : eval()'d code on line 1
+[19-Jul-2020 17:35:03 Europe/London] PHP Stack trace:
+[19-Jul-2020 17:35:03 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[19-Jul-2020 17:35:03 Europe/London] PHP   2. PageCompAds() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:28
+[19-Jul-2020 17:35:03 Europe/London] PHP   3. BxDolPageView->getCode() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:113
+[19-Jul-2020 17:35:03 Europe/London] PHP   4. BxDolPageView->gen() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:263
+[19-Jul-2020 17:35:03 Europe/London] PHP   5. BxDolPageView->genColumn() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:223
+[19-Jul-2020 17:35:03 Europe/London] PHP   6. BxDolPageView->genBlock() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:315
+[19-Jul-2020 17:35:03 Europe/London] PHP   7. BxDolPageView->getBlockCode_PHP() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:399
+[19-Jul-2020 17:35:03 Europe/London] PHP   8. eval() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:720
+[06-Oct-2020 18:15:03 Europe/London] PHP Fatal error:  Call to a member function getId() on null in /home/xplosive/dancerdates/inc/classes/BxDolPageView.php(720) : eval()'d code on line 1
+[06-Oct-2020 18:15:03 Europe/London] PHP Stack trace:
+[06-Oct-2020 18:15:03 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[06-Oct-2020 18:15:03 Europe/London] PHP   2. PageCompAds() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:28
+[06-Oct-2020 18:15:03 Europe/London] PHP   3. BxDolPageView->getCode() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:113
+[06-Oct-2020 18:15:03 Europe/London] PHP   4. BxDolPageView->gen() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:263
+[06-Oct-2020 18:15:03 Europe/London] PHP   5. BxDolPageView->genColumn() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:223
+[06-Oct-2020 18:15:03 Europe/London] PHP   6. BxDolPageView->genBlock() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:315
+[06-Oct-2020 18:15:03 Europe/London] PHP   7. BxDolPageView->getBlockCode_PHP() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:399
+[06-Oct-2020 18:15:03 Europe/London] PHP   8. eval() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:720
+[09-Oct-2020 05:31:43 Europe/London] PHP Fatal error:  Call to a member function getId() on null in /home/xplosive/dancerdates/inc/classes/BxDolPageView.php(720) : eval()'d code on line 1
+[09-Oct-2020 05:31:43 Europe/London] PHP Stack trace:
+[09-Oct-2020 05:31:43 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[09-Oct-2020 05:31:43 Europe/London] PHP   2. PageCompAds() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:28
+[09-Oct-2020 05:31:43 Europe/London] PHP   3. BxDolPageView->getCode() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:113
+[09-Oct-2020 05:31:43 Europe/London] PHP   4. BxDolPageView->gen() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:263
+[09-Oct-2020 05:31:43 Europe/London] PHP   5. BxDolPageView->genColumn() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:223
+[09-Oct-2020 05:31:43 Europe/London] PHP   6. BxDolPageView->genBlock() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:315
+[09-Oct-2020 05:31:43 Europe/London] PHP   7. BxDolPageView->getBlockCode_PHP() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:399
+[09-Oct-2020 05:31:43 Europe/London] PHP   8. eval() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:720
+[28-Nov-2020 08:17:00 Europe/London] PHP Fatal error:  Call to a member function getId() on null in /home/xplosive/dancerdates/inc/classes/BxDolPageView.php(720) : eval()'d code on line 1
+[28-Nov-2020 08:17:00 Europe/London] PHP Stack trace:
+[28-Nov-2020 08:17:00 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[28-Nov-2020 08:17:00 Europe/London] PHP   2. PageCompAds() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:28
+[28-Nov-2020 08:17:00 Europe/London] PHP   3. BxDolPageView->getCode() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:113
+[28-Nov-2020 08:17:00 Europe/London] PHP   4. BxDolPageView->gen() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:263
+[28-Nov-2020 08:17:00 Europe/London] PHP   5. BxDolPageView->genColumn() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:223
+[28-Nov-2020 08:17:00 Europe/London] PHP   6. BxDolPageView->genBlock() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:315
+[28-Nov-2020 08:17:00 Europe/London] PHP   7. BxDolPageView->getBlockCode_PHP() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:399
+[28-Nov-2020 08:17:00 Europe/London] PHP   8. eval() /home/xplosive/dancerdates/inc/classes/BxDolPageView.php:720
+[07-Feb-2021 15:42:34 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 15:42:34 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds_tags.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 15:45:20 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 15:45:20 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds_tags.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 15:46:45 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 15:46:45 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds_tags.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 15:48:30 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 15:48:30 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds_tags.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 15:49:14 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 15:49:14 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds_tags.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 15:51:07 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 15:51:07 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds_tags.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 15:51:31 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 15:51:31 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds_tags.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 15:52:56 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 15:52:56 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds_tags.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 16:04:16 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 16:04:16 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 16:12:05 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 16:12:05 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 16:22:53 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 16:22:53 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds_tags.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 16:34:16 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 16:34:16 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 17:52:41 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 17:52:41 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 18:00:14 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 18:00:14 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 18:00:51 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 18:00:51 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 18:58:53 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 18:58:53 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 18:59:13 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 18:59:13 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 19:00:10 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 19:00:10 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 19:00:36 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 19:00:36 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 19:25:00 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 19:25:00 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 19:34:39 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 19:34:39 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 19:37:01 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 19:37:01 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 19:39:03 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 19:39:03 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 19:53:38 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 19:53:38 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 20:16:19 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 20:16:19 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 20:22:47 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 20:22:47 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 20:28:35 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 20:28:35 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 20:29:36 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 20:29:36 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 20:41:39 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 20:41:39 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 21:03:47 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 21:03:47 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 21:06:47 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 21:06:47 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 21:09:39 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 21:09:39 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 21:10:45 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 21:10:45 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 21:11:01 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 21:11:01 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 21:12:11 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 21:12:11 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 21:17:30 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 21:17:30 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 22:04:00 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 22:04:00 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 22:04:54 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 22:04:54 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 22:31:42 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 22:31:42 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 23:06:03 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 23:06:03 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds_tags.php(8): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 23:13:02 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 23:13:02 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 23:23:01 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 23:23:01 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[07-Feb-2021 23:35:40 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[07-Feb-2021 23:35:40 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[08-Feb-2021 00:00:58 Europe/London] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 40
+[08-Feb-2021 00:00:58 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/xplosive/dancerdates/inc/classes/BxDolDb.php:66
+Stack trace:
+#0 /home/xplosive/dancerdates/inc/classes/BxDolDb.php(44): BxDolDb->connect()
+#1 /home/xplosive/dancerdates/inc/db.inc.php(12): BxDolDb->BxDolDb()
+#2 /home/xplosive/dancerdates/inc/classes/BxDolAlerts.php(7): require_once('/home/xplosive/...')
+#3 /home/xplosive/dancerdates/inc/header.inc.php(169): require_once('/home/xplosive/...')
+#4 /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php(7): require_once('/home/xplosive/...')
+#5 {main}
+  thrown in /home/xplosive/dancerdates/inc/classes/BxDolDb.php on line 66
+[08-Feb-2021 00:27:38 Europe/London] PHP Fatal error:  Call to undefined method BxBaseConfig::BxBaseConfig() in /home/xplosive/dancerdates/templates/tmpl_myEvo/scripts/BxTemplConfig.php on line 24
+[08-Feb-2021 00:27:38 Europe/London] PHP Stack trace:
+[08-Feb-2021 00:27:38 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[08-Feb-2021 00:27:38 Europe/London] PHP   2. require_once() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:8
+[08-Feb-2021 00:27:38 Europe/London] PHP   3. require_once() /home/xplosive/dancerdates/inc/admin.inc.php:10
+[08-Feb-2021 00:27:38 Europe/London] PHP   4. require_once() /home/xplosive/dancerdates/inc/design.inc.php:11
+[08-Feb-2021 00:27:38 Europe/London] PHP   5. require_once() /home/xplosive/dancerdates/inc/languages.inc.php:22
+[08-Feb-2021 00:27:38 Europe/London] PHP   6. require_once() /home/xplosive/dancerdates/inc/profiles.inc.php:10
+[08-Feb-2021 00:27:38 Europe/London] PHP   7. require_once() /home/xplosive/dancerdates/inc/images.inc.php:10
+[08-Feb-2021 00:27:38 Europe/London] PHP   8. BxTemplConfig->BxTemplConfig() /home/xplosive/dancerdates/inc/params.inc.php:90
+[08-Feb-2021 01:06:53 Europe/London] PHP Fatal error:  Call to undefined method BxDolModule::BxDolModule() in /home/xplosive/dancerdates/modules/misterpopper/googleanalytics/classes/MPGoogleAnalyticsModule.php on line 29
+[08-Feb-2021 01:06:53 Europe/London] PHP Stack trace:
+[08-Feb-2021 01:06:53 Europe/London] PHP   1. {main}() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:0
+[08-Feb-2021 01:06:53 Europe/London] PHP   2. PageCode() /home/xplosive/dancerdates/modules/boonex/ads/classifieds.php:164
+[08-Feb-2021 01:06:53 Europe/London] PHP   3. {closure:/home/xplosive/dancerdates/inc/design.inc.php:110-110}() /home/xplosive/dancerdates/inc/design.inc.php:105
+[08-Feb-2021 01:06:53 Europe/London] PHP   4. eval() /home/xplosive/dancerdates/inc/design.inc.php:110
+[08-Feb-2021 01:06:53 Europe/London] PHP   5. BxDolTemplate->parsePageByName() /home/xplosive/dancerdates/inc/design.inc.php(110) : eval()'d code:25
+[08-Feb-2021 01:06:53 Europe/London] PHP   6. BxDolTemplate->parseHtmlByName() /home/xplosive/dancerdates/inc/classes/BxDolTemplate.php:727
+[08-Feb-2021 01:06:53 Europe/London] PHP   7. BxDolTemplate->getCached() /home/xplosive/dancerdates/inc/classes/BxDolTemplate.php:663
+[08-Feb-2021 01:06:53 Europe/London] PHP   8. eval() /home/xplosive/dancerdates/inc/classes/BxDolTemplate.php:940
+[08-Feb-2021 01:06:53 Europe/London] PHP   9. BxDolTemplate->processInjection() /home/xplosive/dancerdates/inc/classes/BxDolTemplate.php(940) : eval()'d code:57
+[08-Feb-2021 01:06:53 Europe/London] PHP  10. eval() /home/xplosive/dancerdates/inc/classes/BxDolTemplate.php:1971
+[08-Feb-2021 01:06:53 Europe/London] PHP  11. BxDolModule::getInstance() /home/xplosive/dancerdates/inc/classes/BxDolTemplate.php(1971) : eval()'d code:1
+[08-Feb-2021 01:06:53 Europe/London] PHP  12. MPGoogleAnalyticsModule->MPGoogleAnalyticsModule() /home/xplosive/dancerdates/inc/classes/BxDolModule.php:97

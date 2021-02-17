@@ -1,0 +1,12 @@
+<div class="aqb-events-rec-info-block">
+<bx_repeat:recur>  
+  <div class="aqb-events-rec-info-block-item">__title__:&nbsp;<span>__value__</span></div>
+    <bx_if:sub_items>
+		<ul>
+			<bx_repeat:sub_recur>  
+				<div class="aqb-events-rec-info-block-sub-item"><li>__title__&nbsp;-&nbsp;<span>__value__</span></li></div>
+			</bx_repeat:sub_recur>  
+		</ul>
+	</bx_if:sub_items>
+</bx_repeat:recur>
+</div>

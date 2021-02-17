@@ -1,0 +1,28 @@
+div#content
+{
+	position:relative;
+	display:block;
+	Background-color: transparent;
+	background-image: "/templates/tmpl_myEvo/images/sys-bg-main.jpg";
+}
+
+div#ray_chat_content
+{
+	display: block;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width:730px;
+	height:515px;
+	Background-color: transparent;
+	background-image: "/templates/tmpl_myEvo/images/sys-bg-main.jpg";
+}
+.mainWindow {
+	margin-left: auto;
+	margin-right: auto;
+	width: 755px;
+	Background-color: transparent;
+	background-image: "/templates/tmpl_myEvo/images/sys-bg-main.jpg";
+}

@@ -1,0 +1,1 @@
+[16-Feb-2021 07:27:55 Europe/London] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 132177 bytes) in /home/xplosive/dancerdates/inc/classes/BxDolTemplate.php on line 1039

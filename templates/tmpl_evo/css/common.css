@@ -83,7 +83,7 @@ div.thumbnail_image p.thumbnail_image_letter2 {
 	-webkit-border-radius:4px;
 
 	border-color: rgba(0, 0, 0, 0.6);
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.72);
 }
 .disignBoxFirst .boxFirstHeader .dbTitle {
     position: relative;
@@ -91,6 +91,7 @@ div.thumbnail_image p.thumbnail_image_letter2 {
 
     font-weight: bold;
     color: #88abc2;
+    }
 }
 
 /*--- DesignBox Menu ---*/

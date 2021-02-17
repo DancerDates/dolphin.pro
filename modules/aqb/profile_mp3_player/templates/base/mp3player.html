@@ -1,0 +1,50 @@
+<script language="javascript">
+	function aqb_mp3_player_save_settings(oForm) {
+		var oDate = new Date();
+
+		$('#aqb_mp3_player_loading').bx_loading();
+		$.post($(oForm).attr('action'), $(oForm).serialize() + '_t=' + oDate.getTime(), function (sResponse) {
+			$('#aqb_mp3_player_player_block').html(sResponse);
+			$('#aqb_mp3_player_loading').bx_loading();
+		});
+	}
+</script>
+<div class="bx-def-padding" style="position: relative;">
+	<bx_if:settings_form>
+		<form action="__save_settings_url__" onsubmit="aqb_mp3_player_save_settings(this); return false;" id="aqb_mp3_player_settings_form">
+			<table width="99%">
+				<tr>
+					<td>
+						<bx_text:_aqb_profile_mp3_player_play_album />
+					</td>
+					<td style="text-align:right;">
+						<select name="aqb_mp3player_album">
+							<option value=""><bx_text:_aqb_profile_mp3_player_disabled /></option>
+							<bx_repeat:albums>
+								<option value="__album_id__" __selected__>__album_name__</option>
+							</bx_repeat:albums>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="aqb_mp3_player_autoplay_checkbox"><bx_text:_aqb_profile_mp3_player_autoplay /></label><input type="checkbox" __autoplay_checked__ id="aqb_mp3_player_autoplay_checkbox" name="aqb_mp3player_autoplay"/>
+					</td>
+					<td style="text-align:right;">
+						<input type="submit" value="<bx_text:_Save />"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<bx_text:_aqb_profile_mp3_player_embed_code /><input type="text" value='&lt;iframe src="<bx_url_root />modules/?r=aqb_profile_mp3_player/action_popout_player/__profile_id__&amp;embed=true" width="__embed_width__" height="__embed_height__" style="border:none;"&gt;&lt;/iframe&gt;' style="width: 100%;" onclick="this.select()"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</bx_if:settings_form>
+
+	<div id="aqb_mp3_player_player_block">
+		__player__
+	</div>
+	__loading_box__
+</div>

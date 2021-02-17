@@ -1,0 +1,75 @@
+.myTree,
+.myTree ul
+{
+	list-style: none;
+	padding-left: 22px;
+}
+
+.expandImage
+{
+	margin-right: 4px;
+    float:left;
+}
+.folderImage
+{
+    float:left;
+    border:none;
+}
+.textHolder
+{
+	height: 16px;
+	line-height: 16px;
+	/*padding-left: 6px;*/
+}
+span.dropOver
+{
+	background-color: #00c;
+	color: #fff;
+	height: 16px;
+	line-height: 16px;
+	padding-left: 6px;
+}
+.treeItem
+{
+	list-style: none;
+    cursor: pointer;
+}
+
+
+.activeTree {
+    width:10000px;
+}
+
+.activeTree li ul li.treeItem {
+    float:left;
+}
+
+.activeTree li ul li.treeItem ul li {
+    float:none;
+}
+
+.inactiveTree, .builder_actions {
+    width:7000px;
+}
+
+.inactiveTree li {
+    /*width:auto;*/float:left;
+}
+
+.inactiveTree .downIcon, .inactiveTree .upIcon {
+    display:none;
+}
+/*.topLevel {
+    width:auto;float:left;
+}*/
+
+
+.saver, .backup, .restore {
+    line-height:40px;
+    margin:10px;
+    padding:10px;
+    border:1px solid #CCCCCC;
+    background-color: #e6eee9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}

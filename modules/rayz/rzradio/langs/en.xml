@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<items>
+	<item key="_name_"><![CDATA[English]]></item>
+
+	<item key="dlgBrowse"><![CDATA[Browse]]></item>
+	<item key="dlgSearch"><![CDATA[Search]]></item>
+	<item key="dlgFeatured"><![CDATA[Featured]]></item>
+	<item key="dlgFavorites"><![CDATA[Favorites]]></item>
+	<item key="dlgCategoryNew"><![CDATA[New Category]]></item>
+	<item key="dlgNewCategory"><![CDATA[New Category]]></item>
+	<item key="dlgCategoryEdit"><![CDATA[Edit Category]]></item>
+	<item key="dlgCategoryTitle"><![CDATA[Title:]]></item>
+	<item key="dlgCategoryImage"><![CDATA[Image:]]></item>
+	<item key="dlgSettings"><![CDATA[Settings]]></item>
+	<item key="dlgMenu"><![CDATA[Menu Location:]]></item>
+	<item key="dlgMenuHide"><![CDATA[Enable Menu autohiding:]]></item>
+	<item key="dlgMenuHint"><![CDATA[Display Menu hints:]]></item>
+	<item key="dlgSearchCaption"><![CDATA[Search keywords:]]></item>
+	<item key="dlgRemoveIdle"><![CDATA[Automatically remove idle radios:]]></item>
+	<item key="dlgGuestPlay"><![CDATA[Allow guests playing radios:]]></item>
+	<item key="dlgMinCatItems"><![CDATA[Min number of category items:]]></item>
+	<item key="dlgVolume"><![CDATA[Volume:]]></item>
+	
+	<item key="btnOk"><![CDATA[OK]]></item>
+	<item key="btnCancel"><![CDATA[Cancel]]></item>
+	<item key="btnSearch"><![CDATA[Search]]></item>
+	<item key="btnEdit"><![CDATA[Edit]]></item>
+	<item key="btnUp"><![CDATA[Move Up]]></item>
+	<item key="btnDown"><![CDATA[Move Down]]></item>
+	<item key="btnBrowse"><![CDATA[Browse]]></item>
+	<item key="btnSave"><![CDATA[Save]]></item>
+	<item key="btnRemove"><![CDATA[Remove]]></item>
+	<item key="btnApply"><![CDATA[Apply]]></item>
+	<item key="btnFavorite"><![CDATA[Add to Favorites]]></item>
+	<item key="btnFeatured"><![CDATA[Add to Featured]]></item>
+	<item key="btnPopup"><![CDATA[Open in popup-window]]></item>
+	
+	<item key="menuBottom"><![CDATA[Bottom]]></item>
+	<item key="menuTop"><![CDATA[Top]]></item>
+	<item key="menuLeft"><![CDATA[Left]]></item>
+	<item key="menuRight"><![CDATA[Right]]></item>
+
+	<item key="msgGuestPlay"><![CDATA[Radio playing is available only for registered users. Click OK to register now.]]></item>
+	<item key="msgConnectionError"><![CDATA[Connection error]]></item>
+    <item key="msgLoading"><![CDATA[LOADING ...]]></item>
+    <item key="msgPlayError"><![CDATA[Error playing radio.]]></item>
+    <item key="msgErrorGetItems"><![CDATA[Error getting radios.]]></item>
+
+	<item key="txtHome"><![CDATA[Home]]></item>
+	<item key="txtSearch"><![CDATA[Search]]></item>
+	<item key="txtNoItems"><![CDATA[NO RADIOS]]></item>
+	<item key="txtNoCategories"><![CDATA[NO CATEGORIES]]></item>
+	<item key="txtSearchNoItems"><![CDATA[NO RADIOS FOUND]]></item>
+</items>

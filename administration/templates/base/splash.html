@@ -6,9 +6,9 @@
         if ('undefined' == typeof(tinyMCE))
             return;
         if($(oCheckbox).is(':checked'))
-        	tinyMCE.execCommand('mceAddEditor', false, sEditorId);
+        	tinyMCE.execCommand('mceAddControl', true, sEditorId);
         else
-        	tinyMCE.execCommand('mceRemoveEditor', false, sEditorId);
+        	tinyMCE.execCommand('mceRemoveControl', false, sEditorId);
     }
     </script>
 </div>

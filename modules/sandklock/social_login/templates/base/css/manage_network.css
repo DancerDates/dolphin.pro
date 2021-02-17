@@ -1,0 +1,41 @@
+div.network_caption {
+    float: left !important;
+}
+
+div.network_logo{
+    display: inline-block;
+	padding: 0 15px 0 0 !important;
+}
+
+div.network_name{
+	display: inline-block;
+	margin-left: 0px;
+	font-weight: bold;
+}
+
+div.network_updating{
+	float:right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+div.network_status{
+	float: right;
+	margin-right: 20px;
+	font-weight: bold;
+	line-height: 32px;
+}
+div.network+div.network{
+	border-top: 1px solid #CCC;
+}
+	
+div.network_block {
+	display: block;
+	height: 32px;
+	padding: 5px 0 7px 10px;
+}
+
+div.network_block:hover{
+	background-color: #EDEFF4;
+	cursor: move;
+}

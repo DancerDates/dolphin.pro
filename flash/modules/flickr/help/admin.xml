@@ -1,0 +1,30 @@
+<topics>
+	<topic id="help">
+		<title><![CDATA[Using Help]]></title>
+		<contents><![CDATA[This documentation contains a great deal of information that describes the application capabilities and user guidelines. The whole documentation consists of a number of topics covering all available features.]]></contents>
+	</topic>
+	<topic id="about">
+		<title><![CDATA[About Internet Photos]]></title>
+		<contents><![CDATA["Internet Photos" is a Ray widget (Flash application), developed by <a href="http://rayzzz.com/redirect.php?action=author&widget=#widget#&domain=#domain#" target="_blank"><font color="#0000CC"><u>Rayz</u></font></a>. It uses <a href="http://flickr.com/" target="_blank"><font color="#0000CC"><u>flickr.com</u></font></a> API to search for photos. You can easily get this widget for your own site (<a href="http://rayzzz.com/redirect.php?action=about&widget=#widget#&domain=#domain#&type=free" target="_blank"><font color="#0000CC"><u>limited</u></font></a> or <a href="http://rayzzz.com/redirect.php?action=about&widget=#widget#&domain=#domain#&type=paid" target="_blank"><font color="#0000CC"><u>full version</u></font></a>). For questions and bug reports contact me at <a href="mailto:contact@rayzzz.com?subject=#widget#"><font color="#0000CC"><u>contact@rayzzz.com</u></font></a>.]]></contents>
+	</topic>
+	<topic id="APIkey">
+		<title><![CDATA[Getting API key]]></title>
+		<contents><![CDATA[If you are getting "Bad API key" error while searching for photos you should get new API key instead of existing one. You should go to <a href="http://flickr.com/signup/" target="_blank"><font color="#0000CC"><u>flickr.com</u></font></a> and register a new account. After your account is activated login to flickr.com and navigate to <a href="http://www.flickr.com/services/api/keys/apply/" target="_blank"><font color="#0000CC"><u>Flickr Services</u></font></a> page, carefully fill out the form (leave "Non-commercial use" radio button selected) and submit it. Then you will get your API key, which you should insert for "Flickr API key" in Flickr Settings via Ray Base.]]></contents>
+	</topic>
+	<topic id="browse">
+		<title><![CDATA[Browsing Photos]]></title>
+		<contents><![CDATA[The application contains the list of available categories list. Clicking on category will open photos list related to this Category.<BR>Every Photo icon displays photo thumbnail, current rating (from 1 to 5) and extra buttons:<br><li>"View Original Size" opens current photo in new browser window with its original size (if it's provided) and therefore you can save it to your hard drive from there.</li>While hovering over the Photo, you can see extra information about it as a tooltip. It contains information about Photo title, nickname of your site user who shared the Photo, nickname of the user who published this Photo to <a href="http://flickr.com" target="_blank"><font color="#0000CC"><u>flickr.com</u></font></a>, current rating, number of times this Photo was viewed by site members and visitors, addition date and tags.<BR>Clicking any Photo icon will open it for viewing.]]></contents>
+	</topic>
+	<topic id="player">
+		<title><![CDATA[Viewing Photo]]></title>
+		<contents><![CDATA[After you select any Photo for viewing, it will be opened with larger size in the Photo viewer. You can also see this Photo by clicking "View Original Size" button on Photo icon.]]></contents>
+	</topic>
+	<topic id="newCat">
+		<title><![CDATA[Adding New Categories]]></title>
+		<contents><![CDATA[Clicking the "New Category" button at the top left corner of the application window will show the "Adding Category" dialog. This dialog will ask you to enter values for the Category title, description and contents details (initially the category will have a standard icon. You can change it later by clicking on "Image" icon of the category). For contents details you should select type of contents (tag or user). Selecting "tag" or "user" types will ask you to enter additional values for searching criterias (as you have already guessed this category will use your criterias to search photos at flickr.com and retrieve it automatically to users). After you have filled in all the fields, click the "Save" button. If everything is OK, a new Category will be added to the list.]]></contents>
+	</topic>
+	<topic id="editCat">
+		<title><![CDATA[Editing Categories]]></title>
+		<contents><![CDATA[Clicking the "Edit" button on Category will show the "Editing Category" dialog. This dialog is almost the same as "Adding Category" one. You can change category title and description there. After you have filled in all the fields, click the "Save" button. If everything is OK, the changes will be applied.]]></contents>
+	</topic>
+</topics>

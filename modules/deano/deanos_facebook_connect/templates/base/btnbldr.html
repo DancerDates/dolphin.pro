@@ -1,0 +1,161 @@
+<form method="post" action="__save_url__">
+  <table cellpadding="0" cellspacing="0" class="main_table">
+    <tr>
+      <td colspan="5" align="center" bgcolor="#005782" height="32"><table border="0" width="100%" class="sub_table" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><table border="0" class="sub_table" style="color: #FFFFFF">
+                <tr>
+                  <td>Enabled:</td>
+                  <td><input name="loginbox_enabled" type="checkbox" value="checked" __enabled__></td>
+                </tr>
+              </table></td>
+            <td width="20">&nbsp;</td>
+            <td width="450" nowrap><table border="0" class="sub_table" style="color: #FFFFFF;__display_pos__">
+                <tr>
+                  <td>x-pos:</td>
+                  <td><input name="xpos" type="text" id="left_image_name___button_id__0" value="__xpos__" size="4"></td>
+                  <td>px from</td>
+                  <td><select id="xpos___button_id__" size="1" name="xdirection">
+                      <option value="right">right</option>
+                      <option value="left">left</option>
+                    </select></td>
+                  <td width="20">&nbsp;</td>
+                  <td>y-pos:</td>
+                  <td><input name="ypos" type="text" id="left_image_name___button_id__1" value="__ypos__" size="4"></td>
+                  <td>px from</td>
+                  <td><select id="ypos___button_id__" size="1" name="ydirection">
+                      <option value="top">top</option>
+                      <option value="bottom">bottom</option>
+                    </select></td>
+                </tr>
+              </table></td>
+            <td width="20">&nbsp;</td>
+            <td align="center"><input type="submit" value="Save Settings" name="save" /></td>
+          </tr>
+        </table></td>
+    <tr>
+      <td align="center" bgcolor="#F4FCFF" colspan="3"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="sub_table">
+          <tr id="button_sections_row___button_id__">
+            <td align="center" bgcolor="#F4FCFF" width="33%"><img border="0" src="__button_left__"></td>
+            <td align="center" bgcolor="#F4FCFF" width="33%"><img border="0" src="__button_center__"></td>
+            <td align="center" bgcolor="#F4FCFF" width="33%"><img border="0" src="__button_right__"></td>
+          </tr>
+        </table></td>
+      <td bgcolor="#F4FCFF" nowrap><table border="0" cellpadding="0" cellspacing="0" class="sub_table">
+          <tr>
+            <td width="145" align="right">Language Key:&nbsp;</td>
+            <td><input name="languagekey" type="text" value="__language_key__" size="24"></td>
+          </tr>
+        </table></td>
+      <td align="center" bgcolor="#F4FCFF"><strong>Button Preview</strong></td>
+    </tr>
+    <tr>
+      <td align="center" bgcolor="#F4FCFF"><a href="javascript: void(0);" onclick="$('#updateleftrow___button_id__').show();$('#updatecenterrow___button_id__').hide();$('#updaterightrow___button_id__').hide();">Left Side</a></td>
+      <td align="center" bgcolor="#F4FCFF"><a href="javascript: void(0);" onclick="$('#updatecenterrow___button_id__').show();$('#updateleftrow___button_id__').hide();$('#updaterightrow___button_id__').hide();">Center</a></td>
+      <td align="center" bgcolor="#F4FCFF"><a href="javascript: void(0);" onclick="$('#updaterightrow___button_id__').show();$('#updateleftrow___button_id__').hide();$('#updatecenterrow___button_id__').hide();">Right Side</a></td>
+      <td bgcolor="#F4FCFF" nowrap><table border="0" cellpadding="0" cellspacing="0" class="sub_table">
+          <tr>
+            <td width="145" align="right">Language Key Text:&nbsp;</td>
+            <td><input name="keytext" type="text" value="__language_key_text__" size="24"></td>
+          </tr>
+        </table></td>
+      <td bgcolor="#F4FCFF" id="button_preview"><div align="center">
+          <table cellpadding="0" cellspacing="0" class="sub_table">
+            <tr id="button_preview_row___button_id__">
+              <td style="background-image: url(__button_left__);background-repeat: no-repeat;" width="__left_width__" height="__height__"></td>
+              <td style="background-image: url(__button_center__);background-repeat: repeat-x;" height="__height__"><div class="buttontext" style="min-width: __min_adjusted_width__px; font-size: __font_size__px; color: __font_color__; font-weight: __font_weight__; font-family: __font_family__">__language_key_text__</div></td>
+              <td style="background-image: url(__button_right__);background-repeat: no-repeat;" width="__right_width__" height="__height__"></td>
+            </tr>
+          </table>
+        </div></td>
+    </tr>
+    <tr id="updateleftrow___button_id__" style="display: none;">
+      <td bgcolor="#FFFFD2" colspan="5" ><table class="sub_table" border="0">
+          <tr>
+            <td>Left side image:</td>
+            <td><input id="left_image_name___button_id__" class="inputplain" type="text" name="left_image_name" size="24" value="button_lg_left.png" readonly></td>
+            <td><input type="button" value="Cancel" name="Cancell" onclick="$('#updateleftrow___button_id__').hide()"></td>
+            <td><input type="button" value="Select Image" name="selectleft" onclick="showPopupSelect('__button_id__','left_image_name___button_id__')"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr id="updatecenterrow___button_id__" style="display: none;">
+      <td bgcolor="#FFFFD2" colspan="5" ><table class="sub_table" border="0">
+          <tr>
+            <td>Center image:</td>
+            <td><input id="center_image_name___button_id__" class="inputplain" type="text" name="center_image_name" size="24" value="button_lg_center.png" readonly></td>
+            <td><input type="button" value="Cancel" name="Cancelc" onclick="$('#updatecenterrow___button_id__').hide()"></td>
+            <td><input type="button" value="Select Image" name="selectcenter" onclick="showPopupSelect('__button_id__','center_image_name___button_id__')"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr id="updaterightrow___button_id__" style="display: none;">
+      <td bgcolor="#FFFFD2" colspan="5" ><table class="sub_table" border="0">
+          <tr>
+            <td>Right side image:</td>
+            <td><input id="right_image_name___button_id__" class="inputplain" type="text" name="right_image_name" size="24" value="button_lg_right.png" readonly></td>
+            <td><input type="button" value="Cancel" name="Cancelr" onclick="$('#updaterightrow___button_id__').hide()"></td>
+            <td><input type="button" value="Select Image" name="selectright" onclick="showPopupSelect('__button_id__','right_image_name___button_id__')"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td id="left_image_name_wtd___button_id__" bgcolor="#F4FCFF" width="74" align="center" nowrap>Width: __left_width__px</td>
+      <td id="center_image_name_wtd___button_id__" bgcolor="#F4FCFF" width="74" align="center" nowrap>Width: __center_width__px</td>
+      <td id="right_image_name_wtd___button_id__" bgcolor="#F4FCFF" width="74" align="center" nowrap>Width: __right_width__px</td>
+      <td id="height_td___button_id__" bgcolor="#F4FCFF">&nbsp;Height: __height__px </td>
+      <td bgcolor="#F4FCFF" align="center"><table border="0" class="sub_table">
+          <tr>
+            <td>Min Width:</td>
+            <td><input type="text" name="min_width" size="4" value="__min_width__"></td>
+            <td>px</td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td colspan="5" bgcolor="#F4FCFF"><table border="0" class="sub_table">
+          <tr>
+            <td>Font-Size:</td>
+            <td><input type="text" name="font_size" size="8" value="__font_size__"></td>
+            <td>px</td>
+            <td width="20">&nbsp;</td>
+            <td>Font-Family</td>
+            <td><select id="ff___button_id__" size="1" name="font_family">
+                <option value="&quot;Arial Black&quot;, Gadget, sans-serif">"Arial Black", Gadget, sans-serif </option>
+                <option value="Impact, Charcoal, sans-serif">Impact, Charcoal, sans-serif </option>
+                <option value="Tahoma, Geneva, sans-serif">Tahoma, Geneva, sans-serif </option>
+                <option value="Verdana, Geneva, sans-serif">Verdana, Geneva, sans-serif </option>
+                <option value="&quot;Comic Sans MS&quot;, cursive, sans-serif">"Comic Sans MS", cursive, sans-serif </option>
+                <option value="&amp;quot;Courier New&amp;quot;, Courier, monospace">&quot;Courier New&quot;, Courier, monospace </option>
+                <option value="&quot;Lucida Console&quot;, Monaco, monospace">"Lucida Console", Monaco, monospace </option>
+                <option value="&quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif">"Lucida Sans Unicode", "Lucida Grande", sans-serif </option>
+                <option value="&quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif">"Palatino Linotype", "Book Antiqua", Palatino, serif </option>
+                <option value="&quot;Times New Roman&quot;, Times, serif">"Times New Roman", Times, serif </option>
+                <option value="&quot;Trebuchet MS&quot;, Helvetica, sans-serif">"Trebuchet MS", Helvetica, sans-serif </option>
+                <option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif </option>
+                <option value="Georgia, serif">Georgia, serif</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td>Font-Weight:</td>
+            <td><select id="fw___button_id__" size="1" name="font_weight">
+                <option value="normal">normal</option>
+                <option value="bold">bold</option>
+              </select></td>
+            <td>&nbsp;</td>
+            <td width="20">&nbsp;</td>
+            <td>Font-Color:</td>
+            <td><input type="text" name="font_color" size="12" value="__font_color__"></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+  <input type="hidden" name="buttonid" value="__button_id__">
+  <input type="hidden" name="buttonname" value="__button_name__">
+</form>
+<script>
+$('#ff_'+__button_id__).val('__font_familyq__');
+$('#fw_'+__button_id__).val('__font_weight__');
+$('#xpos_'+__button_id__).val('__xdirection__');
+$('#ypos_'+__button_id__).val('__ydirection__');
+</script>

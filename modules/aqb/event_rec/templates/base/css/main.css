@@ -1,0 +1,168 @@
+/***************************************************************************
+* 
+*     copyright            : (C) 2009 AQB Soft
+*     website              : http://www.aqbsoft.com
+*      
+* IMPORTANT: This is a commercial product made by AQB Soft. It cannot be modified for other than personal usage.
+* The "personal usage" means the product can be installed and set up for ONE domain name ONLY. 
+* To be able to use this product for another domain names you have to order another copy of this product (license).
+* 
+* This product cannot be redistributed for free or a fee without written permission from AQB Soft.
+* 
+* This notice may not be removed from the source code.
+* 
+***************************************************************************/
+
+div.aqb-event-rec-area{
+	position: relative;
+	overflow:hidden;
+	display:inline-block;
+	margin-left:30%;
+}
+
+div.aqb-event-rec-app-area{
+	position: relative;
+	overflow:hidden;	
+	position:relative;
+	margin:10px;
+}
+
+div.aqb-event-rec-app-area span{
+	font-weight:bold;	
+}
+
+table.aqb-event-rec-table td{
+	height:auto;
+	border:0px;	
+}
+table.aqb-event-rec-table {
+	border-bottom:1px solid #dadada;
+}
+
+table.aqb-event-rec-table tr{
+	height:30px;
+}
+
+div.aqb-event-rec-select-area{
+	float: left; 
+	position: relative; 
+	margin-right: 10px;
+	overflow:hidden;
+}
+
+div.aqb-event-rec-block{
+	position: relative; 
+	overflow:hidden;
+	margin-top:10px;	
+}
+
+div.aqb-event-recurrance-pattern-weeks{
+	display:inline-block;
+	text-align:center;
+	vertical-align: middle;
+}
+table.aqb-event-recurrance-pattern-table td:first-child{
+	border-right:1px solid #dadada;
+}
+
+table.aqb-event-recurrance-range-table {
+	border-bottom:1px solid #dadada;
+}
+
+#aqb-week-days{
+	white-space: normal;
+	margin:10px;
+}
+
+#aqb-repeat{
+	display:inline-block;	
+	vertical-align: middle;
+	margin-left:10px;
+}
+
+.aqb-block-inline {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+td.aqb-event-recurrance-range-empty-td {
+	/*height: 25px;*/
+	border-bottom:0px;
+	padding:0px;
+}
+
+table.aqb-event-recurrance-range-table td{
+	border:0px;
+	padding:8px 0 0 4px;
+}
+
+table.aqb-event-recurrance-range-table td.aqb-event-recurrance-range-td{
+	padding:0px;	
+}
+
+div.aqb-event-rec-panel{
+	overflow:hidden;
+	margin:5px;
+	width:auto;
+}
+
+div.aqb-event-rec-panel-select-area div{
+	margin:3px;
+}
+
+div.aqb-event-rec-panel-show{
+	display:block;	
+}
+
+div.aqb-event-rec-panel-hide{
+	display:none;	
+}
+
+table.aqb-event-rec-panel-standard-fields td{
+	border:none;
+}
+
+div.aqb-event-rec-panel-sub{
+	overflow:hidden;
+	position:relative;
+}
+
+div.aqb-events-rec-info-block{
+	overflow:hidden;
+	position:relative;
+}
+
+div.aqb-events-rec-info-block-item{
+	overflow:hidden;
+	width:100%;
+	float:left;
+	margin:5px;
+}
+div.aqb-events-rec-info-block-item span{
+	font-weight:bold;
+}
+
+div.aqb-events-rec-info-block-sub-item{
+	float: left;	
+    width: 100%;	
+}
+
+div.aqb-events-rec-info-block-sub-item span{
+	font-weight:bold;	
+}
+
+div.aqb-event-recurrance-pattern-days-number{
+   overflow:hidden;
+   position:relative;
+   margin-left:10px;
+}
+
+div.aqb-event-recurrance-pattern-only-start-day{
+    float: left;
+    font-style: oblique;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: underline;
+    vertical-align: middle;
+}

@@ -1,0 +1,24 @@
+	
+	<div id="network_ui">
+	<bx_repeat:networks>
+		
+		<div id="network___name__" class="network">
+			<div class="network_block">
+				<div class="network_logo"><img src="__image_url__" width="32px" height="32px"/></div>
+				<div class="network_name">__name__</div>
+				<div class="network_status" id="sk___name__">__status__</div>
+				<div class="network_updating" id="sk___name___updating" style="display:none">
+					<img src="__loading_image__" />
+				</div>
+				<script type="text/javascript">
+					$('#sk___name__').iphoneSwitch("__status__", function() {
+						enableProvider('__name__', 'enabled');
+					}, function() {
+						enableProvider('__name__', 'disabled');
+					});
+				</script>
+					</div>
+		</div>
+		
+	</bx_repeat:networks>
+	</div>

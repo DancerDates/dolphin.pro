@@ -4,7 +4,7 @@ aRayApps["global"]["admin"] = {"params": new Array('nick', 'password'), "top": 0
 //global end
 //im begin
 aRayApps["im"] = new Array();
-aRayApps["im"]["user"] = {"params": new Array('sender', 'password', 'recipient'), "top": 0, "left": 0, "width": 550, "height": 500, "resizable": 1};
+aRayApps["im"]["user"] = {"params": new Array('sender', 'password', 'recipient'), "top": 0, "left": 0, "width": 600, "height": 600, "resizable": 1};
 //im end
 //mp3 begin
 aRayApps["mp3"] = new Array();
@@ -28,4 +28,10 @@ aRayApps["video"]["recorder"] = {"params": new Array('user', 'password', 'extra'
 aRayApps["video_comments"] = new Array();
 aRayApps["video_comments"]["player"] = {"params": new Array('id', 'user', 'password'), "top": 0, "left": 0, "width": 350, "height": 400, "resizable": 0};
 aRayApps["video_comments"]["recorder"] = {"params": new Array('user', 'password', 'extra'), "top": 0, "left": 0, "width": 350, "height": 400, "resizable": 0};
-//video_comments end
+//video_comments end//flickr begin
+aRayApps["flickr"] = new Array();
+aRayApps["flickr"]["browse"] = {"params": new Array('user', 'password'), "top": 0, "left": 0, "width": 755, "height": 650, "resizable": 0};
+aRayApps["flickr"]["user"] = {"params": new Array('mode', 'user', 'password', 'member'), "top": 0, "left": 0, "width": 755, "height": 650, "resizable": 0};
+aRayApps["flickr"]["search"] = {"params": new Array('user', 'password'), "top": 0, "left": 0, "width": 755, "height": 650, "resizable": 0};
+aRayApps["flickr"]["admin"] = {"params": new Array('nick', 'password'), "top": 0, "left": 0, "width": 755, "height": 550, "resizable": 0};
+//flickr end\n

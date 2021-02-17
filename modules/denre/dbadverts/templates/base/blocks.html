@@ -1,0 +1,35 @@
+<form id="db_adverts_admin_form" method="post">
+<table id="myTable" class="tablesorter">
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th class="page">Page</th>
+      <th class="title">Caption</th>
+      <th>Column</th>
+      <th>Order</th>
+      <th>DesignBox</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+   <bx_repeat:message_list>
+    <tr>
+      <td><input type="checkbox" value="__id__" name="entry[]"/></td>
+      <td>__page__</td>
+      <td class="title">__caption__</td>
+      <td>__column__</td>
+      <td>__order__</td>
+      <td>__design_box__</td>
+      <td>__edit__</td>
+    </tr>
+   </bx_repeat:message_list>
+  </tbody>
+</table>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function()
+        {
+            $("#myTable").tablesorter({headers:{0:{sorter:false}},sortList:[[1,0]],widgets:['zebra'],widgetOptions:{zebra:["normal-row","alt-row"]}});
+        }
+    );
+</script>
+

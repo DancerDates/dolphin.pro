@@ -1,0 +1,28 @@
+<div id="db_adverts_container__random__">
+    <div id="db_adverts_space__random__">
+        <center><h2>Advertise here</h2></center>
+<script type="text/javascript">
+$(document).ready(function (){
+    var block = document.getElementById("db_adverts_space__random__");
+    var blockTextRectangle = block.getBoundingClientRect();
+    var box_top = blockTextRectangle.top;
+    var box_left = blockTextRectangle.left
+    var box_right = blockTextRectangle.right;
+    var screen_height = $(window).height();
+
+    $.ajax({
+        url: "__ajax_url__",
+        type: "GET",
+        data: "ajax=advert&screen=" + screen_height + "&block_top=" + box_top + "&block_left=" + box_left + "&block_right=" + box_right + "&ad_type=__type__&ad_page=__page__",
+        success: function(data, textStatus, jqXHR){
+            $("#db_adverts_space").remove();
+            $("#db_adverts_container__random__").html(data);
+        },
+        error: function (jqXHR, textStatus, errorThrown){
+            //alert(errorThrown);
+        }
+    });
+});
+</script>
+    </div>
+</div>

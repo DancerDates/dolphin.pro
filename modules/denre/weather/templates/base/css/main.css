@@ -1,0 +1,29 @@
+.weather
+{
+    font-size: 14px;
+    padding: 20px;
+}
+
+.weather_head
+{
+    margin-bottom: 20px;
+}
+
+.weather_left
+{
+    float: left;
+    width: 50%;
+}
+
+.weather_pic
+{
+    float: left;
+}
+
+.weather_temp
+{
+    float: left;
+    font-size: 30px;
+    line-height: 50px;
+}
+

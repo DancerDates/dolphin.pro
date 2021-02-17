@@ -1,0 +1,17 @@
+<div class="bx-def-bc-padding">
+   <div><b>__percent__</b>% <bx_text:_modzzz_pcheck_profile_completeness /></div>
+   <div class="clear_both"></div>
+   <div class="modzzz_pcheck_outer_padding">
+   		<div class="progress_bar" style="width:__percent__%"></div>
+   </div>
+   <div class="clear_both"></div> 
+   <bx_if:show_next>
+	    <b><bx_text:_modzzz_pcheck_next />:</b> + __next_field_name__ (+__next_field_weight__%)
+        <div class="clear_both"></div>
+   </bx_if:show_next> 
+   <bx_if:edit_profile>
+	   <div class="modzzz_pcheck_link">
+			<a href="pedit.php?ID=__id__"><bx_text:_modzzz_pcheck_update_profile /></a>
+	   </div>
+   </bx_if:edit_profile>
+</div>

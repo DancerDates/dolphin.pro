@@ -1,0 +1,123 @@
+<style>
+	.sk_posting_tabs{
+		margin:0;
+		list-style:none;
+		padding-left:0px;
+	}
+	.sk_posting_tab{
+        display: table-cell;
+		background-color:#666;
+		padding:10px;
+        width: 1%;
+        text-align: center;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		-moz-border-radius-topleft: 15px;
+		-moz-border-radius-topright: 15px;
+		-webkit-border-top-left-radius:: 15px;
+		-webkit-border-top-right-radius: 15px;
+        cursor: pointer;
+	}
+	.sk_posting_tab a{
+		color:white;
+	}
+	.sk_posting_tab a:hover{
+		text-decoration:none;
+		font-weight:bold;
+	}
+	.sk_posting_tab:hover{
+		background-color:#C5C5C5;		
+	}
+	.sk_posting_tab+.sk_posting_tab{
+	}
+	.sk_cell{
+		float:left;
+		line-height:32px;
+	}
+	.sk_cell:nth-child(1){
+		width:32px;
+	}
+	.sk_cell:nth-child(2){
+		margin-left:20px;
+		width:300px;
+	}
+	.sk_cell:nth-child(3){
+		float:right;
+		width:400px;
+		text-align:right;
+	}
+	.sk_tab_selected{
+		background-color:#C5C5C5;		
+	}
+</style>
+<div>
+
+	<ul class="sk_posting_tabs">
+		<bx_repeat:networks>
+		<li class="sk_posting_tab"><a id="__default_tab__"  href="javascript:void(0)" rel="sk_posting___name__">__caption__</a></li>
+		</bx_repeat:networks>
+		<li class="sk_posting_tab"><a id="__other_default_tab__" href="javascript:void(0)" rel="sk_posting_other">__other_text__</a></li>
+		<div class="clear_both"></div>
+	</ul>
+	
+	<bx_repeat:forms>
+		<div class="sk_posting_tab_content" id="sk_posting___network__">
+			__html_form__ 
+		</div>
+	</bx_repeat:forms>
+	
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.sk_posting_tabs .sk_posting_tab').click(function(){
+			switch_tabs($(this).children('a'));
+		});
+		
+		switch_tabs($('#default_tab'));
+		
+		var aNetwork = ['tumblr','linkedin','twitter','plurk','lastfm','mailru','facebook','auto_publish','no_ask'];
+		for(var i=0;i < aNetwork.length; i++){
+			select_all(aNetwork[i]);
+		}
+		
+	});
+	function select_all(network){
+		if(network == 'auto_publish' || network == 'no_ask'){
+            var ele = "";
+            if(network == 'auto_publish')
+                ele = $('#sk_posting_other input[type=\'checkbox\'][value=\'all_auto_publish\']');
+            else
+                ele = $('#sk_posting_other input[type=\'checkbox\'][value=\'all_no_ask\']');
+            
+			ele.change(function(){
+                if(network == 'auto_publish')
+                    var eles = $('#sk_posting_other input[name=\'action[]\']:even');
+                else
+                    var eles = $('#sk_posting_other input[name=\'action[]\']:odd');
+                if(ele.prop('checked'))
+                    eles.prop('checked', true);
+                else
+                    eles.prop('checked', false);
+			});
+			
+		}else{
+			var ele = $('#sk_posting_' + network + ' input[type=\'checkbox\'][value=\'all_enable\']');
+			ele.change(function(){
+                var eles = $('#sk_posting_' + network + ' input[name=\'action[]\']');
+				if(ele.prop('checked'))
+					eles.prop('checked',true);
+				else
+					eles.prop('checked',false);
+			});
+		}
+	}
+	function switch_tabs(obj){
+		$('.sk_posting_tab_content').hide();
+		obj.parent().parent().find('li').removeClass('sk_tab_selected');
+		var id = obj.attr('rel');
+		$('#'+id).show();
+		obj.parent().addClass('sk_tab_selected');
+	}
+	
+</script>

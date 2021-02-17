@@ -1,0 +1,57 @@
+<script type="text/javascript">
+	function AutoBox()
+	{
+		// call the parent constructor ;
+		//this.constructor(); 
+	}
+
+	// inheritance ;
+	//AutoBox.prototype = MailBox.prototype;
+
+	// add some function to the object ;
+ 
+	AutoBox.prototype.AutoComplete = function()
+	{ 
+
+	 /*
+		// get nicknames list ;
+		$("#profile_nick").autocomplete('__url__?ajax_mode=true&action=auto_complete', {
+			width: 260,
+			selectFirst: false
+		});	
+*/
+	}
+
+	// create the object;
+	var oAutoBox = new AutoBox();
+	
+	$(document).ready(function () {
+		oAutoBox.AutoComplete();
+	});
+
+
+	function bindAuto(){
+
+		if($("#select_type").val()=='external'){
+		 
+			$("#profile_nick").autocomplete = null;	
+		}else{ 
+			// get nicknames list ;
+			$("#profile_nick").autocomplete('__url__?ajax_mode=true&action=auto_complete', {
+				width: 260,
+				selectFirst: false
+			});	
+		}
+
+	}
+
+</script>
+
+
+
+
+
+
+
+
+

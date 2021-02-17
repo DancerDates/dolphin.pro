@@ -1,0 +1,39 @@
+<style>
+	.sk_cell{
+		float:left;
+		line-height:32px;
+	}
+	.sk_cell:nth-child(1){
+		width:32px;
+	}
+	.sk_cell:nth-child(2){
+		margin-left:20px;
+		width:300px;
+	}
+	.sk_cell:nth-child(3){
+		float:right;
+		width:400px;
+		text-align:right;
+	}
+</style>
+
+<div class="bx-def-border">
+
+	<bx_repeat:networks>
+		<div class="bx-def-padding-sec">
+			<div class="sk_cell">
+				<img src="__img_src__">
+			</div>
+			<div class="sk_cell">
+				__name__
+			</div>
+			<div class="sk_cell">
+				__connect_link__
+			</div>
+			<div class="clear_both"></div>
+		</div>
+		<div class="bx-def-hr">
+		</div>
+	</bx_repeat:networks>
+
+</div>

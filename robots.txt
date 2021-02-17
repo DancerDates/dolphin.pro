@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /inc/
+Disallow: /cache/
+Disallow: /cache_public/
+Sitemap: https://www.dancerdates.net/sitemap.xml

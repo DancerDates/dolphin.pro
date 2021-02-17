@@ -1,0 +1,65 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<items>
+	<item key="_name_"><![CDATA[English]]></item>
+
+	<item key="menuPreferences"><![CDATA[Preferences]]></item>
+	<item key="menuLanguages"><![CDATA[Languages]]></item>
+	<item key="menuSkins"><![CDATA[Templates]]></item>
+	<item key="menuShowHints"><![CDATA[Show Hints]]></item>
+	<item key="menuHelp"><![CDATA[Help]]></item>
+	<item key="menuSearch"><![CDATA[Search]]></item>
+
+	<item key="btnOk"><![CDATA[OK]]></item>
+	<item key="btnCancel"><![CDATA[Cancel]]></item>
+	<item key="btnSearch"><![CDATA[Search]]></item>
+	<item key="btnExport"><![CDATA[Export]]></item>
+
+	<item key="msgConnectionError"><![CDATA[Connection error]]></item>
+    <item key="msgAuthorizing"><![CDATA[Authorizing ...]]></item>
+    <item key="msgAuthorizingError"><![CDATA[Authorization failed]]></item>
+    <item key="msgAuthNeeded"><![CDATA[This feature for authorized members only.]]></item>
+    <item key="msgLoading"><![CDATA[Loading ...]]></item>
+	<item key="msgSearching"><![CDATA[Searching ...]]></item>
+	<item key="msgExporting"><![CDATA[Exporting ...]]></item>
+	<item key="msgShareConfirm"><![CDATA[Are you sure you want to share this photo?]]></item>
+	<item key="msgApplyChanges"><![CDATA[Changes will be applied after reloading. Click "OK" to reload now.]]></item>
+	<item key="msgEnterWords"><![CDATA[Enter Key Words ...]]></item>
+	<item key="msgErrorGetPhotos"><![CDATA[Error Getting Photos.]]></item>
+	<item key="msgExportError"><![CDATA[Error Exporting Photo.]]></item>
+	<item key="msgErrorFilesCount"><![CDATA[Error Exporting. Too Many Photos.]]></item>
+	<item key="msgSharingError"><![CDATA[Sharing Photo Error.]]></item>
+	<item key="msgFavoriteError"><![CDATA[Adding to Favorites Error.]]></item>
+	<item key="msgUserNotFound"><![CDATA[User not found. Change searching criterias.]]></item>
+	<item key="msgFavoriteRemove"><![CDATA[Are you sure you want to remove the Photo from Favorites?]]></item>
+	<item key="msgNoElements"><![CDATA[Photos not found.]]></item>
+	<item key="msgNoHelp"><![CDATA[Help not found.]]></item>
+	<item key="msgLimitWarning"><![CDATA[Free version doesn't allow to perform this action. Click OK to know more.]]></item>
+
+	<item key="hSearch"><![CDATA[Search For Photos at Flickr.com]]></item>
+	<item key="hExport"><![CDATA[Export Photo]]></item>
+
+	<item key="txtSeparator"><![CDATA[ :: ]]></item>
+	<item key="txtSharing"><![CDATA[to Sharing Photos]]></item>
+	<item key="txtProfile"><![CDATA[to Profile Photos]]></item>
+	<item key="txtByTags"><![CDATA[by Tags]]></item>
+	<item key="txtByUser"><![CDATA[by User]]></item>
+	<item key="txtAuthor"><![CDATA[Author: ]]></item>
+	<item key="txtUser"><![CDATA[Shared by: ]]></item>
+	<item key="txtTitle"><![CDATA[Title: ]]></item>
+	<item key="txtTags"><![CDATA[Tags: ]]></item>
+	<item key="txtRating"><![CDATA[Rating: ]]></item>
+	<item key="txtDate"><![CDATA[Uploaded: ]]></item>
+	<item key="txtPages"><![CDATA[Pages:]]></item>
+	<item key="txtVote"><![CDATA[Vote for Photo]]></item>
+	<item key="txtViews"><![CDATA[Viewed: ]]></item>
+	<item key="txtRatingCaption"><![CDATA[Rating: ]]></item>
+	<item key="txtRating"><![CDATA[#rating# (#voted# voted)]]></item>
+	<item key="txtCategories"><![CDATA[Categories]]></item>
+
+	<item key="hintFavoriteAdd"><![CDATA[Add To Favorites]]></item>
+	<item key="hintFavoriteRemove"><![CDATA[Remove From Favorites]]></item>
+	<item key="hintFavoriteNow"><![CDATA[Favorite Photo]]></item>
+	<item key="hintExport"><![CDATA[Export]]></item>
+	<item key="hintView"><![CDATA[View Original Size]]></item>
+	<item key="hintShare"><![CDATA[Share]]></item>
+</items>

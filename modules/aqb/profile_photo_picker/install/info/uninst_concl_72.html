@@ -1,0 +1,22 @@
+<style>
+	.file {
+		font-weight: bold;
+		font-size: 8pt;
+		color: red;
+	}
+</style>
+Edit the the file <span class="file">modules/boonex/photos/classes/BxPhotosSearch.php</span> remove the code
+
+<div class="code">//--- AQB Profile Photo Picker ---//
+if ((empty($aParams['album']) || $aParams['album'] == 'profile_album_name') &amp;&amp; BxDolRequest::serviceExists('aqb_profile_photo_picker', 'replace_profile_photo_restriction')) {
+	BxDolService::call('aqb_profile_photo_picker', 'replace_profile_photo_restriction', array(&amp;$this->aCurrent['restriction']));
+}
+//--- AQB Profile Photo Picker ---//</div>
+
+Uninstallation finished.
+If you need some help feel free to <a href="mailto:support@aqbsoft.com">contact us</a>.
+<script language="javascript">
+$(document).ready(function(){
+	$('.modules-plank-switch').toggleClass('modules-plank-switch-opened').next().toggle()
+});
+</script>

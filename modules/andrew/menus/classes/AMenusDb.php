@@ -1,0 +1,36 @@
+<?php
+/***************************************************************************
+*
+* IMPORTANT: This is a commercial product made by AndrewP. It cannot be modified for other than personal usage.
+* The "personal usage" means the product can be installed and set up for ONE domain name ONLY.
+* To be able to use this product for another domain names you have to order another copy of this product (license).
+* This product cannot be redistributed for free or a fee without written permission from AndrewP.
+* This notice may not be removed from the source code.
+*
+***************************************************************************/
+bx_import('BxDolModuleDb');
+
+class AMenusDb extends BxDolModuleDb {
+    var $_oConfig;
+
+    function AMenusDb(&$oConfig) {
+        parent::__construct(); 
+
+        $this->_oConfig = $oConfig;
+    }
+
+
+    function updateMenuSettings($iProfileID, $iMenuID, $sAction) {
+        $sSQL = "DELETE FROM `ams_profile_settings` WHERE `profile_id`='{$iProfileID}'";
+        $this->query($sSQL);
+
+        if ($sAction == 'Apply') {
+            $sSQL = "INSERT INTO `ams_profile_settings` SET `profile_id`='{$iProfileID}', `menu_id`='{$iMenuID}'";
+            $this->query($sSQL);
+        }
+    }
+
+    function getCurrentMenu($iProfileID) {
+        return (int)$this->getOne("SELECT `menu_id` FROM `ams_profile_settings` WHERE `profile_id` = '{$iProfileID}'");
+    }
+}

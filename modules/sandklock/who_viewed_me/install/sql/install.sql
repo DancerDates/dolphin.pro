@@ -1,0 +1,2 @@
+INSERT INTO `sys_page_compose` (`ID`, `Page`, `PageWidth`, `Desc`, `Caption`, `Column`, `Order`, `Func`, `Content`, `DesignBox`, `ColWidth`, `Visible`, `MinWidth`) VALUES
+(NULL, 'profile', '1140px', 'Who Viewer Me Block', '_sk_who_viewed_me_caption_profile_block', 2, 0, 'PHP', 'return BxDolService::call(''who_viewed_me'', ''block_profile_page'', array($this->oProfileGen->_iProfileID));', 1, 71.9, 'memb', 0);

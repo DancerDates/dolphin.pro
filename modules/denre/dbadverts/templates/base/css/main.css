@@ -1,0 +1,79 @@
+.left_block {
+    background: none repeat scroll 0 0 #000;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.right_block {
+    background: none repeat scroll 0 0 #eee;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.network_types {
+    float: right;
+    font: initial;
+    padding: 10px;
+}
+
+.tablesorter {
+    background: none repeat scroll 0 0 #aaa;
+    border: 1px solid #DDD;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/*
+.tablesorter th, .tablesorter td {
+    background: none repeat scroll 0 0 #EEE;
+    font-size: 14px;
+    padding: 2px 4px;
+    text-align: left;
+}
+
+
+.tablesorter th {
+    background: none repeat scroll 0 0 #DDD;
+    padding: 4px;
+    text-align: center;
+}
+*/
+
+.tablesorter td {
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    padding: 2px 4px;
+}
+
+.page {
+    width: 202px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.title {
+    width: 306px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#active {
+    text-align: center;
+}
+
+.none {
+    display:none;
+}
+.thank_you{
+    font-size: 0px;
+}
+/* Extra selectors needed to override the default styling */
+.odd {
+  background: #ECECEC;
+  /* color: #fff; */
+}
+.even {
+  background: #dae5f4;
+  /* color: #fff; */
+}

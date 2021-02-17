@@ -1,0 +1,157 @@
+<style>
+    .sk_wrapper {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+	.sk_list_u{
+		margin:0;
+		list-style:none;
+		padding-left:0px;
+		border-top:0px;
+		max-height:149px;
+		overflow-y:auto;
+        font-size: 16px;
+	}
+	.sk_friend_u{
+		padding:5px;
+		margin:0;
+	}
+	.sk_header_2{
+		background-color:#f0f0f0;
+		border-bottom:1px solid #ccc;
+		font-weight:bold;
+        font-size: 16px;
+	}
+	.sk_friend_u+.sk_friend_u{
+		border-top:1px solid #ccc;
+	}
+	.sk_margin_top,.sk_input{
+		margin-top:5px;
+	}
+	.sk_input{
+		padding:0 0 5px 5px;
+        font-size: 16px;
+	}
+	.sk_label_form{
+		display:block;
+		width:80px;
+		float:left;
+	}
+	.sk_error_2{
+		color:red;
+	}
+    .sk_padding{
+        padding: 10px 20px;
+    }
+</style>
+<script>
+	var typing_key = 0;
+	$(document).ready(function(){
+		count_character();
+		disable_scroll();
+	});
+	
+	function disable_scroll(){
+		document.body.style.overflow = "hidden";
+		$('.login_ajx_close').click(function(){
+			document.body.style.overflow = "visible";
+		});
+	}
+	
+	function send_message(){
+		$('#sk_inviter_loading_img').show();
+		if ($('#sk_message_form').length)
+			$('#sk_message_form').hide();
+		var content = $.trim($('#sk_message_form_info textarea').val());
+		var url = site_url+'m/social_inviter/ajax_mode/send_invitation';
+		var data = {
+			ajaxmode: 'true',
+			list: '__friend_id__',
+			name_list: '__friend_name__',
+			message: content,
+		};
+		$.post(url,data,function(response,status){
+			if(status == 'success'){
+				$('#sk_inviter_loading_img').hide();
+				if(response.indexOf('email') != -1)
+					showSocialInviterMes('__send_message__','message');
+				else
+					showSocialInviterMes(response,'message');
+			}
+		});
+	}
+	
+	function count_character(){
+		$('#sk_message_form_info .sk_input:eq(0) textarea').keyup(function(){
+			count_character_cb();
+		});
+	}
+	
+	function friend_list_block(){
+		$('#sk_message_form').hide();
+		$('#sk_friend_block').show();
+	}
+	
+	function count_character_cb(){
+		var content_length = $.trim($('#sk_message_form_info .sk_input:eq(0) textarea').val()).length;
+		var mess = $('#sk_message_form_info .sk_input:eq(1)');
+		if(content_length == 0)
+			mess.find('input').prop('disabled',true);
+		else
+			mess.find('input').prop('disabled',false);
+		if('__network__' == 'twitter'){
+			display_message(mess,117-content_length);
+		}
+		if('__network__' == 'lastfm'){
+			display_message(mess,900-content_length);
+		}
+		/*if('__network__' == 'linkedin'){
+			display_message(mess,600-content_length);
+		}*/
+		if('__network__' == 'plurk'){
+			display_message(mess,178-content_length);
+		}
+	}
+	function display_message(mess,length){
+		if(length < 0){
+			mess.find('p').addClass('sk_error_2');
+			mess.find('p').html('__error_long_message__');
+			mess.find('input').prop('disabled',true);
+		}else{
+			if(mess.find('p').hasClass('sk_error_2'))
+				mess.find('p').removeClass('sk_error_2')
+			mess.find('p').html('You have '+(length)+' characters left');
+			if(mess.find('input').prop('disabled'))
+				mess.find('input').prop('disabled',false);
+		}
+	}
+</script>
+<div class="sk_wrapper">
+    <div class="sk_header_2 sk_padding">
+    	__lab_selected_friend__
+    </div>
+    <ul class="sk_list_u">
+    	<bx_repeat:friends>
+    	<li class="sk_friend_u">
+    		__username__
+    	</li>
+    	</bx_repeat:friends>
+    </ul>
+</div>
+
+<div class="sk_wrapper sk_margin_top">
+	<form id="sk_message_form_info" method="post" action="">
+		<div class="sk_header_2 sk_padding">__lab_message__</div>
+		<div class="sk_input sk_padding">
+			<label class="sk_label_form">__lab_content__</label><textarea style="border-color:#ccc;padding:3px;width:78%;height:130px;resize:none;border-radius:2px;" class="form_input_textarea bx-def-font-inputs">__content__</textarea>
+			<div class="clear_both"></div>
+		</div>
+		<div class="sk_input sk_padding">
+			<p>__max_length__</p>
+			<input class="bx-btn" style="float:right" type="button" value="__send_invitation__" onclick="send_message()" />
+			<input class="bx-btn" style="float: left; left: -10px;" type="button" value="__back__" onclick="friend_list_block()" />
+			<div class="clear_both"></div>
+		</div>
+		<div class="clear_both"></div>
+	</form>
+</div>

@@ -1,0 +1,19 @@
+<script src="__modules_url__andrew/menus/js/main.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript">
+    var oAmsSettings = new AmsSettings({
+        iOwnerId: __profile_id__
+    });
+</script>
+
+<form name="menu_switcher_form" method="post" action="profile.php" style="margin:10px;" target="menu_switcher_form_target">
+    <input type="hidden" name="ID" value="__profile_id__" />
+    <input type="hidden" name="action" value="menu_change" />
+    <div><bx_text:_ams_Available_menus />:</div>
+	<div><select class="size20" name="menu_id">__menu_options__</select></div>
+    <div>
+        <input type="submit" size="15" name="apply" value="<bx_text:_sys_admin_apply />" />
+        <input type="submit" size="15" name="reset" value="<bx_text:_Reset />" />
+    </div>
+</form>
+<iframe name="menu_switcher_form_target" style="display: none;"></iframe>
+<div id="menu_switcher_success" style="display:none;">__success_msgbox__</div>

@@ -1,0 +1,399 @@
+<style>
+	.sk_list,.sk_tabs{
+		margin:0;
+		list-style:none;
+		padding-left:0px;
+	}
+    .sk_tabs {
+        margin-bottom: -2px;
+        font-size: 18px;
+    }
+	.sk_tab{
+        display: inline-block;
+		background-color: #F8F8F8;
+        padding: 5px 15px;
+        margin: 0 -6px 0 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+	}
+	.sk_tab a{
+		color: #999;
+	}
+	.sk_tab+.sk_tab{
+		margin-left:5px;
+	}
+    .sk_tab_content{
+        background-color: #F8F8F8;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+	.sk_header{
+		background-color:#FFF;
+		padding:10px 0;
+	}
+	.sk_select{
+		margin-left:5px;
+        margin-top: 4px;
+		float:left;
+		width:150px;
+	}
+	.sk_filter{
+		float:right;
+		margin-right: 10px;
+	}
+	.sk_list{
+		border-top:0px;	
+		overflow-y:auto;
+	}
+	.sk_friend{
+		line-height:18px;
+		padding:10px 5px;
+		margin:0;
+	}
+	.sk_friend+.sk_friend{
+		border-top:1px solid #ccc;
+	}
+	.sk_right_aligned,.sk_add{
+		float:right;
+	}
+	.sk_inviter_info{
+		margin: 5px 10px 10px;
+		padding-left:5px;
+	}
+	.sk_tabs_selected{
+		background-color: #FFF;
+        padding: 7px 15px !important;
+        border-bottom: none !important;
+	}
+    .sk_tabs_a_selected{
+        color: #666 !important;
+    }
+	#e_message{
+		padding:5px;
+        background-color: #fff;
+	}
+	.sk_error{
+		color:red;
+	}
+	.sk_status{
+		line-height:21px;
+		font-style:italic;
+	}
+	.sk_hover_color{
+		background-color:#ebebeb;
+	}
+</style>
+<script>
+	var keyRunning = 0;
+	$(document).ready(function(){
+		$('.sk_tabs a').click(function(){
+			switch_tabs($(this));
+		});
+		if('__num_invitation__' == 0){
+			$('#fl_button').prop('disabled',true);
+			$('.sk_inviter_info label').html("__limit_error__");
+			$('.sk_inviter_info label').addClass('sk_error');
+		}else
+			count_checked();
+		
+		check_all();
+		render_display();
+		switch_tabs($('#default_tab'));
+		disable_scroll();
+		filter();
+		
+		var e = '__j_friend__';
+	});
+	
+	function disable_scroll(){
+		document.body.style.overflow = "hidden";
+		$('.bx-popup-element-close').click(function(){
+			document.body.style.overflow = "visible";
+		});
+	}
+	
+	function switch_tabs(obj){
+		$('.sk_tab_content').hide();
+        $('.sk_tab').removeClass('sk_tabs_selected');
+		$('.sk_tabs a').removeClass('sk_tabs_a_selected');
+		var id = obj.attr('rel');
+		$('#'+id).show();
+		obj.parent().addClass('sk_tabs_selected');
+        obj.addClass('sk_tabs_a_selected');
+	}
+	
+	function render_display(){
+		var $height =  Math.floor($(window).height() * 0.8);
+		var $list_max_height = (Math.floor($height * 0.7) - Math.floor($height * 0.7) % 42) - 1;
+		$('#sk_friend_block').css('max-height',$height);
+		$('#sk_friend_block .login_wrap_ajax').css('height','100%');
+		$('#sk_friend_block .login_ajax_wrap').css('width','500px');
+		$('#sk_friend_block .sk_list').css('max-height',$list_max_height+'px');
+	}
+	
+	function check_all(){
+		$('#sk_select_all').click(function(){
+			if(this.checked){
+				$('#sk_tab1 .sk_list .sk_friend').each(function(){
+					if($(this).is(':visible'))
+						$(this).addClass('sk_hover_color');
+				});
+				$('#sk_tab1 :checkbox').each(function(){
+					if($(this).is(':visible'))
+						$(this).prop('checked', true);
+				});
+			}else{
+				$('#sk_tab1 .sk_list .sk_friend').each(function(){
+						if($(this).is(':visible')){
+							if($(this).hasClass('sk_hover_color'))
+								$(this).removeClass('sk_hover_color');
+						}
+				});
+				$('#sk_tab1 :checkbox').each(function(){
+					if($(this).is(':visible'))
+						$(this).prop('checked', false);
+				});
+			}
+			if('__num_invitation__' != 0)
+				display_selected_friends(false);
+		});
+	}
+	
+	function limit_invitation(ele){
+		if(ele.prop('checked')){
+			var leng = get_checked_value().length;
+			if('__num_invitation__' - leng < 0 && '__num_invitation__' != 'unlimited'){
+				if(ele.parent().hasClass('sk_hover_color')){
+					var timeout = setTimeout(function(){
+						ele.prop('checked',false);
+						ele.parent().removeClass('sk_hover_color');
+						clearTimeout(timeout);
+					},200);
+				}
+			}
+		}
+	}
+	
+	function display_selected_friends(isChecking){
+		var leng = get_checked_value().length;
+		var mess = $('.sk_inviter_info label');
+		if('__num_invitation__' == 'unlimited'){
+			if(leng < 0){
+				mess.html('__form_note__');
+				mess.addClass('sk_error');
+			}
+			return;
+		}
+		if('__num_invitation__' - leng >= 0 ){
+			if(leng > 0){
+				if(mess.hasClass('sk_error'))
+					mess.removeClass('sk_error');
+				$('.sk_inviter_info label').html('You have selected '+leng+' friend(s)');
+				$('#fl_button').prop('disabled',false);
+			}else{
+				mess.html('__form_note__');
+				mess.addClass('sk_error');
+			}
+		}else if('__num_invitation__' - leng < 0 && !isChecking){
+			mess.html('__sfriend_note__');
+			mess.addClass('sk_error');
+			$('#fl_button').prop('disabled',true);
+		}
+	}
+	
+	function get_checked_value(){
+		var checked_value = []; 
+		$('#sk_tab1 .sk_list :checkbox:checked').each(function(){
+			checked_value.push($(this).val());
+		});
+		return checked_value;
+	}
+	function get_username(){
+		var username = [];
+		if('__network__' == 'other'){
+			$('#sk_tab1 .sk_list :checkbox:checked').each(function(){
+				username.push($(this).parent().find('.sk_right_aligned').text());
+			});
+		}else{
+			$('#sk_tab1 .sk_list :checkbox:checked').each(function(){
+				username.push($(this).parent().find('.sk_label').text());
+			});
+		}
+		return username;
+	}
+	function count_checked(){
+		$('#sk_tab1 .sk_list .sk_friend').each(function(){
+			$(this).hover(function(){
+				$(this).addClass('sk_hover_color');
+			},function(){
+				var _checkbox = $(this).find(':checkbox');
+				if($(this).hasClass('sk_hover_color') && !_checkbox.prop('checked'))
+					$(this).removeClass('sk_hover_color');
+			});
+			
+            $(this).find('input[type=\'checkbox\']').change(function() {
+                if($(this).prop('checked')){
+                    $(this).parent().addClass('sk_hover_color');
+					limit_invitation($(this));
+                } else {
+                    if($(this).parent().hasClass('sk_hover_color'))
+						$(this).parent().removeClass('sk_hover_color');
+                }
+                display_selected_friends(true);
+            });
+		});
+	}
+	function show_message_form(){
+		var leng = get_checked_value().length;
+		var mess = $('.sk_inviter_info label');
+		if('__num_invitation__' == 'unlimited'){
+			if(leng > 0)
+				showSocialInviterMessageForm(get_checked_value(),get_username());
+			else{
+				mess.html('__form_note__');
+				mess.addClass('sk_error');
+			}
+			return;
+		}
+		if('__num_invitation__' - leng >= 0 && leng > 0)
+			showSocialInviterMessageForm(get_checked_value(),get_username());
+		else if('__num_invitation__' - leng < 0){
+			mess.html('__sfriend_note__');
+			mess.addClass('sk_error');
+		}
+		else{
+			mess.html('__form_note__');
+			mess.addClass('sk_error');
+		}
+	}
+	function showSocialInviterMessageForm(friend_id,name){
+	
+		if ($('#sk_friend_block').is(':visible')){
+			$('#sk_friend_block').hide();
+		}
+		
+		var oPopupOptions = {closeOnOuterClick: false};
+		
+		if ($('#sk_message_form').length){
+			$('#sk_message_form').remove();
+		}
+		$('<div id="sk_message_form" style="display: none;"></div>').prependTo('body').load(
+			site_url + 'm/social_inviter/ajax_mode/message_form',
+			{
+				ajaxmode: 'true',
+				list_id: JSON.stringify(friend_id),
+				username: JSON.stringify(name),
+			},
+			function() {
+				$(this).dolPopup(oPopupOptions);
+			}
+		);
+	}
+	function filter(){
+		$('#sk_filter').keyup(function(){
+		
+			if(keyRunning === 0)
+				keyRunning = setTimeout(filter_callback,400);
+			else{
+				clearTimeout(keyRunning);
+				keyRunning = setTimeout(filter_callback,400);
+			}
+						
+		}).focus(function(){
+			this.value = "";
+			$(this).css({
+				"color": "black"
+			});
+			$(this).unbind('focus');
+		});
+	}
+	function filter_callback(){
+		var data = $('#sk_filter')[0].value.split(' ');
+		var list = $('#sk_tab1 .sk_list').find('.sk_friend');
+		if(this.value === ''){
+			list.show();
+			return;
+		}
+		
+		list.hide();
+		
+		list.filter(function(){
+			var row = $(this);
+			for(var i=0; i<data.length;i++){
+				if(row.find('.sk_right_aligned').is(':contains("'+data[i]+'")') || row.find('.sk_label').is(':contains("'+data[i]+'")'))
+					return true;
+			}
+			return false;
+		}).show();
+	}
+	function add_friend(id_friend) {
+        $('#add_friend_btn_' + id_friend).find('input[type=\'button\']').val('__waiting_text__');
+		$.post(site_url + 'list_pop.php?action=friend' , {ID : id_friend} , function(response,status){
+				$('#loading_img_' + id_friend).hide();
+				$('#add_friend_btn_' + id_friend).html('<label class="sk_status" style="line-height: 38px;">__friend_request__</label>');
+			}
+		);
+	}
+</script>
+
+	<ul class="sk_tabs">
+		<li class="sk_tab"><a id="default_tab"  href="javascript:void(0)" rel="sk_tab1">__lab_friend_list__</a></li>
+		<li class="sk_tab"><a  href="javascript:void(0)" rel="sk_tab2">__lab_existed_member__</a></li>
+		<div class="clear_both"></div>
+	</ul>
+	
+	<div class="sk_tab_content" id="sk_tab1">
+		<div class="sk_header">
+			
+			<div class="sk_select">
+				<input type="checkbox" id="sk_select_all" class="form_input_checkbox" /><label for="sk_select_all" style="font-weight: bold; margin-left: 5px;">__lab_select_all__</label>
+			</div>
+			
+			<div class="sk_filter">
+				<label style="font-weight: bold;">__lab_filter__</label>
+				<input type="text" name="filter" id="sk_filter" class="form_input_text bx-def-font-inputs" style="width: 175px;" />
+			</div>
+			
+			<div class="clear_both"></div>
+			
+		</div>
+		<ul class="sk_list">
+			<bx_repeat:friends>
+				<li class="sk_friend">
+					<input id="sk_checkbox___num__" type="checkbox" value="__receiver__" class="form_input_checkbox" />
+					<label for="sk_checkbox___num__" class="sk_label">__username__</label>
+					<label for="sk_checkbox___num__" class="sk_right_aligned" style="padding-top:3.4px;">__email__</label>
+					<div class="clear_both"></div>
+				</li>
+			</bx_repeat:friends>
+		</ul>
+
+			
+			<div class="sk_inviter_info">
+				<label style="line-height:38px;"></label>
+				<input id="fl_button" type="button" class="bx-btn sk_right_aligned" value="__lab_next__" onclick="show_message_form()" disabled>
+				<div class="clear_both"></div>
+			</div>
+			<div class="sk_inviter_info">
+				<i>__total_invitations__</i><br />
+				<i>__total_friends__</i>
+			</div>
+	</div>
+	
+	<div class="sk_tab_content" id="sk_tab2" style="padding: 10px; background-color: #fff;">
+		<div id="e_message" style="__display_e_message__">
+			__e_message__
+		</div>
+		<ul class="sk_list" style="__display_e_friend__">
+			<bx_repeat:e_friends>
+				<li class="sk_friend">
+					<div style="float:left;margin-right:5px;line-height: 38px;">__e_avatar__</div>
+					<label class="sk_label" style="line-height: 38px;"><a href="__e_link__">__e_username__</a> - __e_email__</label>
+					<div id="add_friend_btn___e_id__" class="sk_right_aligned">__e_display_btn__</div>
+					<div class="clear_both"></div>
+				</li>
+			</bx_repeat:e_friends>
+		</ul>
+	</div>
+	

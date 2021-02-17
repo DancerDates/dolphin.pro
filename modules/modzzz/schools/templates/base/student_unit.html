@@ -1,0 +1,35 @@
+<div class="bx-twig-unit modzzz_schools_unit bx-def-margin-top-auto">
+ 
+	<bx_if:site>
+		<div class="bx-twig-unit-thumb-cont bx-def-margin-sec-right bx-def-round-corners bx-def-shadow" style='background-color: #ffffff;'>
+			<a href="__url__"><img class="bx-twig-unit-thumb bx-def-round-corners bx-def-shadow" src="__thumb_url__"></a>
+		</div>
+	</bx_if:site>
+
+	<bx_if:external>
+		<div class="bx-twig-unit-thumb-cont bx-def-margin-sec-right">
+			<a href="__url__"><img class="bx-twig-unit-thumb bx-def-round-corners bx-def-shadow" src="__thumb_url__"></a>
+		</div>
+	</bx_if:external>
+ 
+    <div class="bx-twig-unit-info">
+
+        <div class="bx-twig-unit-title bx-def-font-h2">
+			<a href="__url__">__title__</a>
+        </div>
+		 
+        <div class="bx-twig-unit-line bx-twig-unit-desc">__snippet_text__</div> 
+
+        <div class="bx-twig-unit-line"><bx_text:_modzzz_schools_label_attendance_period />: __year_entered__ - __year_left__</div> 
+ 
+        <bx_if:full> 
+            <div class="bx-twig-unit-line bx-twig-unit-rate">
+                __rate__
+            </div>
+
+            <div class="bx-twig-unit-line bx-def-font-small bx-def-font-grayed">
+                <bx_text:_modzzz_schools_posted /> __created__ <bx_text:_modzzz_schools_by /> <a href="__author_url__">__author__</a>
+            </div> 
+        </bx_if:full> 
+    </div>   
+</div>

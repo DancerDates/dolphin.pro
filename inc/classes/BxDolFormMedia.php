@@ -35,6 +35,11 @@ class BxDolFormMedia extends BxTemplFormView
      */
     function uploadPhotos ($sTag, $sCat, $sName = 'images', $sTitle = 'images_titles', $sTitleAlt = 'title')
     {
+        
+        /* AQB Extended Video Uploader begin */
+        if ($_POST['aqb_uploader_chooser'] == 'youtube') return BxDolService::call('aqb_evu', 'upload_videos', array($this, $sTag, $sCat, $sName, $sTitle, $sTitleAlt)); 
+        /* AQB Extended Video Uploader end */
+        
         $aRet = array ();
         $aTitles = $this->getCleanValue($sTitle);
 
